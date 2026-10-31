@@ -2,9 +2,7 @@
 
 from fastapi import FastAPI
 
+from mana.web.rotas import router
+
 app = FastAPI(title="Maná Diário")
-
-
-@app.get("/saude")
-def saude() -> dict[str, str]:
-    return {"status": "ok"}
+app.include_router(router)

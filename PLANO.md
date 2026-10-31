@@ -21,12 +21,12 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [x] Testes do cliente com respx
 
 ## Fase 2 — Bíblia local
-- [ ] Baixar a Bíblia Livre (eBible `porbr2018`, USFX), registrar `data/biblia/FONTE.md`
-- [ ] Crédito BLIVRE no rodapé e no popover
-- [ ] Importador USFX → SQLite com FTS5
-- [ ] Testes de integridade contra `data/livros.json`
-- [ ] Parser de referências + `linkar_referencias()` + tabela de testes
-- [ ] `/api/passagem`
+- [x] Baixar a Bíblia Livre (eBible `porbr2018`, USFX), registrar `data/biblia/FONTE.md`
+- [ ] Crédito BLIVRE no rodapé e no popover (a API já devolve `edicao: BLIVRE`; o rodapé entra com os templates, Fase 3)
+- [x] Importador USFX → SQLite com FTS5
+- [x] Testes de integridade contra `data/livros.json`
+- [x] Parser de referências + `linkar_referencias()` + tabela de testes
+- [x] `/api/passagem`
 
 ## Fase 3 — Interface da Bíblia
 - [ ] Fontes locais (Nunito, Crimson Pro) e tokens de cor
@@ -71,6 +71,8 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [ ] Adaptador do novo provedor, prompt v2 se necessário, regerar estudos de teste
 
 ## Decisões
+- Fase 2: texto do USFX sem notas de rodapé (`f`) nem referências cruzadas (`rq`); palavras acrescentadas (`add`) mantidas como texto simples. 31.102 versículos. Versão da BLIVRE: fevereiro de 2018 (eBible atualizou o pacote em 08/03/2022).
+- Referências: duas formas — canônica (`rom.5.3-4`, vários trechos separados por `;`) e de exibição (`Romanos 5.3,4`; 2 versículos seguidos viram `3,4`, 3 ou mais `3-5`).
 - Bíblia: Bíblia Livre (CC BY 4.0, linhagem Almeida 1819). A "Almeida" do open-bibles foi descartada (texto com direitos).
 - LLM atual (llm-server) é temporária; provedor trocável por `.env`.
 - Versículo principal vem de acervo curado (≥ 1.100, 3 anos sem repetir) via calendário anual; a LLM só escolhe o complementar (dentre 3 candidatas validadas).

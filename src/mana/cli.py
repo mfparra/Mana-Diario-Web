@@ -1,6 +1,7 @@
 """CLI do Maná Diário (`uv run mana ...`)."""
 
 import logging
+from pathlib import Path
 
 import typer
 
@@ -15,14 +16,26 @@ app.add_typer(llm, name="llm")
 
 @biblia.command("baixar")
 def biblia_baixar() -> None:
-    """Baixa a Bíblia Livre (Fase 2)."""
-    typer.echo("Ainda não implementado.")
+    """Baixa a Bíblia Livre (eBible, USFX) para data/biblia/raw/."""
+    from mana.biblia import importar as imp
+
+    xml = imp.baixar(Path(obter_configuracao().biblia_db).parent / "raw")
+    typer.echo(f"Baixado e extraído: {xml}")
 
 
 @biblia.command("importar")
 def biblia_importar() -> None:
-    """Converte a Bíblia para SQLite (Fase 2)."""
-    typer.echo("Ainda não implementado.")
+    """Converte a Bíblia para SQLite e valida a integridade."""
+    from mana.biblia import importar as imp
+
+    destino = Path(obter_configuracao().biblia_db)
+    xml = destino.parent / "raw" / "usfx" / imp.NOME_XML
+    try:
+        total = imp.importar(xml, Path("data/livros.json"), destino)
+    except (imp.ErroImportacao, FileNotFoundError) as e:
+        typer.secho(f"Falhou: {e}", fg=typer.colors.RED, err=True)
+        raise typer.Exit(1) from e
+    typer.echo(f"Importados {total} versículos em {destino}")
 
 
 @llm.command("testar")
