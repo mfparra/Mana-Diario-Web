@@ -1,0 +1,9 @@
+services:
+  web:
+    image: "localhost/mana-diario:${MANA_TAG:?defina MANA_TAG (exemplo 2026.11.01)}"
+    logging:
+      driver: journald
+  agendador:
+    image: "localhost/mana-diario:${MANA_TAG:?defina MANA_TAG (exemplo 2026.11.01)}"
+    logging:
+      driver: journald

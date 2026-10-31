@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+data/biblia/raw/
+data/mana.sqlite
+data/mana.sqlite-*
+docs/referencia/

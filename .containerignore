@@ -1,0 +1,10 @@
+.env
+.git
+.venv
+tests/
+docs/
+data/biblia/raw/
+data/mana.sqlite*
+__pycache__/
+.pytest_cache/
+.ruff_cache/

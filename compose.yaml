@@ -1,0 +1,33 @@
+x-app: &app
+  build:
+    context: .
+    dockerfile: Containerfile
+  image: localhost/mana-diario:${MANA_TAG:-dev}
+  env_file: .env
+  environment:
+    MANA_DB: /dados/mana.sqlite
+    CALENDARIOS_DIR: /dados/calendarios
+  volumes:
+    - mana-dados:/dados
+  restart: unless-stopped
+
+services:
+  web:
+    <<: *app
+    ports:
+      - "127.0.0.1:${PORTA_HOST:-8000}:8000"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/saude').status == 200 else 1)"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  agendador:
+    <<: *app
+    command: ["mana", "agendador"]
+
+volumes:
+  mana-dados:

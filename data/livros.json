@@ -1,0 +1,855 @@
+{
+ "_nota": "'Jó' (com acento) é Jó; 'Jo' sem acento é sempre João. Variantes são formas extras aceitas pelo parser, além de nome e abrev.",
+ "livros": [
+  {
+   "id": 1,
+   "codigo": "GEN",
+   "nome": "Gênesis",
+   "slug": "genesis",
+   "abrev": "Gn",
+   "testamento": "AT",
+   "capitulos": 50,
+   "variantes": [
+    "Gen",
+    "Genesis"
+   ]
+  },
+  {
+   "id": 2,
+   "codigo": "EXO",
+   "nome": "Êxodo",
+   "slug": "exodo",
+   "abrev": "Êx",
+   "testamento": "AT",
+   "capitulos": 40,
+   "variantes": [
+    "Ex",
+    "Exodo"
+   ]
+  },
+  {
+   "id": 3,
+   "codigo": "LEV",
+   "nome": "Levítico",
+   "slug": "levitico",
+   "abrev": "Lv",
+   "testamento": "AT",
+   "capitulos": 27,
+   "variantes": [
+    "Lev",
+    "Levitico"
+   ]
+  },
+  {
+   "id": 4,
+   "codigo": "NUM",
+   "nome": "Números",
+   "slug": "numeros",
+   "abrev": "Nm",
+   "testamento": "AT",
+   "capitulos": 36,
+   "variantes": [
+    "Num",
+    "Numeros"
+   ]
+  },
+  {
+   "id": 5,
+   "codigo": "DEU",
+   "nome": "Deuteronômio",
+   "slug": "deuteronomio",
+   "abrev": "Dt",
+   "testamento": "AT",
+   "capitulos": 34,
+   "variantes": [
+    "Deut",
+    "Deuteronomio"
+   ]
+  },
+  {
+   "id": 6,
+   "codigo": "JOS",
+   "nome": "Josué",
+   "slug": "josue",
+   "abrev": "Js",
+   "testamento": "AT",
+   "capitulos": 24,
+   "variantes": [
+    "Jos",
+    "Josue"
+   ]
+  },
+  {
+   "id": 7,
+   "codigo": "JDG",
+   "nome": "Juízes",
+   "slug": "juizes",
+   "abrev": "Jz",
+   "testamento": "AT",
+   "capitulos": 21,
+   "variantes": [
+    "Jui",
+    "Juizes"
+   ]
+  },
+  {
+   "id": 8,
+   "codigo": "RUT",
+   "nome": "Rute",
+   "slug": "rute",
+   "abrev": "Rt",
+   "testamento": "AT",
+   "capitulos": 4,
+   "variantes": []
+  },
+  {
+   "id": 9,
+   "codigo": "1SA",
+   "nome": "1 Samuel",
+   "slug": "1-samuel",
+   "abrev": "1Sm",
+   "testamento": "AT",
+   "capitulos": 31,
+   "variantes": [
+    "1 Sm",
+    "I Samuel",
+    "I Sm",
+    "1Sam"
+   ]
+  },
+  {
+   "id": 10,
+   "codigo": "2SA",
+   "nome": "2 Samuel",
+   "slug": "2-samuel",
+   "abrev": "2Sm",
+   "testamento": "AT",
+   "capitulos": 24,
+   "variantes": [
+    "2 Sm",
+    "II Samuel",
+    "II Sm",
+    "2Sam"
+   ]
+  },
+  {
+   "id": 11,
+   "codigo": "1KI",
+   "nome": "1 Reis",
+   "slug": "1-reis",
+   "abrev": "1Rs",
+   "testamento": "AT",
+   "capitulos": 22,
+   "variantes": [
+    "1 Rs",
+    "I Reis",
+    "I Rs"
+   ]
+  },
+  {
+   "id": 12,
+   "codigo": "2KI",
+   "nome": "2 Reis",
+   "slug": "2-reis",
+   "abrev": "2Rs",
+   "testamento": "AT",
+   "capitulos": 25,
+   "variantes": [
+    "2 Rs",
+    "II Reis",
+    "II Rs"
+   ]
+  },
+  {
+   "id": 13,
+   "codigo": "1CH",
+   "nome": "1 Crônicas",
+   "slug": "1-cronicas",
+   "abrev": "1Cr",
+   "testamento": "AT",
+   "capitulos": 29,
+   "variantes": [
+    "1 Cr",
+    "I Crônicas",
+    "I Cr",
+    "1 Cronicas"
+   ]
+  },
+  {
+   "id": 14,
+   "codigo": "2CH",
+   "nome": "2 Crônicas",
+   "slug": "2-cronicas",
+   "abrev": "2Cr",
+   "testamento": "AT",
+   "capitulos": 36,
+   "variantes": [
+    "2 Cr",
+    "II Crônicas",
+    "II Cr",
+    "2 Cronicas"
+   ]
+  },
+  {
+   "id": 15,
+   "codigo": "EZR",
+   "nome": "Esdras",
+   "slug": "esdras",
+   "abrev": "Ed",
+   "testamento": "AT",
+   "capitulos": 10,
+   "variantes": [
+    "Esd"
+   ]
+  },
+  {
+   "id": 16,
+   "codigo": "NEH",
+   "nome": "Neemias",
+   "slug": "neemias",
+   "abrev": "Ne",
+   "testamento": "AT",
+   "capitulos": 13,
+   "variantes": [
+    "Nee"
+   ]
+  },
+  {
+   "id": 17,
+   "codigo": "EST",
+   "nome": "Ester",
+   "slug": "ester",
+   "abrev": "Et",
+   "testamento": "AT",
+   "capitulos": 10,
+   "variantes": [
+    "Est"
+   ]
+  },
+  {
+   "id": 18,
+   "codigo": "JOB",
+   "nome": "Jó",
+   "slug": "jo",
+   "abrev": "Jó",
+   "testamento": "AT",
+   "capitulos": 42,
+   "variantes": [
+    "Job"
+   ]
+  },
+  {
+   "id": 19,
+   "codigo": "PSA",
+   "nome": "Salmos",
+   "slug": "salmos",
+   "abrev": "Sl",
+   "testamento": "AT",
+   "capitulos": 150,
+   "variantes": [
+    "Salmo",
+    "Sal"
+   ]
+  },
+  {
+   "id": 20,
+   "codigo": "PRO",
+   "nome": "Provérbios",
+   "slug": "proverbios",
+   "abrev": "Pv",
+   "testamento": "AT",
+   "capitulos": 31,
+   "variantes": [
+    "Prov",
+    "Proverbios"
+   ]
+  },
+  {
+   "id": 21,
+   "codigo": "ECC",
+   "nome": "Eclesiastes",
+   "slug": "eclesiastes",
+   "abrev": "Ec",
+   "testamento": "AT",
+   "capitulos": 12,
+   "variantes": [
+    "Ecl"
+   ]
+  },
+  {
+   "id": 22,
+   "codigo": "SNG",
+   "nome": "Cantares",
+   "slug": "cantares",
+   "abrev": "Ct",
+   "testamento": "AT",
+   "capitulos": 8,
+   "variantes": [
+    "Cânticos",
+    "Cantico dos Canticos",
+    "Cântico dos Cânticos",
+    "Cant"
+   ]
+  },
+  {
+   "id": 23,
+   "codigo": "ISA",
+   "nome": "Isaías",
+   "slug": "isaias",
+   "abrev": "Is",
+   "testamento": "AT",
+   "capitulos": 66,
+   "variantes": [
+    "Isa",
+    "Isaias"
+   ]
+  },
+  {
+   "id": 24,
+   "codigo": "JER",
+   "nome": "Jeremias",
+   "slug": "jeremias",
+   "abrev": "Jr",
+   "testamento": "AT",
+   "capitulos": 52,
+   "variantes": [
+    "Jer"
+   ]
+  },
+  {
+   "id": 25,
+   "codigo": "LAM",
+   "nome": "Lamentações",
+   "slug": "lamentacoes",
+   "abrev": "Lm",
+   "testamento": "AT",
+   "capitulos": 5,
+   "variantes": [
+    "Lam",
+    "Lamentacoes"
+   ]
+  },
+  {
+   "id": 26,
+   "codigo": "EZK",
+   "nome": "Ezequiel",
+   "slug": "ezequiel",
+   "abrev": "Ez",
+   "testamento": "AT",
+   "capitulos": 48,
+   "variantes": [
+    "Eze"
+   ]
+  },
+  {
+   "id": 27,
+   "codigo": "DAN",
+   "nome": "Daniel",
+   "slug": "daniel",
+   "abrev": "Dn",
+   "testamento": "AT",
+   "capitulos": 12,
+   "variantes": [
+    "Dan"
+   ]
+  },
+  {
+   "id": 28,
+   "codigo": "HOS",
+   "nome": "Oseias",
+   "slug": "oseias",
+   "abrev": "Os",
+   "testamento": "AT",
+   "capitulos": 14,
+   "variantes": [
+    "Oséias"
+   ]
+  },
+  {
+   "id": 29,
+   "codigo": "JOL",
+   "nome": "Joel",
+   "slug": "joel",
+   "abrev": "Jl",
+   "testamento": "AT",
+   "capitulos": 3,
+   "variantes": []
+  },
+  {
+   "id": 30,
+   "codigo": "AMO",
+   "nome": "Amós",
+   "slug": "amos",
+   "abrev": "Am",
+   "testamento": "AT",
+   "capitulos": 9,
+   "variantes": [
+    "Amos"
+   ]
+  },
+  {
+   "id": 31,
+   "codigo": "OBA",
+   "nome": "Obadias",
+   "slug": "obadias",
+   "abrev": "Ob",
+   "testamento": "AT",
+   "capitulos": 1,
+   "variantes": [
+    "Abd"
+   ]
+  },
+  {
+   "id": 32,
+   "codigo": "JON",
+   "nome": "Jonas",
+   "slug": "jonas",
+   "abrev": "Jn",
+   "testamento": "AT",
+   "capitulos": 4,
+   "variantes": [
+    "Jon"
+   ]
+  },
+  {
+   "id": 33,
+   "codigo": "MIC",
+   "nome": "Miqueias",
+   "slug": "miqueias",
+   "abrev": "Mq",
+   "testamento": "AT",
+   "capitulos": 7,
+   "variantes": [
+    "Miquéias"
+   ]
+  },
+  {
+   "id": 34,
+   "codigo": "NAM",
+   "nome": "Naum",
+   "slug": "naum",
+   "abrev": "Na",
+   "testamento": "AT",
+   "capitulos": 3,
+   "variantes": []
+  },
+  {
+   "id": 35,
+   "codigo": "HAB",
+   "nome": "Habacuque",
+   "slug": "habacuque",
+   "abrev": "Hc",
+   "testamento": "AT",
+   "capitulos": 3,
+   "variantes": [
+    "Hab"
+   ]
+  },
+  {
+   "id": 36,
+   "codigo": "ZEP",
+   "nome": "Sofonias",
+   "slug": "sofonias",
+   "abrev": "Sf",
+   "testamento": "AT",
+   "capitulos": 3,
+   "variantes": [
+    "Sof"
+   ]
+  },
+  {
+   "id": 37,
+   "codigo": "HAG",
+   "nome": "Ageu",
+   "slug": "ageu",
+   "abrev": "Ag",
+   "testamento": "AT",
+   "capitulos": 2,
+   "variantes": []
+  },
+  {
+   "id": 38,
+   "codigo": "ZEC",
+   "nome": "Zacarias",
+   "slug": "zacarias",
+   "abrev": "Zc",
+   "testamento": "AT",
+   "capitulos": 14,
+   "variantes": [
+    "Zac"
+   ]
+  },
+  {
+   "id": 39,
+   "codigo": "MAL",
+   "nome": "Malaquias",
+   "slug": "malaquias",
+   "abrev": "Ml",
+   "testamento": "AT",
+   "capitulos": 4,
+   "variantes": [
+    "Mal"
+   ]
+  },
+  {
+   "id": 40,
+   "codigo": "MAT",
+   "nome": "Mateus",
+   "slug": "mateus",
+   "abrev": "Mt",
+   "testamento": "NT",
+   "capitulos": 28,
+   "variantes": [
+    "Mat"
+   ]
+  },
+  {
+   "id": 41,
+   "codigo": "MRK",
+   "nome": "Marcos",
+   "slug": "marcos",
+   "abrev": "Mc",
+   "testamento": "NT",
+   "capitulos": 16,
+   "variantes": [
+    "Mar"
+   ]
+  },
+  {
+   "id": 42,
+   "codigo": "LUK",
+   "nome": "Lucas",
+   "slug": "lucas",
+   "abrev": "Lc",
+   "testamento": "NT",
+   "capitulos": 24,
+   "variantes": [
+    "Luc"
+   ]
+  },
+  {
+   "id": 43,
+   "codigo": "JHN",
+   "nome": "João",
+   "slug": "joao",
+   "abrev": "Jo",
+   "testamento": "NT",
+   "capitulos": 21,
+   "variantes": [
+    "Joao"
+   ]
+  },
+  {
+   "id": 44,
+   "codigo": "ACT",
+   "nome": "Atos",
+   "slug": "atos",
+   "abrev": "At",
+   "testamento": "NT",
+   "capitulos": 28,
+   "variantes": [
+    "Atos dos Apóstolos"
+   ]
+  },
+  {
+   "id": 45,
+   "codigo": "ROM",
+   "nome": "Romanos",
+   "slug": "romanos",
+   "abrev": "Rm",
+   "testamento": "NT",
+   "capitulos": 16,
+   "variantes": [
+    "Rom"
+   ]
+  },
+  {
+   "id": 46,
+   "codigo": "1CO",
+   "nome": "1 Coríntios",
+   "slug": "1-corintios",
+   "abrev": "1Co",
+   "testamento": "NT",
+   "capitulos": 16,
+   "variantes": [
+    "1 Co",
+    "I Coríntios",
+    "I Co",
+    "1 Corintios",
+    "1Cor"
+   ]
+  },
+  {
+   "id": 47,
+   "codigo": "2CO",
+   "nome": "2 Coríntios",
+   "slug": "2-corintios",
+   "abrev": "2Co",
+   "testamento": "NT",
+   "capitulos": 13,
+   "variantes": [
+    "2 Co",
+    "II Coríntios",
+    "II Co",
+    "2 Corintios",
+    "2Cor"
+   ]
+  },
+  {
+   "id": 48,
+   "codigo": "GAL",
+   "nome": "Gálatas",
+   "slug": "galatas",
+   "abrev": "Gl",
+   "testamento": "NT",
+   "capitulos": 6,
+   "variantes": [
+    "Gal",
+    "Galatas"
+   ]
+  },
+  {
+   "id": 49,
+   "codigo": "EPH",
+   "nome": "Efésios",
+   "slug": "efesios",
+   "abrev": "Ef",
+   "testamento": "NT",
+   "capitulos": 6,
+   "variantes": [
+    "Efe",
+    "Efesios"
+   ]
+  },
+  {
+   "id": 50,
+   "codigo": "PHP",
+   "nome": "Filipenses",
+   "slug": "filipenses",
+   "abrev": "Fp",
+   "testamento": "NT",
+   "capitulos": 4,
+   "variantes": [
+    "Fil"
+   ]
+  },
+  {
+   "id": 51,
+   "codigo": "COL",
+   "nome": "Colossenses",
+   "slug": "colossenses",
+   "abrev": "Cl",
+   "testamento": "NT",
+   "capitulos": 4,
+   "variantes": [
+    "Col"
+   ]
+  },
+  {
+   "id": 52,
+   "codigo": "1TH",
+   "nome": "1 Tessalonicenses",
+   "slug": "1-tessalonicenses",
+   "abrev": "1Ts",
+   "testamento": "NT",
+   "capitulos": 5,
+   "variantes": [
+    "1 Ts",
+    "I Tessalonicenses",
+    "I Ts"
+   ]
+  },
+  {
+   "id": 53,
+   "codigo": "2TH",
+   "nome": "2 Tessalonicenses",
+   "slug": "2-tessalonicenses",
+   "abrev": "2Ts",
+   "testamento": "NT",
+   "capitulos": 3,
+   "variantes": [
+    "2 Ts",
+    "II Tessalonicenses",
+    "II Ts"
+   ]
+  },
+  {
+   "id": 54,
+   "codigo": "1TI",
+   "nome": "1 Timóteo",
+   "slug": "1-timoteo",
+   "abrev": "1Tm",
+   "testamento": "NT",
+   "capitulos": 6,
+   "variantes": [
+    "1 Tm",
+    "I Timóteo",
+    "I Tm",
+    "1 Timoteo"
+   ]
+  },
+  {
+   "id": 55,
+   "codigo": "2TI",
+   "nome": "2 Timóteo",
+   "slug": "2-timoteo",
+   "abrev": "2Tm",
+   "testamento": "NT",
+   "capitulos": 4,
+   "variantes": [
+    "2 Tm",
+    "II Timóteo",
+    "II Tm",
+    "2 Timoteo"
+   ]
+  },
+  {
+   "id": 56,
+   "codigo": "TIT",
+   "nome": "Tito",
+   "slug": "tito",
+   "abrev": "Tt",
+   "testamento": "NT",
+   "capitulos": 3,
+   "variantes": [
+    "Tit"
+   ]
+  },
+  {
+   "id": 57,
+   "codigo": "PHM",
+   "nome": "Filemom",
+   "slug": "filemom",
+   "abrev": "Fm",
+   "testamento": "NT",
+   "capitulos": 1,
+   "variantes": [
+    "Flm",
+    "Filemon"
+   ]
+  },
+  {
+   "id": 58,
+   "codigo": "HEB",
+   "nome": "Hebreus",
+   "slug": "hebreus",
+   "abrev": "Hb",
+   "testamento": "NT",
+   "capitulos": 13,
+   "variantes": [
+    "Heb"
+   ]
+  },
+  {
+   "id": 59,
+   "codigo": "JAS",
+   "nome": "Tiago",
+   "slug": "tiago",
+   "abrev": "Tg",
+   "testamento": "NT",
+   "capitulos": 5,
+   "variantes": [
+    "Tia"
+   ]
+  },
+  {
+   "id": 60,
+   "codigo": "1PE",
+   "nome": "1 Pedro",
+   "slug": "1-pedro",
+   "abrev": "1Pe",
+   "testamento": "NT",
+   "capitulos": 5,
+   "variantes": [
+    "1 Pe",
+    "I Pedro",
+    "I Pe",
+    "1Pd"
+   ]
+  },
+  {
+   "id": 61,
+   "codigo": "2PE",
+   "nome": "2 Pedro",
+   "slug": "2-pedro",
+   "abrev": "2Pe",
+   "testamento": "NT",
+   "capitulos": 3,
+   "variantes": [
+    "2 Pe",
+    "II Pedro",
+    "II Pe",
+    "2Pd"
+   ]
+  },
+  {
+   "id": 62,
+   "codigo": "1JN",
+   "nome": "1 João",
+   "slug": "1-joao",
+   "abrev": "1Jo",
+   "testamento": "NT",
+   "capitulos": 5,
+   "variantes": [
+    "1 Jo",
+    "I João",
+    "I Jo",
+    "1 Joao"
+   ]
+  },
+  {
+   "id": 63,
+   "codigo": "2JN",
+   "nome": "2 João",
+   "slug": "2-joao",
+   "abrev": "2Jo",
+   "testamento": "NT",
+   "capitulos": 1,
+   "variantes": [
+    "2 Jo",
+    "II João",
+    "II Jo",
+    "2 Joao"
+   ]
+  },
+  {
+   "id": 64,
+   "codigo": "3JN",
+   "nome": "3 João",
+   "slug": "3-joao",
+   "abrev": "3Jo",
+   "testamento": "NT",
+   "capitulos": 1,
+   "variantes": [
+    "3 Jo",
+    "III João",
+    "III Jo",
+    "3 Joao"
+   ]
+  },
+  {
+   "id": 65,
+   "codigo": "JUD",
+   "nome": "Judas",
+   "slug": "judas",
+   "abrev": "Jd",
+   "testamento": "NT",
+   "capitulos": 1,
+   "variantes": [
+    "Jud"
+   ]
+  },
+  {
+   "id": 66,
+   "codigo": "REV",
+   "nome": "Apocalipse",
+   "slug": "apocalipse",
+   "abrev": "Ap",
+   "testamento": "NT",
+   "capitulos": 22,
+   "variantes": [
+    "Apoc"
+   ]
+  }
+ ]
+}
