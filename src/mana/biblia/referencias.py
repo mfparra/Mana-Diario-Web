@@ -308,7 +308,11 @@ def url_referencia(ref: Referencia) -> str:
     """`/biblia/romanos/8#v28` (primeiro trecho)."""
     t = ref.trechos[0]
     url = f"/biblia/{livro_por_id(t.livro_id).slug}/{t.cap_ini}"
-    return url + (f"#v{t.vers_ini}" if t.vers_ini is not None else "")
+    if t.vers_ini is None:
+        return url
+    if t.cap_fim == t.cap_ini and t.vers_fim != t.vers_ini:
+        url += f"?destacar={t.vers_ini}-{t.vers_fim}"
+    return url + f"#v{t.vers_ini}"
 
 
 # ------------------------------------------------------------------ texto livre

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block titulo %}Bíblia — Maná Diário{% endblock %}
+{% block conteudo %}
+<h1>Bíblia</h1>
+<div class="ferramentas">
+  <form action="/biblia/busca" method="get" role="search">
+    <label class="so-leitor" for="q">Buscar na Bíblia</label>
+    <input class="campo" id="q" name="q" type="search" placeholder="Buscar na Bíblia" required>
+    <button type="submit">Buscar</button>
+  </form>
+</div>
+{% for testamento in testamentos %}
+<h2>{{ testamento.nome }}</h2>
+<ul class="grade">
+  {% for livro in testamento.livros %}
+  <li><a class="pilula" href="/biblia/{{ livro.slug }}/1">{{ livro.nome }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% endblock %}

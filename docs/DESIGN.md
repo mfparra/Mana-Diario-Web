@@ -90,8 +90,8 @@ sem rolagem horizontal. Popover vira uma "folha" fixa na base da tela.
   --papel-escuro: #EDE3D4;  /* faixa do versículo */
   --tinta:        #2A221D;  /* texto */
   --tinta-suave:  #5B4D43;  /* metadados */
-  --terracota:    #9C5524;  /* títulos, frase do dia, cruz */
-  --terracota-2:  #B8713A;  /* hover dos links */
+  --terracota:    #965220;  /* títulos, frase do dia, cruz */
+  --terracota-2:  #A15C29;  /* hover dos links */
   --linha:        #CDBFAE;  /* contornos e divisores */
   --mana:         #FBF7EE;  /* flocos do maná no logo */
   --madeira:      #8A5A33;  /* tigela */
@@ -106,6 +106,10 @@ sem rolagem horizontal. Popover vira uma "folha" fixa na base da tela.
 ```
 
 Contraste mínimo AA para texto do corpo (≥ 4.5:1) nos dois temas — teste.
+
+> Verificado na Fase 3: os valores originais `#9C5524`/`#B8713A` davam 4,42:1 (terracota sobre
+> `--papel-escuro`) e 3,45:1 (hover); foram escurecidos para os valores acima (≥ 4,6:1). No tema
+> escuro, texto sobre fundo terracota usa `--papel` (o branco dava 2,36:1).
 
 ## 5. Tipografia (servir localmente em `static/fonts/`, licença OFL)
 

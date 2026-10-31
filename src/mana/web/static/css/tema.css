@@ -1,0 +1,132 @@
+/* Maná Diário — tokens, base e interface da Bíblia (docs/DESIGN.md) */
+:root {
+  --papel: #F7F2E9;
+  --papel-escuro: #EDE3D4;
+  --tinta: #2A221D;
+  --tinta-suave: #5B4D43;
+  --terracota: #965220;
+  --terracota-2: #A15C29;
+  --linha: #CDBFAE;
+  --mana: #FBF7EE;
+  --madeira: #8A5A33;
+  --sombra: rgba(42, 34, 29, .16);
+  --sans: 'Nunito', system-ui, sans-serif;
+  --serif: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papel: #1E1915; --papel-escuro: #2A231D; --tinta: #EDE4D8;
+    --tinta-suave: #B9AC9E; --terracota: #E0995F; --terracota-2: #F0B27D;
+    --linha: #4A3F36; --sombra: rgba(0, 0, 0, .5);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--papel); color: var(--tinta);
+  font: 1.125rem/1.55 var(--serif); min-height: 100vh;
+  display: flex; flex-direction: column;
+}
+a { color: inherit; }
+.so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+:focus-visible { outline: 2px solid var(--terracota); outline-offset: 3px; border-radius: 3px; }
+
+.pagina { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 16px; }
+main.pagina { flex: 1; padding-bottom: 3rem; }
+
+/* Cabeçalho e rodapé */
+.topo { border-bottom: 1px solid var(--linha); }
+.topo .pagina { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: .6rem; padding-bottom: .6rem; }
+.marca { display: flex; align-items: center; gap: .6rem; text-decoration: none; font: 900 1.25rem/1 var(--sans); color: var(--terracota); }
+.marca img { width: 40px; height: 40px; }
+.menu { display: flex; gap: 1.1rem; font: 800 .8rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+.menu a { text-decoration: none; color: var(--tinta-suave); padding: .5rem 0; }
+.menu a:hover, .menu a[aria-current] { color: var(--terracota); }
+
+.rodape { border-top: 1px solid var(--linha); margin-top: 2rem; padding: 1.2rem 0 2rem; color: var(--tinta-suave); font: .95rem/1.5 var(--serif); }
+.rodape .credito { max-width: 60ch; margin: 0 0 .6rem; }
+.rodape nav { font: 800 .75rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; display: flex; gap: 1.2rem; flex-wrap: wrap; }
+.rodape nav a { text-decoration: none; }
+.rodape nav a:hover { color: var(--terracota); }
+.faixa-teste { background: var(--terracota); color: var(--papel); text-align: center; font: 800 .75rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; padding: .45rem; }
+
+/* Títulos e rótulos */
+h1, h2 { font-family: var(--sans); color: var(--terracota); text-transform: uppercase; letter-spacing: .04em; margin: 1.6rem 0 1rem; line-height: 1.1; }
+h1 { font-weight: 900; font-size: clamp(1.7rem, 5vw, 2.4rem); }
+h2 { font-weight: 800; font-size: 1.05rem; letter-spacing: .18em; }
+.rotulo { font: 800 .75rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--tinta-suave); }
+
+/* Biblia: lista de livros */
+.grade { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0 0 1.5rem; list-style: none; }
+.pilula { display: inline-block; border: 1px solid var(--linha); border-radius: 999px; padding: .35rem .95rem; text-decoration: none; font: 700 .95rem/1.3 var(--sans); background: transparent; }
+.pilula:hover { border-color: var(--terracota); color: var(--terracota); }
+.capitulos { gap: .4rem; }
+.capitulos .pilula { min-width: 2.6rem; text-align: center; padding: .3rem .5rem; }
+.capitulos .pilula[aria-current] { background: var(--papel-escuro); border-color: var(--terracota); color: var(--terracota); }
+
+/* Biblia: busca e seletores */
+.ferramentas { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: center; margin: 1rem 0; }
+.ferramentas form { display: flex; gap: .4rem; align-items: center; flex-wrap: wrap; }
+.campo, select, button, .botao {
+  font: 700 .95rem/1.2 var(--sans); color: var(--tinta); background: var(--papel);
+  border: 1px solid var(--linha); border-radius: 8px; padding: .5rem .7rem;
+}
+select { max-width: 11rem; }
+input.campo { min-width: 0; width: 13rem; }
+button, .botao { cursor: pointer; text-decoration: none; display: inline-block; }
+button:hover, .botao:hover { border-color: var(--terracota); color: var(--terracota); }
+
+/* Biblia: leitura do capítulo */
+.leitura { max-width: 40rem; }
+.texto-biblico { font-size: 1.2rem; line-height: 1.75; hyphens: auto; text-align: justify; margin: 0 0 1.5rem; }
+.versiculo { scroll-margin-top: 5rem; border-radius: 4px; }
+.versiculo sup { font: 800 .62em/1 var(--sans); color: var(--terracota); margin-right: .25em; vertical-align: super; }
+.versiculo:target, .versiculo.destacado { background: var(--papel-escuro); box-shadow: 0 0 0 .2em var(--papel-escuro); }
+.navegacao { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; }
+
+/* Biblia: resultados da busca */
+.resultados { list-style: none; padding: 0; margin: 0; }
+.resultados li { padding: .8rem 0; border-bottom: 1px solid var(--linha); }
+.resultados a.ref-busca { font: 800 .8rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--terracota); text-decoration: none; }
+.resultados p { margin: .3rem 0 0; }
+mark { background: var(--papel-escuro); color: inherit; border-bottom: 2px solid var(--terracota); }
+
+/* Referências bíblicas no texto + popover (DESIGN.md §6) */
+a.ref { color: inherit; text-decoration: underline dotted var(--terracota); text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+a.ref:hover, a.ref:focus-visible { color: var(--terracota-2); }
+.ref-popover {
+  position: absolute; z-index: 50; width: min(360px, calc(100vw - 24px));
+  background: var(--papel); color: var(--tinta); border: 1px solid var(--linha); border-radius: 10px;
+  box-shadow: 0 8px 24px var(--sombra); padding: .8rem 1rem .7rem; font: 1rem/1.5 var(--serif);
+  text-align: left; hyphens: none;
+}
+.ref-popover[hidden] { display: none; }
+.ref-popover::before { /* seta */
+  content: ''; position: absolute; left: var(--seta-x, 24px); width: 12px; height: 12px;
+  background: var(--papel); border: 1px solid var(--linha); transform: rotate(45deg);
+  top: -7px; border-right: 0; border-bottom: 0;
+}
+.ref-popover.acima::before { top: auto; bottom: -7px; transform: rotate(225deg); }
+.ref-popover .pop-ref { font: 800 .72rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--terracota); margin: 0 0 .45rem; }
+.ref-popover .pop-texto { margin: 0; }
+.ref-popover sup { font: 800 .65em/1 var(--sans); color: var(--terracota); margin-right: .2em; }
+.ref-popover .pop-mais { color: var(--tinta-suave); font-style: italic; }
+.ref-popover .pop-rodape { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: .6rem; font: 800 .7rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
+.ref-popover .pop-rodape a { color: var(--terracota); text-decoration: none; }
+.ref-popover .pop-rodape a:hover { color: var(--terracota-2); }
+.ref-popover .pop-edicao { color: var(--tinta-suave); }
+.ref-popover .pop-fechar { display: none; }
+
+@media (max-width: 899px) {
+  /* "folha" fixa na base da tela */
+  .ref-popover { position: fixed; left: 0; right: 0; bottom: 0; top: auto !important; width: auto;
+    border-radius: 14px 14px 0 0; border-bottom: 0; padding: 1rem 16px calc(1rem + env(safe-area-inset-bottom)); }
+  .ref-popover::before { display: none; }
+  .ref-popover .pop-fechar { display: inline-block; padding: .35rem .6rem; font-size: .75rem; }
+  .menu { gap: .8rem; }
+  .marca span { display: none; }
+  .texto-biblico { text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block titulo %}{% if q %}“{{ q }}” — {% endif %}Buscar na Bíblia — Maná Diário{% endblock %}
+{% block conteudo %}
+<h1>Buscar na Bíblia</h1>
+<div class="ferramentas">
+  <form action="/biblia/busca" method="get" role="search">
+    <label class="so-leitor" for="q">Palavras a buscar</label>
+    <input class="campo" id="q" name="q" type="search" value="{{ q }}" placeholder="Ex.: esperança" required>
+    <button type="submit">Buscar</button>
+  </form>
+</div>
+{% if q %}
+<p class="rotulo">{{ total }} {{ "resultado" if total == 1 else "resultados" }}</p>
+<ul class="resultados">
+  {% for r in resultados %}
+  <li>
+    <a class="ref-busca" href="{{ r.url }}">{{ r.rotulo }}</a>
+    <p>{{ r.trecho|safe }}</p>
+  </li>
+  {% else %}
+  <li>Nenhum versículo encontrado.</li>
+  {% endfor %}
+</ul>
+<nav class="navegacao" aria-label="Páginas de resultados">
+  {% if pagina_anterior %}<a class="botao" href="{{ pagina_anterior }}" rel="prev">‹ Anteriores</a>{% else %}<span></span>{% endif %}
+  {% if pagina_proxima %}<a class="botao" href="{{ pagina_proxima }}" rel="next">Próximos ›</a>{% endif %}
+</nav>
+{% endif %}
+{% endblock %}

@@ -22,17 +22,17 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 
 ## Fase 2 — Bíblia local
 - [x] Baixar a Bíblia Livre (eBible `porbr2018`, USFX), registrar `data/biblia/FONTE.md`
-- [ ] Crédito BLIVRE no rodapé e no popover (a API já devolve `edicao: BLIVRE`; o rodapé entra com os templates, Fase 3)
+- [x] Crédito BLIVRE no rodapé e no popover
 - [x] Importador USFX → SQLite com FTS5
 - [x] Testes de integridade contra `data/livros.json`
 - [x] Parser de referências + `linkar_referencias()` + tabela de testes
 - [x] `/api/passagem`
 
 ## Fase 3 — Interface da Bíblia
-- [ ] Fontes locais (Nunito, Crimson Pro) e tokens de cor
-- [ ] `/biblia`, `/biblia/{livro}/{cap}` com destaque de versículo e navegação
-- [ ] `ref-popover.js` (hover, foco, toque, Esc, cache)
-- [ ] `/biblia/busca`
+- [x] Fontes locais (Nunito, Crimson Pro) e tokens de cor
+- [x] `/biblia`, `/biblia/{livro}/{cap}` com destaque de versículo e navegação
+- [x] `ref-popover.js` (hover, foco, toque, Esc, cache)
+- [x] `/biblia/busca`
 
 ## Fase 4 — Acervo e calendário
 - [ ] Definir a lista fechada de temas (~25) no topo de `data/versiculos.yaml`
@@ -71,6 +71,9 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [ ] Adaptador do novo provedor, prompt v2 se necessário, regerar estudos de teste
 
 ## Decisões
+- Fase 3: terracota escurecida para `#965220` / `#A15C29` (os valores do DESIGN.md originais ficavam abaixo de AA); detalhes no DESIGN.md. Fontes `woff2` latin + latin-ext em `static/fonts/`.
+- Fase 3: o seletor de livro/capítulo funciona sem JavaScript (`/biblia/ir`); `?destacar=3-5` destaca a faixa no servidor e `:target` cobre o `#vN`.
+- Fase 3: Playwright (já previsto como opcional) entrou no grupo `dev` para testar o popover; o teste é pulado se o Chromium não estiver instalado (`uv run playwright install chromium`).
 - Fase 2: texto do USFX sem notas de rodapé (`f`) nem referências cruzadas (`rq`); palavras acrescentadas (`add`) mantidas como texto simples. 31.102 versículos. Versão da BLIVRE: fevereiro de 2018 (eBible atualizou o pacote em 08/03/2022).
 - Referências: duas formas — canônica (`rom.5.3-4`, vários trechos separados por `;`) e de exibição (`Romanos 5.3,4`; 2 versículos seguidos viram `3,4`, 3 ou mais `3-5`).
 - Bíblia: Bíblia Livre (CC BY 4.0, linhagem Almeida 1819). A "Almeida" do open-bibles foi descartada (texto com direitos).

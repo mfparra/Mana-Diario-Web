@@ -80,3 +80,15 @@ def test_busca_ignora_acento(repo):
     assert repo.contar_busca("esperanca") == repo.contar_busca("esperança") > 50
     achados = repo.buscar("pastor", limite=3)
     assert len(achados) == 3 and "<mark>" in achados[0].trecho
+
+
+def test_sem_espaco_antes_de_pontuacao(repo):
+    import re
+
+    ruins = [
+        t
+        for (t,) in con(repo).execute("SELECT texto FROM versiculos")
+        if re.search(r"\s[,.;:!?]", t)
+    ]
+    assert ruins == []
+    assert "adoção, isto é, a redenção" in repo.capitulo(45, 8)[22].texto

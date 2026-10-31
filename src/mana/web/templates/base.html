@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% block titulo %}Maná Diário{% endblock %}</title>
+  <link rel="preload" href="/static/fonts/crimsonpro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/css/fontes.css">
+  <link rel="stylesheet" href="/static/css/tema.css">
+  {% block cabecalho %}{% endblock %}
+</head>
+<body>
+  {% if modo_teste %}<div class="faixa-teste">Ambiente de testes</div>{% endif %}
+  <header class="topo">
+    <div class="pagina">
+      <a class="marca" href="/"><img src="/static/img/logo-mana.svg" alt="" width="40" height="40"><span>Maná Diário</span></a>
+      <nav class="menu" aria-label="Principal">
+        <a href="/biblia"{% if secao == 'biblia' %} aria-current="page"{% endif %}>Bíblia</a>
+      </nav>
+    </div>
+  </header>
+  <main class="pagina">
+    {% block conteudo %}{% endblock %}
+  </main>
+  <footer class="rodape">
+    <div class="pagina">
+      <p class="credito">{{ credito }}</p>
+      <nav aria-label="Rodapé">
+        <a href="/biblia">Bíblia</a>
+        <a href="/biblia/busca">Buscar na Bíblia</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/static/js/ref-popover.js" defer></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

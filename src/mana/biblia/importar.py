@@ -95,8 +95,10 @@ def escrever_fonte(caminho: Path, url: str, zip_baixado: Path) -> None:
 - **SHA-256 do zip:** `{sha256(zip_baixado)}`
 - **Versão da BLIVRE:** {VERSAO}
 - **Licença:** Creative Commons Atribuição 4.0 (https://creativecommons.org/licenses/by/4.0/br/)
-- **Texto não alterado.** Notas de rodapé e referências cruzadas do arquivo original são
-  descartadas na importação; as palavras acrescentadas (`<add>`) são mantidas como texto simples.
+- **Texto sem alterações de conteúdo.** Na importação: notas de rodapé e referências cruzadas
+  são descartadas; as palavras acrescentadas (`<add>`) são mantidas como texto simples; e os
+  espaços antes de pontuação (`isso , mas`, artefato de formatação do arquivo, ~800
+  versículos) são removidos. Nenhuma palavra é alterada.
 
 ## Crédito exibido no site
 
@@ -109,7 +111,9 @@ Forma curta (popover): **BLIVRE**.
 
 
 def normalizar(texto: str) -> str:
-    return re.sub(r"\s+", " ", texto).strip()
+    """Espaços simples e sem espaço antes de pontuação (artefato do USFX: `</add> ,`)."""
+    texto = re.sub(r"\s+", " ", texto).strip()
+    return re.sub(r"\s+([,.;:!?])", r"\1", texto)
 
 
 class _Leitor:

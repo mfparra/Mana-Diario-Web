@@ -6,8 +6,10 @@
 - **SHA-256 do zip:** `cf13631e6f9f1378d2298d300862d38dfa5bce02deef1eeb1c5006c1c5084597`
 - **Versão da BLIVRE:** fevereiro de 2018
 - **Licença:** Creative Commons Atribuição 4.0 (https://creativecommons.org/licenses/by/4.0/br/)
-- **Texto não alterado.** Notas de rodapé e referências cruzadas do arquivo original são
-  descartadas na importação; as palavras acrescentadas (`<add>`) são mantidas como texto simples.
+- **Texto sem alterações de conteúdo.** Na importação: notas de rodapé e referências cruzadas
+  são descartadas; as palavras acrescentadas (`<add>`) são mantidas como texto simples; e os
+  espaços antes de pontuação (`isso , mas`, artefato de formatação do arquivo, ~800
+  versículos) são removidos. Nenhuma palavra é alterada.
 
 ## Crédito exibido no site
 

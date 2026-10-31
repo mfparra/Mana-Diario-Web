@@ -138,6 +138,7 @@ uv run mana gerar --regerar-modelo X      # refaz estudos futuros/sem revisão f
 uv run mana servir                        # sobe o site em http://localhost:8000
 uv run mana agendador                     # laço diário (o mesmo que roda no container)
 uv run pytest                             # testes
+uv run playwright install chromium        # uma vez, para o teste do popover (opcional)
 uv run ruff check . && uv run ruff format .
 
 # podman compose (local) — é assim que o projeto é testado de ponta a ponta
