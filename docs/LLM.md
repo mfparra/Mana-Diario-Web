@@ -114,11 +114,27 @@ tempo de geração e motivo de cada rejeição — isso orienta ajustes no promp
 
 ## 6. Contrato observado
 
-> Preencher na Fase 1, depois de ler o `llm-server`.
+Lido em `llm-server/README.md` e `compose.yaml` e testado ao vivo em 31/10/2026.
 
-- URL base:
-- Autenticação:
-- Endpoint usado:
-- Saída estruturada:
-- Modelo / contexto:
-- Observações:
+- **Servidor:** `llama-server` (llama.cpp, imagem `ghcr.io/ggml-org/llama.cpp:server`) puro, **sem camada
+  FastAPI**. Roda local no Podman (`container_name: llm`, `restart: always`). Para subir:
+  `podman network create llm-net` (uma vez) e `podman compose up -d` na pasta do llm-server;
+  o 1º carregamento do modelo leva ~1–2 min (`/health` devolve 503 "Loading model" até ficar pronto).
+- **URL base:** dentro da rede `llm-net`: `http://llm:8081/v1`; no host: `http://127.0.0.1:8081/v1`.
+  A porta do host é publicada **só em loopback**, então **`host.containers.internal:8081` não
+  funciona** (testado: *Connection refused*). Os containers do Maná entram na rede externa
+  `llm-net` (`compose.local.yaml`). Em `uv run` no host, use `http://127.0.0.1:8081/v1`.
+- **Autenticação:** nenhuma (`LLM_API_KEY` vazio; o adaptador envia `Authorization: Bearer` se houver).
+- **Endpoint usado:** `POST /v1/chat/completions` (compatível com OpenAI). Há também `/health`,
+  `/v1/models`, `/props`.
+- **Saída estruturada:** `response_format: {"type":"json_schema","json_schema":{"name","strict":true,"schema"}}`
+  funciona (convertido em gramática; JSON sempre válido). `json_object` também respondeu bem no teste.
+- **Modelo / contexto:** `gemma-4-e4b-it` (Gemma 4 E4B Q4_K_M), contexto **4096** tokens, 1 requisição
+  por vez (`-np 1`; as demais esperam na fila). O `.env` do llm-server também traz o Qwen3-4B como
+  alternativa (alias `qwen3-4b-instruct-2507`).
+- **Thinking:** com `chat_template_kwargs: {"enable_thinking": false}` (padrão do adaptador): ~1–3 s
+  para respostas curtas. Com thinking: ~18 s no mesmo pedido, e o raciocínio vem em
+  `message.reasoning_content` (o `content` fica só com o JSON). Configurável por `LLM_PENSAR`.
+- **Observações:** o contexto de 4096 tokens cobre prompt + resposta; o prompt do estudo (inclui
+  30 dias de referências/palavras-chave) deve caber com folga. `max_tokens` com thinking precisa ser maior.
+  Sem limite de taxa conhecido além da fila de 1 requisição.

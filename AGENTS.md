@@ -396,6 +396,7 @@ arquivos. Esses arquivos ainda **não existem**; crie-os na Fase 0 seguindo isto
 - Com dois serviços montando as mesmas pastas, use `:z` (compartilhado), não `:Z`: com `:Z`
   o último container a subir reetiqueta a pasta e o outro recebe "Permission denied".
 - A mensagem de `${VAR:?...}` no compose não pode conter `:` sem aspas.
-- Acesso ao llm-server: em 31/10/2026 `host.containers.internal:8080` deu *Connection
-  refused* porque o llm-server não estava rodando; repetir o teste com ele ligado (e
-  escutando em `0.0.0.0`) na Fase 1.
+- Acesso ao llm-server: `host.containers.internal:8081` dá *Connection refused* (o llm-server
+  publica a porta só em loopback). Funciona entrando na rede externa `llm-net`
+  (`compose.local.yaml`) e usando `LLM_BASE_URL=http://llm:8081/v1`. Subir o llm-server:
+  `podman compose up -d` na pasta dele (a rede `llm-net` já existe). Ver `docs/LLM.md` §6.

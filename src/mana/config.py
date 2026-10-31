@@ -10,10 +10,11 @@ class Configuracao(BaseSettings):
 
     llm_provedor: str = "llm-server"
     modo_teste: bool = True
-    llm_base_url: str = "http://localhost:8080"
+    llm_base_url: str = "http://localhost:8081/v1"
     llm_api_key: str = ""
     llm_modelo: str = ""
     llm_timeout_s: int = 120
+    llm_pensar: bool = False
     llm_versao_prompt: str = "estudo_diario.v1"
 
     biblia_db: str = "data/biblia/biblia.sqlite"

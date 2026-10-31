@@ -1,14 +1,20 @@
+# Ambiente local. A rede externa "llm-net" (podman network create llm-net) dá acesso ao
+# llm-server compartilhado em http://llm:8081/v1 (a porta dele só escuta em loopback no host).
+x-local: &local
+  userns_mode: keep-id
+  networks: [default, llm-net]
+  volumes:
+    - ./src:/app/src:ro,z
+    - ./prompts:/app/prompts:ro,z
+    - ./data/calendarios:/dados/calendarios:z
+
 services:
   web:
+    <<: *local
     command: ["uvicorn", "mana.web.app:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers", "--reload", "--reload-dir", "/app/src"]
-    userns_mode: keep-id
-    volumes:
-      - ./src:/app/src:ro,z
-      - ./prompts:/app/prompts:ro,z
-      - ./data/calendarios:/dados/calendarios:z
   agendador:
-    userns_mode: keep-id
-    volumes:
-      - ./src:/app/src:ro,z
-      - ./prompts:/app/prompts:ro,z
-      - ./data/calendarios:/dados/calendarios:z
+    <<: *local
+
+networks:
+  llm-net:
+    external: true

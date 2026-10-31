@@ -15,10 +15,10 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [x] `mana agendador` (laço vazio por enquanto, só log) rodando no serviço `agendador`
 
 ## Fase 1 — Contrato com o llm-server (somente leitura)
-- [ ] Ler a pasta do `llm-server` e preencher "Contrato observado" em `docs/LLM.md`
-- [ ] Se não houver endpoint genérico: parar e propor opções ao Marcos
-- [ ] Interface `ClienteLLM`, adaptador `llm_server.py`, `fabrica.py` + `mana llm testar`
-- [ ] Testes do cliente com respx
+- [x] Ler a pasta do `llm-server` e preencher "Contrato observado" em `docs/LLM.md`
+- [x] Se não houver endpoint genérico: parar e propor opções ao Marcos
+- [x] Interface `ClienteLLM`, adaptador `llm_server.py`, `fabrica.py` + `mana llm testar`
+- [x] Testes do cliente com respx
 
 ## Fase 2 — Bíblia local
 - [ ] Baixar a Bíblia Livre (eBible `porbr2018`, USFX), registrar `data/biblia/FONTE.md`
