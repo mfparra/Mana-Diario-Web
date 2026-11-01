@@ -9,7 +9,8 @@
 - **Texto sem alterações de conteúdo.** Na importação: notas de rodapé e referências cruzadas
   são descartadas; as palavras acrescentadas (`<add>`) são mantidas como texto simples; e os
   espaços antes de pontuação (`isso , mas`, artefato de formatação do arquivo, ~800
-  versículos) são removidos. Nenhuma palavra é alterada.
+  versículos) são removidos, e um espaço é inserido onde o arquivo colou uma palavra
+  acrescentada na anterior (`Deus<add>como</add>`, poucos casos). Nenhuma palavra é alterada.
 
 ## Crédito exibido no site
 

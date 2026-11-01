@@ -98,7 +98,8 @@ def escrever_fonte(caminho: Path, url: str, zip_baixado: Path) -> None:
 - **Texto sem alterações de conteúdo.** Na importação: notas de rodapé e referências cruzadas
   são descartadas; as palavras acrescentadas (`<add>`) são mantidas como texto simples; e os
   espaços antes de pontuação (`isso , mas`, artefato de formatação do arquivo, ~800
-  versículos) são removidos. Nenhuma palavra é alterada.
+  versículos) são removidos, e um espaço é inserido onde o arquivo colou uma palavra
+  acrescentada na anterior (`Deus<add>como</add>`, poucos casos). Nenhuma palavra é alterada.
 
 ## Crédito exibido no site
 
@@ -133,6 +134,11 @@ class _Leitor:
         if texto and self.vers is not None:
             self.capitulos[self.cap][self.vers].append(texto)
 
+    def _colado_em_letra(self, elem: ET.Element) -> bool:
+        """True se o `add` começa por letra logo depois de outra letra (sem espaço entre elas)."""
+        partes = self.capitulos[self.cap][self.vers] if self.vers is not None else []
+        return bool(partes and elem.text and partes[-1][-1:].isalpha() and elem.text[:1].isalpha())
+
     def visitar(self, elem: ET.Element) -> None:
         if elem.tag == "c":
             self.cap, self.vers = int(elem.get("id")), None
@@ -142,6 +148,8 @@ class _Leitor:
         elif elem.tag == "ve":
             self.vers = None
         elif elem.tag not in IGNORAR:
+            if elem.tag == "add" and self._colado_em_letra(elem):
+                self._texto(" ")  # o USFX às vezes esquece o espaço: `Deus<add>como</add>`
             self._texto(elem.text)
             for filho in elem:
                 self.visitar(filho)

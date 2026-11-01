@@ -1,0 +1,68 @@
+# Calendário de 2026 — edite `ref` (e `ocasiao`) e rode:
+#   uv run mana calendario importar --ano 2026
+# Dias já publicados (hoje ou antes) não mudam. Só a referência é editável: o texto
+# do versículo sempre vem da Bíblia local.
+ano: 2026
+dias:
+  - {data: "2026-10-31", ref: "2 Timóteo 4.2"}  # sáb
+  - {data: "2026-11-01", ref: "2 Tessalonicenses 2.16,17"}  # dom
+  - {data: "2026-11-02", ref: "Provérbios 18.21"}  # seg
+  - {data: "2026-11-03", ref: "Salmos 27.4"}  # ter
+  - {data: "2026-11-04", ref: "Mateus 25.40"}  # qua
+  - {data: "2026-11-05", ref: "Salmos 133.1"}  # qui
+  - {data: "2026-11-06", ref: "2 Timóteo 4.17"}  # sex
+  - {data: "2026-11-07", ref: "1 Pedro 3.12"}  # sáb
+  - {data: "2026-11-08", ref: "Jó 28.28"}  # dom
+  - {data: "2026-11-09", ref: "Mateus 19.14"}  # seg
+  - {data: "2026-11-10", ref: "Ezequiel 36.27"}  # ter
+  - {data: "2026-11-11", ref: "Romanos 8.16,17"}  # qua
+  - {data: "2026-11-12", ref: "Salmos 19.7,8"}  # qui
+  - {data: "2026-11-13", ref: "João 14.15"}  # sex
+  - {data: "2026-11-14", ref: "Efésios 5.20"}  # sáb
+  - {data: "2026-11-15", ref: "Isaías 1.18"}  # dom
+  - {data: "2026-11-16", ref: "Apocalipse 1.3"}  # seg
+  - {data: "2026-11-17", ref: "Provérbios 1.7"}  # ter
+  - {data: "2026-11-18", ref: "Salmos 125.1,2"}  # qua
+  - {data: "2026-11-19", ref: "Hebreus 3.14"}  # qui
+  - {data: "2026-11-20", ref: "Lucas 11.28"}  # sex
+  - {data: "2026-11-21", ref: "Eclesiastes 11.5"}  # sáb
+  - {data: "2026-11-22", ref: "Mateus 6.12"}  # dom
+  - {data: "2026-11-23", ref: "Josué 23.14"}  # seg
+  - {data: "2026-11-24", ref: "Atos 14.22"}  # ter
+  - {data: "2026-11-25", ref: "Salmos 84.10"}  # qua
+  - {data: "2026-11-26", ref: "João 13.14,15"}  # qui
+  - {data: "2026-11-27", ref: "Gênesis 15.6"}  # sex
+  - {data: "2026-11-28", ref: "2 Crônicas 30.9"}  # sáb
+  - {data: "2026-11-29", ref: "Isaías 40.3", ocasiao: advento}  # dom
+  - {data: "2026-11-30", ref: "Filipenses 4.6"}  # seg
+  - {data: "2026-12-01", ref: "Provérbios 19.20"}  # ter
+  - {data: "2026-12-02", ref: "João 1.12"}  # qua
+  - {data: "2026-12-03", ref: "Apocalipse 2.4,5"}  # qui
+  - {data: "2026-12-04", ref: "Tiago 4.2,3"}  # sex
+  - {data: "2026-12-05", ref: "Salmos 86.11"}  # sáb
+  - {data: "2026-12-06", ref: "João 4.14"}  # dom
+  - {data: "2026-12-07", ref: "Mateus 13.31,32"}  # seg
+  - {data: "2026-12-08", ref: "Salmos 19.1"}  # ter
+  - {data: "2026-12-09", ref: "João 1.16"}  # qua
+  - {data: "2026-12-10", ref: "Jeremias 9.23,24"}  # qui
+  - {data: "2026-12-11", ref: "Atos 16.25"}  # sex
+  - {data: "2026-12-12", ref: "Lucas 7.47"}  # sáb
+  - {data: "2026-12-13", ref: "Jó 5.17"}  # dom
+  - {data: "2026-12-14", ref: "Josué 21.45"}  # seg
+  - {data: "2026-12-15", ref: "Atos 13.38,39"}  # ter
+  - {data: "2026-12-16", ref: "Miqueias 6.8"}  # qua
+  - {data: "2026-12-17", ref: "Marcos 14.36"}  # qui
+  - {data: "2026-12-18", ref: "Romanos 10.17"}  # sex
+  - {data: "2026-12-19", ref: "Isaías 40.1,2"}  # sáb
+  - {data: "2026-12-20", ref: "1 Pedro 1.22"}  # dom
+  - {data: "2026-12-21", ref: "Salmos 17.8"}  # seg
+  - {data: "2026-12-22", ref: "Tiago 1.22"}  # ter
+  - {data: "2026-12-23", ref: "Rute 3.11"}  # qua
+  - {data: "2026-12-24", ref: "Lucas 1.45", ocasiao: vespera-natal}  # qui
+  - {data: "2026-12-25", ref: "João 1.10,11", ocasiao: natal}  # sex
+  - {data: "2026-12-26", ref: "João 14.1"}  # sáb
+  - {data: "2026-12-27", ref: "2 Timóteo 2.15"}  # dom
+  - {data: "2026-12-28", ref: "Deuteronômio 31.8"}  # seg
+  - {data: "2026-12-29", ref: "Hebreus 3.13"}  # ter
+  - {data: "2026-12-30", ref: "1 Reis 19.11,12"}  # qua
+  - {data: "2026-12-31", ref: "Salmos 90.16,17", ocasiao: fim-de-ano}  # qui

@@ -1,4 +1,5 @@
 import json
+import re
 import sqlite3
 
 from conftest import RAIZ
@@ -83,8 +84,6 @@ def test_busca_ignora_acento(repo):
 
 
 def test_sem_espaco_antes_de_pontuacao(repo):
-    import re
-
     ruins = [
         t
         for (t,) in con(repo).execute("SELECT texto FROM versiculos")
@@ -92,3 +91,14 @@ def test_sem_espaco_antes_de_pontuacao(repo):
     ]
     assert ruins == []
     assert "adoção, isto é, a redenção" in repo.capitulo(45, 8)[22].texto
+
+
+def test_palavras_acrescentadas_nao_colam_na_anterior(repo):
+    texto = repo.capitulo(55, 2)[14].texto  # 2 Timóteo 2.15
+    assert "a Deus como um trabalhador" in texto
+    colados = [
+        t
+        for (t,) in con(repo).execute("SELECT texto FROM versiculos")
+        if re.search(r"\b(Deus|Senhor)(como|mais|apenas|somente)\b", t)
+    ]
+    assert colados == []

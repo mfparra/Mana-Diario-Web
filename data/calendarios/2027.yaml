@@ -1,0 +1,371 @@
+# Calendário de 2027 — edite `ref` (e `ocasiao`) e rode:
+#   uv run mana calendario importar --ano 2027
+# Dias já publicados (hoje ou antes) não mudam. Só a referência é editável: o texto
+# do versículo sempre vem da Bíblia local.
+ano: 2027
+dias:
+  - {data: "2027-01-01", ref: "Deuteronômio 11.12", ocasiao: ano-novo}  # sex
+  - {data: "2027-01-02", ref: "Salmos 32.5"}  # sáb
+  - {data: "2027-01-03", ref: "Jeremias 31.25"}  # dom
+  - {data: "2027-01-04", ref: "Salmos 113.3"}  # seg
+  - {data: "2027-01-05", ref: "Isaías 44.3"}  # ter
+  - {data: "2027-01-06", ref: "Lucas 2.30-32", ocasiao: epifania}  # qua
+  - {data: "2027-01-07", ref: "Tiago 5.16"}  # qui
+  - {data: "2027-01-08", ref: "Salmos 147.3"}  # sex
+  - {data: "2027-01-09", ref: "Mateus 5.3"}  # sáb
+  - {data: "2027-01-10", ref: "Salmos 31.14,15"}  # dom
+  - {data: "2027-01-11", ref: "Apocalipse 22.1,2"}  # seg
+  - {data: "2027-01-12", ref: "2 Samuel 22.31"}  # ter
+  - {data: "2027-01-13", ref: "João 3.30"}  # qua
+  - {data: "2027-01-14", ref: "Sofonias 3.17"}  # qui
+  - {data: "2027-01-15", ref: "Lucas 12.22,23"}  # sex
+  - {data: "2027-01-16", ref: "Atos 24.16"}  # sáb
+  - {data: "2027-01-17", ref: "Marcos 13.31"}  # dom
+  - {data: "2027-01-18", ref: "Salmos 112.7"}  # seg
+  - {data: "2027-01-19", ref: "Daniel 2.20,21"}  # ter
+  - {data: "2027-01-20", ref: "1 Coríntios 3.11"}  # qua
+  - {data: "2027-01-21", ref: "Provérbios 16.7"}  # qui
+  - {data: "2027-01-22", ref: "1 João 5.14,15"}  # sex
+  - {data: "2027-01-23", ref: "Lucas 24.49"}  # sáb
+  - {data: "2027-01-24", ref: "Isaías 53.6"}  # dom
+  - {data: "2027-01-25", ref: "1 Samuel 15.22"}  # seg
+  - {data: "2027-01-26", ref: "Lucas 5.31,32"}  # ter
+  - {data: "2027-01-27", ref: "João 14.13,14"}  # qua
+  - {data: "2027-01-28", ref: "Lamentações 3.24"}  # qui
+  - {data: "2027-01-29", ref: "Hebreus 11.3"}  # sex
+  - {data: "2027-01-30", ref: "Josué 24.15"}  # sáb
+  - {data: "2027-01-31", ref: "1 Coríntios 15.55"}  # dom
+  - {data: "2027-02-01", ref: "Oseias 11.4"}  # seg
+  - {data: "2027-02-02", ref: "Lucas 17.21"}  # ter
+  - {data: "2027-02-03", ref: "Isaías 54.17"}  # qua
+  - {data: "2027-02-04", ref: "3 João 2"}  # qui
+  - {data: "2027-02-05", ref: "Colossenses 3.14"}  # sex
+  - {data: "2027-02-06", ref: "Provérbios 29.18"}  # sáb
+  - {data: "2027-02-07", ref: "Romanos 6.14"}  # dom
+  - {data: "2027-02-08", ref: "Salmos 103.1,2"}  # seg
+  - {data: "2027-02-09", ref: "Romanos 16.20"}  # ter
+  - {data: "2027-02-10", ref: "Daniel 9.3", ocasiao: cinzas}  # qua
+  - {data: "2027-02-11", ref: "Provérbios 12.15"}  # qui
+  - {data: "2027-02-12", ref: "Lucas 7.50"}  # sex
+  - {data: "2027-02-13", ref: "Salmos 119.50"}  # sáb
+  - {data: "2027-02-14", ref: "Mateus 10.16"}  # dom
+  - {data: "2027-02-15", ref: "Apocalipse 11.15"}  # seg
+  - {data: "2027-02-16", ref: "Provérbios 11.24,25"}  # ter
+  - {data: "2027-02-17", ref: "Efésios 6.19,20"}  # qua
+  - {data: "2027-02-18", ref: "Provérbios 17.22"}  # qui
+  - {data: "2027-02-19", ref: "Atos 9.15"}  # sex
+  - {data: "2027-02-20", ref: "Salmos 34.19"}  # sáb
+  - {data: "2027-02-21", ref: "Gênesis 26.24"}  # dom
+  - {data: "2027-02-22", ref: "Levítico 26.3,4"}  # seg
+  - {data: "2027-02-23", ref: "1 Timóteo 1.15"}  # ter
+  - {data: "2027-02-24", ref: "Lucas 12.48"}  # qua
+  - {data: "2027-02-25", ref: "Apocalipse 14.12"}  # qui
+  - {data: "2027-02-26", ref: "1 Pedro 5.5"}  # sex
+  - {data: "2027-02-27", ref: "Romanos 4.7,8"}  # sáb
+  - {data: "2027-02-28", ref: "2 Samuel 22.33"}  # dom
+  - {data: "2027-03-01", ref: "Isaías 63.9"}  # seg
+  - {data: "2027-03-02", ref: "Lucas 8.50"}  # ter
+  - {data: "2027-03-03", ref: "Lucas 23.43"}  # qua
+  - {data: "2027-03-04", ref: "Salmos 97.10"}  # qui
+  - {data: "2027-03-05", ref: "Isaías 6.8"}  # sex
+  - {data: "2027-03-06", ref: "Mateus 24.35"}  # sáb
+  - {data: "2027-03-07", ref: "Lucas 13.24"}  # dom
+  - {data: "2027-03-08", ref: "Levítico 26.12"}  # seg
+  - {data: "2027-03-09", ref: "Mateus 7.21"}  # ter
+  - {data: "2027-03-10", ref: "Tiago 1.5"}  # qua
+  - {data: "2027-03-11", ref: "Daniel 3.17,18"}  # qui
+  - {data: "2027-03-12", ref: "Ezequiel 47.9"}  # sex
+  - {data: "2027-03-13", ref: "Mateus 8.8"}  # sáb
+  - {data: "2027-03-14", ref: "Levítico 19.18"}  # dom
+  - {data: "2027-03-15", ref: "Romanos 12.2"}  # seg
+  - {data: "2027-03-16", ref: "Lamentações 3.23"}  # ter
+  - {data: "2027-03-17", ref: "Salmos 146.5"}  # qua
+  - {data: "2027-03-18", ref: "2 Coríntios 5.21"}  # qui
+  - {data: "2027-03-19", ref: "Lucas 6.37"}  # sex
+  - {data: "2027-03-20", ref: "Provérbios 3.7,8"}  # sáb
+  - {data: "2027-03-21", ref: "Lucas 19.37,38", ocasiao: ramos}  # dom
+  - {data: "2027-03-22", ref: "Atos 7.59,60"}  # seg
+  - {data: "2027-03-23", ref: "1 João 3.19,20"}  # ter
+  - {data: "2027-03-24", ref: "Neemias 4.6"}  # qua
+  - {data: "2027-03-25", ref: "João 13.4,5", ocasiao: quinta-santa}  # qui
+  - {data: "2027-03-26", ref: "Romanos 5.6", ocasiao: sexta-santa}  # sex
+  - {data: "2027-03-27", ref: "1 Coríntios 12.27"}  # sáb
+  - {data: "2027-03-28", ref: "João 20.15,16", ocasiao: pascoa}  # dom
+  - {data: "2027-03-29", ref: "Salmos 103.11,12"}  # seg
+  - {data: "2027-03-30", ref: "Tiago 1.25"}  # ter
+  - {data: "2027-03-31", ref: "1 Coríntios 6.11"}  # qua
+  - {data: "2027-04-01", ref: "Isaías 65.24"}  # qui
+  - {data: "2027-04-02", ref: "Lucas 10.20"}  # sex
+  - {data: "2027-04-03", ref: "Gênesis 24.27"}  # sáb
+  - {data: "2027-04-04", ref: "Filipenses 4.7"}  # dom
+  - {data: "2027-04-05", ref: "Gênesis 28.16"}  # seg
+  - {data: "2027-04-06", ref: "Atos 8.35"}  # ter
+  - {data: "2027-04-07", ref: "Salmos 55.16,17"}  # qua
+  - {data: "2027-04-08", ref: "Apocalipse 5.9,10"}  # qui
+  - {data: "2027-04-09", ref: "Apocalipse 22.3-5"}  # sex
+  - {data: "2027-04-10", ref: "Provérbios 28.27"}  # sáb
+  - {data: "2027-04-11", ref: "João 14.6"}  # dom
+  - {data: "2027-04-12", ref: "Números 23.19"}  # seg
+  - {data: "2027-04-13", ref: "Atos 17.11"}  # ter
+  - {data: "2027-04-14", ref: "Jó 23.10"}  # qua
+  - {data: "2027-04-15", ref: "2 Coríntios 7.10"}  # qui
+  - {data: "2027-04-16", ref: "Salmos 121.7,8"}  # sex
+  - {data: "2027-04-17", ref: "Mateus 7.16,17"}  # sáb
+  - {data: "2027-04-18", ref: "Isaías 46.4"}  # dom
+  - {data: "2027-04-19", ref: "Gênesis 17.1"}  # seg
+  - {data: "2027-04-20", ref: "Tiago 2.8"}  # ter
+  - {data: "2027-04-21", ref: "Mateus 5.14-16"}  # qua
+  - {data: "2027-04-22", ref: "João 16.24"}  # qui
+  - {data: "2027-04-23", ref: "Jeremias 32.27"}  # sex
+  - {data: "2027-04-24", ref: "João 1.4,5"}  # sáb
+  - {data: "2027-04-25", ref: "Isaías 54.10"}  # dom
+  - {data: "2027-04-26", ref: "Mateus 11.28"}  # seg
+  - {data: "2027-04-27", ref: "Apocalipse 7.9,10"}  # ter
+  - {data: "2027-04-28", ref: "Jó 11.18"}  # qua
+  - {data: "2027-04-29", ref: "Êxodo 3.14"}  # qui
+  - {data: "2027-04-30", ref: "Romanos 6.11"}  # sex
+  - {data: "2027-05-01", ref: "Amós 9.13"}  # sáb
+  - {data: "2027-05-02", ref: "Colossenses 2.6,7"}  # dom
+  - {data: "2027-05-03", ref: "Marcos 12.17"}  # seg
+  - {data: "2027-05-04", ref: "Salmos 30.11,12"}  # ter
+  - {data: "2027-05-05", ref: "Efésios 1.13,14"}  # qua
+  - {data: "2027-05-06", ref: "Atos 1.9", ocasiao: ascensao}  # qui
+  - {data: "2027-05-07", ref: "Isaías 58.11"}  # sex
+  - {data: "2027-05-08", ref: "Hebreus 13.1,2"}  # sáb
+  - {data: "2027-05-09", ref: "Provérbios 23.25", ocasiao: dia-das-maes}  # dom
+  - {data: "2027-05-10", ref: "Salmos 67.1,2"}  # seg
+  - {data: "2027-05-11", ref: "Mateus 23.11,12"}  # ter
+  - {data: "2027-05-12", ref: "Eclesiastes 3.1"}  # qua
+  - {data: "2027-05-13", ref: "Lucas 9.62"}  # qui
+  - {data: "2027-05-14", ref: "Isaías 62.3"}  # sex
+  - {data: "2027-05-15", ref: "Apocalipse 3.20"}  # sáb
+  - {data: "2027-05-16", ref: "Atos 2.17,18", ocasiao: pentecostes}  # dom
+  - {data: "2027-05-17", ref: "João 12.46"}  # seg
+  - {data: "2027-05-18", ref: "Salmos 23.4"}  # ter
+  - {data: "2027-05-19", ref: "Deuteronômio 6.4,5"}  # qua
+  - {data: "2027-05-20", ref: "2 Coríntios 6.2"}  # qui
+  - {data: "2027-05-21", ref: "Mateus 16.24"}  # sex
+  - {data: "2027-05-22", ref: "Lucas 15.10"}  # sáb
+  - {data: "2027-05-23", ref: "João 15.26", ocasiao: trindade}  # dom
+  - {data: "2027-05-24", ref: "Lucas 14.11"}  # seg
+  - {data: "2027-05-25", ref: "Sofonias 3.19"}  # ter
+  - {data: "2027-05-26", ref: "João 15.8"}  # qua
+  - {data: "2027-05-27", ref: "1 Coríntios 10.16,17", ocasiao: corpus-christi}  # qui
+  - {data: "2027-05-28", ref: "Provérbios 30.8,9"}  # sex
+  - {data: "2027-05-29", ref: "Salmos 139.13,14"}  # sáb
+  - {data: "2027-05-30", ref: "Romanos 8.26"}  # dom
+  - {data: "2027-05-31", ref: "Salmos 84.1,2"}  # seg
+  - {data: "2027-06-01", ref: "João 1.3"}  # ter
+  - {data: "2027-06-02", ref: "Números 14.18"}  # qua
+  - {data: "2027-06-03", ref: "Romanos 14.19"}  # qui
+  - {data: "2027-06-04", ref: "Tiago 5.7,8"}  # sex
+  - {data: "2027-06-05", ref: "Salmos 11.7"}  # sáb
+  - {data: "2027-06-06", ref: "Apocalipse 21.6"}  # dom
+  - {data: "2027-06-07", ref: "Salmos 71.14"}  # seg
+  - {data: "2027-06-08", ref: "Romanos 4.20,21"}  # ter
+  - {data: "2027-06-09", ref: "Provérbios 18.10"}  # qua
+  - {data: "2027-06-10", ref: "Hebreus 10.24,25"}  # qui
+  - {data: "2027-06-11", ref: "Salmos 30.5"}  # sex
+  - {data: "2027-06-12", ref: "Romanos 5.9,10"}  # sáb
+  - {data: "2027-06-13", ref: "Eclesiastes 7.29"}  # dom
+  - {data: "2027-06-14", ref: "João 15.5"}  # seg
+  - {data: "2027-06-15", ref: "Romanos 8.32"}  # ter
+  - {data: "2027-06-16", ref: "Provérbios 16.32"}  # qua
+  - {data: "2027-06-17", ref: "Filipenses 4.4"}  # qui
+  - {data: "2027-06-18", ref: "Jó 22.21"}  # sex
+  - {data: "2027-06-19", ref: "Gálatas 5.16"}  # sáb
+  - {data: "2027-06-20", ref: "Provérbios 16.3"}  # dom
+  - {data: "2027-06-21", ref: "Jó 8.7"}  # seg
+  - {data: "2027-06-22", ref: "2 Pedro 1.5-7"}  # ter
+  - {data: "2027-06-23", ref: "1 Crônicas 28.20"}  # qua
+  - {data: "2027-06-24", ref: "Lucas 12.34"}  # qui
+  - {data: "2027-06-25", ref: "Apocalipse 21.3"}  # sex
+  - {data: "2027-06-26", ref: "João 14.12"}  # sáb
+  - {data: "2027-06-27", ref: "Eclesiastes 9.7"}  # dom
+  - {data: "2027-06-28", ref: "Atos 2.42"}  # seg
+  - {data: "2027-06-29", ref: "Oseias 6.1"}  # ter
+  - {data: "2027-06-30", ref: "Salmos 33.4,5"}  # qua
+  - {data: "2027-07-01", ref: "Colossenses 3.9,10"}  # qui
+  - {data: "2027-07-02", ref: "Apocalipse 3.19"}  # sex
+  - {data: "2027-07-03", ref: "Isaías 58.6,7"}  # sáb
+  - {data: "2027-07-04", ref: "Colossenses 3.23,24"}  # dom
+  - {data: "2027-07-05", ref: "Lucas 15.20"}  # seg
+  - {data: "2027-07-06", ref: "Salmos 116.1,2"}  # ter
+  - {data: "2027-07-07", ref: "Mateus 10.29-31"}  # qua
+  - {data: "2027-07-08", ref: "Levítico 11.44"}  # qui
+  - {data: "2027-07-09", ref: "Salmos 118.6"}  # sex
+  - {data: "2027-07-10", ref: "Mateus 15.28"}  # sáb
+  - {data: "2027-07-11", ref: "Provérbios 29.25"}  # dom
+  - {data: "2027-07-12", ref: "Colossenses 2.2,3"}  # seg
+  - {data: "2027-07-13", ref: "Isaías 40.8"}  # ter
+  - {data: "2027-07-14", ref: "Colossenses 1.10,11"}  # qua
+  - {data: "2027-07-15", ref: "1 Coríntios 2.12"}  # qui
+  - {data: "2027-07-16", ref: "Lucas 15.31,32"}  # sex
+  - {data: "2027-07-17", ref: "Provérbios 8.11"}  # sáb
+  - {data: "2027-07-18", ref: "2 Samuel 9.7"}  # dom
+  - {data: "2027-07-19", ref: "Marcos 4.40"}  # seg
+  - {data: "2027-07-20", ref: "Jó 14.14"}  # ter
+  - {data: "2027-07-21", ref: "Efésios 3.20"}  # qua
+  - {data: "2027-07-22", ref: "Lucas 2.14"}  # qui
+  - {data: "2027-07-23", ref: "Isaías 59.1"}  # sex
+  - {data: "2027-07-24", ref: "1 João 4.12"}  # sáb
+  - {data: "2027-07-25", ref: "João 14.16,17"}  # dom
+  - {data: "2027-07-26", ref: "Malaquias 3.10"}  # seg
+  - {data: "2027-07-27", ref: "Atos 10.43"}  # ter
+  - {data: "2027-07-28", ref: "Provérbios 14.21"}  # qua
+  - {data: "2027-07-29", ref: "Romanos 11.33"}  # qui
+  - {data: "2027-07-30", ref: "Deuteronômio 15.10"}  # sex
+  - {data: "2027-07-31", ref: "Lucas 17.15,16"}  # sáb
+  - {data: "2027-08-01", ref: "Juízes 7.7"}  # dom
+  - {data: "2027-08-02", ref: "Mateus 5.13"}  # seg
+  - {data: "2027-08-03", ref: "Hebreus 12.11"}  # ter
+  - {data: "2027-08-04", ref: "1 Samuel 17.37"}  # qua
+  - {data: "2027-08-05", ref: "Daniel 4.37"}  # qui
+  - {data: "2027-08-06", ref: "Romanos 8.24,25"}  # sex
+  - {data: "2027-08-07", ref: "Mateus 28.18"}  # sáb
+  - {data: "2027-08-08", ref: "Provérbios 23.24", ocasiao: dia-dos-pais}  # dom
+  - {data: "2027-08-09", ref: "Jonas 2.2"}  # seg
+  - {data: "2027-08-10", ref: "Números 32.23"}  # ter
+  - {data: "2027-08-11", ref: "Lucas 8.15"}  # qua
+  - {data: "2027-08-12", ref: "Isaías 35.3,4"}  # qui
+  - {data: "2027-08-13", ref: "João 6.29"}  # sex
+  - {data: "2027-08-14", ref: "Apocalipse 3.21"}  # sáb
+  - {data: "2027-08-15", ref: "Efésios 1.18"}  # dom
+  - {data: "2027-08-16", ref: "Isaías 43.2"}  # seg
+  - {data: "2027-08-17", ref: "Marcos 4.28"}  # ter
+  - {data: "2027-08-18", ref: "Jó 13.15"}  # qua
+  - {data: "2027-08-19", ref: "Gálatas 6.10"}  # qui
+  - {data: "2027-08-20", ref: "Salmos 34.4"}  # sex
+  - {data: "2027-08-21", ref: "2 Timóteo 2.24,25"}  # sáb
+  - {data: "2027-08-22", ref: "Juízes 2.18"}  # dom
+  - {data: "2027-08-23", ref: "Romanos 12.9,10"}  # seg
+  - {data: "2027-08-24", ref: "3 João 4"}  # ter
+  - {data: "2027-08-25", ref: "Provérbios 22.1"}  # qua
+  - {data: "2027-08-26", ref: "Ageu 2.4"}  # qui
+  - {data: "2027-08-27", ref: "Tiago 3.2"}  # sex
+  - {data: "2027-08-28", ref: "Mateus 6.11"}  # sáb
+  - {data: "2027-08-29", ref: "Tiago 1.2-4"}  # dom
+  - {data: "2027-08-30", ref: "Gênesis 1.27"}  # seg
+  - {data: "2027-08-31", ref: "Marcos 12.43,44"}  # ter
+  - {data: "2027-09-01", ref: "Provérbios 28.20"}  # qua
+  - {data: "2027-09-02", ref: "Salmos 23.1,2"}  # qui
+  - {data: "2027-09-03", ref: "Tito 3.14"}  # sex
+  - {data: "2027-09-04", ref: "Gálatas 6.1"}  # sáb
+  - {data: "2027-09-05", ref: "Neemias 4.14"}  # dom
+  - {data: "2027-09-06", ref: "Apocalipse 7.16,17"}  # seg
+  - {data: "2027-09-07", ref: "Provérbios 31.30"}  # ter
+  - {data: "2027-09-08", ref: "Tiago 4.14,15"}  # qua
+  - {data: "2027-09-09", ref: "Gênesis 21.1,2"}  # qui
+  - {data: "2027-09-10", ref: "Provérbios 11.14"}  # sex
+  - {data: "2027-09-11", ref: "Filipenses 2.3,4"}  # sáb
+  - {data: "2027-09-12", ref: "1 João 4.14,15"}  # dom
+  - {data: "2027-09-13", ref: "Provérbios 13.20"}  # seg
+  - {data: "2027-09-14", ref: "2 Coríntios 2.14"}  # ter
+  - {data: "2027-09-15", ref: "Efésios 3.18,19"}  # qua
+  - {data: "2027-09-16", ref: "1 Samuel 2.2"}  # qui
+  - {data: "2027-09-17", ref: "Efésios 1.7"}  # sex
+  - {data: "2027-09-18", ref: "Salmos 56.3,4"}  # sáb
+  - {data: "2027-09-19", ref: "Hebreus 13.15,16"}  # dom
+  - {data: "2027-09-20", ref: "Jeremias 31.3"}  # seg
+  - {data: "2027-09-21", ref: "João 10.10"}  # ter
+  - {data: "2027-09-22", ref: "Provérbios 4.23"}  # qua
+  - {data: "2027-09-23", ref: "Romanos 2.11"}  # qui
+  - {data: "2027-09-24", ref: "João 15.14,15"}  # sex
+  - {data: "2027-09-25", ref: "Salmos 116.12"}  # sáb
+  - {data: "2027-09-26", ref: "1 Timóteo 4.8"}  # dom
+  - {data: "2027-09-27", ref: "Êxodo 16.31"}  # seg
+  - {data: "2027-09-28", ref: "Romanos 4.5"}  # ter
+  - {data: "2027-09-29", ref: "Ezequiel 34.11"}  # qua
+  - {data: "2027-09-30", ref: "Hebreus 1.1,2"}  # qui
+  - {data: "2027-10-01", ref: "Isaías 9.2"}  # sex
+  - {data: "2027-10-02", ref: "Lucas 23.34"}  # sáb
+  - {data: "2027-10-03", ref: "2 Tessalonicenses 3.16"}  # dom
+  - {data: "2027-10-04", ref: "Gênesis 45.5"}  # seg
+  - {data: "2027-10-05", ref: "1 Pedro 5.2,3"}  # ter
+  - {data: "2027-10-06", ref: "Isaías 66.13"}  # qua
+  - {data: "2027-10-07", ref: "Isaías 9.6"}  # qui
+  - {data: "2027-10-08", ref: "Lucas 6.47,48"}  # sex
+  - {data: "2027-10-09", ref: "Efésios 6.11"}  # sáb
+  - {data: "2027-10-10", ref: "Amós 3.3"}  # dom
+  - {data: "2027-10-11", ref: "Mateus 6.26"}  # seg
+  - {data: "2027-10-12", ref: "Salmos 96.1,2"}  # ter
+  - {data: "2027-10-13", ref: "1 Coríntios 14.1"}  # qua
+  - {data: "2027-10-14", ref: "Lucas 2.10,11"}  # qui
+  - {data: "2027-10-15", ref: "Gênesis 2.18"}  # sex
+  - {data: "2027-10-16", ref: "Colossenses 3.16"}  # sáb
+  - {data: "2027-10-17", ref: "Isaías 40.31"}  # dom
+  - {data: "2027-10-18", ref: "Lucas 18.43"}  # seg
+  - {data: "2027-10-19", ref: "Salmos 119.105"}  # ter
+  - {data: "2027-10-20", ref: "2 Coríntios 1.20"}  # qua
+  - {data: "2027-10-21", ref: "Provérbios 14.12"}  # qui
+  - {data: "2027-10-22", ref: "Salmos 94.18,19"}  # sex
+  - {data: "2027-10-23", ref: "Jeremias 29.11"}  # sáb
+  - {data: "2027-10-24", ref: "1 João 1.9"}  # dom
+  - {data: "2027-10-25", ref: "Atos 16.31"}  # seg
+  - {data: "2027-10-26", ref: "João 8.51"}  # ter
+  - {data: "2027-10-27", ref: "Atos 15.11"}  # qua
+  - {data: "2027-10-28", ref: "Provérbios 14.34"}  # qui
+  - {data: "2027-10-29", ref: "Marcos 5.19"}  # sex
+  - {data: "2027-10-30", ref: "Salmos 37.7"}  # sáb
+  - {data: "2027-10-31", ref: "Marcos 10.45"}  # dom
+  - {data: "2027-11-01", ref: "Salmos 119.165"}  # seg
+  - {data: "2027-11-02", ref: "1 Timóteo 2.5"}  # ter
+  - {data: "2027-11-03", ref: "Mateus 12.7"}  # qua
+  - {data: "2027-11-04", ref: "1 Reis 17.14"}  # qui
+  - {data: "2027-11-05", ref: "Naum 1.7"}  # sex
+  - {data: "2027-11-06", ref: "Mateus 16.15,16"}  # sáb
+  - {data: "2027-11-07", ref: "Apocalipse 22.12"}  # dom
+  - {data: "2027-11-08", ref: "1 Samuel 23.16"}  # seg
+  - {data: "2027-11-09", ref: "João 6.68"}  # ter
+  - {data: "2027-11-10", ref: "Salmos 26.2"}  # qua
+  - {data: "2027-11-11", ref: "Atos 20.32"}  # qui
+  - {data: "2027-11-12", ref: "1 Coríntios 14.33"}  # sex
+  - {data: "2027-11-13", ref: "Eclesiastes 11.4"}  # sáb
+  - {data: "2027-11-14", ref: "Gálatas 5.14"}  # dom
+  - {data: "2027-11-15", ref: "1 Crônicas 29.11"}  # seg
+  - {data: "2027-11-16", ref: "Lucas 15.7"}  # ter
+  - {data: "2027-11-17", ref: "Jó 37.14"}  # qua
+  - {data: "2027-11-18", ref: "João 6.40"}  # qui
+  - {data: "2027-11-19", ref: "Lamentações 3.25,26"}  # sex
+  - {data: "2027-11-20", ref: "Atos 4.32"}  # sáb
+  - {data: "2027-11-21", ref: "Juízes 16.28"}  # dom
+  - {data: "2027-11-22", ref: "1 João 3.1"}  # seg
+  - {data: "2027-11-23", ref: "Mateus 28.19,20"}  # ter
+  - {data: "2027-11-24", ref: "Tito 2.11,12"}  # qua
+  - {data: "2027-11-25", ref: "Habacuque 2.3"}  # qui
+  - {data: "2027-11-26", ref: "Isaías 43.1"}  # sex
+  - {data: "2027-11-27", ref: "Apocalipse 15.3"}  # sáb
+  - {data: "2027-11-28", ref: "Jeremias 33.14,15", ocasiao: advento}  # dom
+  - {data: "2027-11-29", ref: "João 17.17"}  # seg
+  - {data: "2027-11-30", ref: "Salmos 118.1"}  # ter
+  - {data: "2027-12-01", ref: "1 Coríntios 13.12"}  # qua
+  - {data: "2027-12-02", ref: "Salmos 37.3"}  # qui
+  - {data: "2027-12-03", ref: "1 Tessalonicenses 5.16-18"}  # sex
+  - {data: "2027-12-04", ref: "1 Reis 8.57,58"}  # sáb
+  - {data: "2027-12-05", ref: "Apocalipse 14.13"}  # dom
+  - {data: "2027-12-06", ref: "Provérbios 31.10"}  # seg
+  - {data: "2027-12-07", ref: "Tiago 2.14"}  # ter
+  - {data: "2027-12-08", ref: "Salmos 51.17"}  # qua
+  - {data: "2027-12-09", ref: "Romanos 10.9"}  # qui
+  - {data: "2027-12-10", ref: "Isaías 60.1"}  # sex
+  - {data: "2027-12-11", ref: "1 Samuel 16.7"}  # sáb
+  - {data: "2027-12-12", ref: "João 15.11"}  # dom
+  - {data: "2027-12-13", ref: "1 Coríntios 16.13,14"}  # seg
+  - {data: "2027-12-14", ref: "Colossenses 3.13"}  # ter
+  - {data: "2027-12-15", ref: "Jeremias 17.14"}  # qua
+  - {data: "2027-12-16", ref: "João 11.25,26"}  # qui
+  - {data: "2027-12-17", ref: "João 3.17"}  # sex
+  - {data: "2027-12-18", ref: "Salmos 18.1,2"}  # sáb
+  - {data: "2027-12-19", ref: "Êxodo 16.4"}  # dom
+  - {data: "2027-12-20", ref: "João 15.16"}  # seg
+  - {data: "2027-12-21", ref: "Romanos 8.37"}  # ter
+  - {data: "2027-12-22", ref: "Êxodo 15.26"}  # qua
+  - {data: "2027-12-23", ref: "Atos 3.6"}  # qui
+  - {data: "2027-12-24", ref: "Lucas 1.30,31", ocasiao: vespera-natal}  # sex
+  - {data: "2027-12-25", ref: "Lucas 2.6,7", ocasiao: natal}  # sáb
+  - {data: "2027-12-26", ref: "Gênesis 32.26"}  # dom
+  - {data: "2027-12-27", ref: "Provérbios 25.11"}  # seg
+  - {data: "2027-12-28", ref: "Gálatas 5.13"}  # ter
+  - {data: "2027-12-29", ref: "Hebreus 11.1"}  # qua
+  - {data: "2027-12-30", ref: "2 Coríntios 3.17"}  # qui
+  - {data: "2027-12-31", ref: "Salmos 138.3", ocasiao: fim-de-ano}  # sex

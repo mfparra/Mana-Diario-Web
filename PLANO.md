@@ -35,14 +35,14 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [x] `/biblia/busca`
 
 ## Fase 4 — Acervo e calendário
-- [ ] Definir a lista fechada de temas (~25) no topo de `data/versiculos.yaml`
-- [ ] Montar o acervo em lotes de ~200 referências (1 a 3 versículos), até ≥ 1.100,
+- [x] Definir a lista fechada de temas (~25) no topo de `data/versiculos.yaml`
+- [x] Montar o acervo em lotes de ~200 referências (1 a 3 versículos), até ≥ 1.100,
       cobrindo os 66 livros com peso maior em Salmos, Provérbios, Evangelhos e Epístolas;
       ≥ 3 entradas por ocasião especial (tabela do AGENTS.md §6.1)
-- [ ] `datas_especiais.py` (fixas + móveis a partir da Páscoa) + testes com datas conhecidas
-- [ ] `mana acervo validar` + testes (resolvem no banco, sem duplicatas, temas válidos)
-- [ ] `mana calendario gerar/importar` com as regras do AGENTS.md §6.1 + testes
-- [ ] Gerar 2026 (restante) e 2027 e entregar `data/calendarios/` para revisão do Marcos
+- [x] `datas_especiais.py` (fixas + móveis a partir da Páscoa) + testes com datas conhecidas
+- [x] `mana acervo validar` + testes (resolvem no banco, sem duplicatas, temas válidos)
+- [x] `mana calendario gerar/importar` com as regras do AGENTS.md §6.1 + testes
+- [x] Gerar 2026 (restante) e 2027 e entregar `data/calendarios/` para revisão do Marcos
 
 ## Fase 5 — Geração diária
 - [ ] Modelos Pydantic, repositório de estudos (`data/mana.sqlite`)
@@ -71,6 +71,9 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [ ] Adaptador do novo provedor, prompt v2 se necessário, regerar estudos de teste
 
 ## Decisões
+- Fase 4: acervo com 1.594 entradas (AT 670 / NT 924; 66 livros; 116 de ocasiões, de 5 a 8 por ocasião), 30 temas. Cinco anos seguidos (2026–2030) gerados sem aviso e sem violar nenhuma regra. O NT ficou maior que o AT no acervo para a janela de 3 anos não apertar o NT (o calendário usa ~55% NT).
+- Fase 4: entradas com ocasião são reservadas a ela (não caem em dia comum); empate entre ocasiões: vale a cristã sobre a civil (ex.: 2035, sem Dia das Mães).
+- Fase 4: `data/calendarios/2026.yaml` (31/10 a 31/12) e `2027.yaml` gerados para revisão do Marcos; o banco `data/mana.sqlite` fica fora do git, então no servidor basta rodar `calendario importar` com esses YAMLs.
 - Fase 3: terracota escurecida para `#965220` / `#A15C29` (os valores do DESIGN.md originais ficavam abaixo de AA); detalhes no DESIGN.md. Fontes `woff2` latin + latin-ext em `static/fonts/`.
 - Fase 3: o seletor de livro/capítulo funciona sem JavaScript (`/biblia/ir`); `?destacar=3-5` destaca a faixa no servidor e `:target` cobre o `#vN`.
 - Fase 3: Playwright (já previsto como opcional) entrou no grupo `dev` para testar o popover; o teste é pulado se o Chromium não estiver instalado (`uv run playwright install chromium`).

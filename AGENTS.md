@@ -100,7 +100,9 @@ mana-diario/
 │   │   ├── importar.py  # download + conversão para SQLite
 │   │   ├── repositorio.py
 │   │   └── referencias.py  # parser e formatador de referências pt-BR
+│   ├── tempo.py         # hoje() no fuso America/Sao_Paulo
 │   ├── estudos/
+│   │   ├── acervo.py          # lê e valida data/versiculos.yaml
 │   │   ├── calendario.py      # monta o calendário anual a partir do acervo
 │   │   ├── datas_especiais.py # datas fixas e móveis (Páscoa e derivadas)
 │   │   ├── gerador.py   # monta prompt, chama LLM, valida, tenta de novo
@@ -129,8 +131,10 @@ mana-diario/
 uv sync                                   # instala dependências
 uv run mana biblia baixar                 # baixa a Bíblia Livre para data/biblia/raw/
 uv run mana biblia importar               # converte para data/biblia/biblia.sqlite e valida
-uv run mana acervo validar                # confere todas as referências de data/versiculos.yaml
+uv run mana acervo validar                # confere o acervo (--sem-minimos enquanto ele cresce)
 uv run mana calendario gerar --ano 2027   # monta o calendário do ano (data/calendarios/2027.yaml)
+                                          #   --refazer: refaz os dias futuros que já existem
+uv run mana calendario importar --ano 2027  # aplica as edições feitas no YAML do ano
 uv run mana llm testar                    # faz uma chamada mínima ao provedor configurado
 uv run mana gerar --data hoje             # gera (ou regenera com --forcar) o estudo do dia
 uv run mana gerar --proximos 7            # pré-gera os próximos 7 dias
@@ -229,7 +233,12 @@ esquema de forma idempotente (qualquer um dos dois pode subir primeiro).
 - O resultado vai para a tabela `calendario` e é exportado em `CALENDARIOS_DIR/AAAA.yaml`
   (padrão `data/calendarios/`)
   para o Marcos revisar e editar; `mana calendario importar --ano AAAA` aplica as edições.
-  Um dia já publicado nunca muda de versículo.
+  Um dia já publicado nunca muda de versículo: `importar` recusa (e não grava nada) qualquer
+  mudança em dia que já exista e seja de hoje ou anterior; `gerar --refazer` só apaga dias futuros.
+- Entradas do acervo com `ocasioes` são **reservadas** a elas: nunca caem em dia comum.
+  Em anos de empate (ex.: Pentecostes = 2º domingo de maio, em 2035) a ocasião civil some.
+- A escolha entre candidatas é sorteada com peso pelo tempo desde o último uso (as menos
+  usadas primeiro), com a semente do ano; tudo é checado de novo por `calendario.verificar()`.
 
 ## 7. Referências bíblicas no site
 

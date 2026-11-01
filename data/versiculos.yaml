@@ -1,0 +1,1752 @@
+# Acervo curado do versículo do dia (AGENTS.md §6.1). SÓ referências — o texto vem da Bíblia local.
+# Cada entrada: ref (1 a 3 versículos do mesmo capítulo), temas (1–3, da lista abaixo) e,
+# opcionalmente, ocasioes (códigos de src/mana/estudos/datas_especiais.py). Uma entrada com
+# ocasião é reservada a ela: nunca cai em dia comum. Não repita nem sobreponha versículos.
+# Validar: uv run mana acervo validar
+temas:
+  - fe
+  - esperanca
+  - amor
+  - graca
+  - perdao
+  - salvacao
+  - paz
+  - alegria
+  - gratidao
+  - oracao
+  - sabedoria
+  - obediencia
+  - coragem
+  - confianca
+  - humildade
+  - servico
+  - justica
+  - misericordia
+  - perseveranca
+  - consolo
+  - provisao
+  - louvor
+  - arrependimento
+  - familia
+  - palavra
+  - santidade
+  - unidade
+  - generosidade
+  - criacao
+  - promessa
+
+versiculos:
+  # ===== Salmos =====
+  - {ref: "Sl 1.1,2", temas: [palavra, sabedoria]}
+  - {ref: "Sl 1.3", temas: [perseveranca, palavra]}
+  - {ref: "Sl 3.3", temas: [confianca, coragem]}
+  - {ref: "Sl 4.8", temas: [paz, confianca]}
+  - {ref: "Sl 5.3", temas: [oracao, confianca]}
+  - {ref: "Sl 5.11", temas: [alegria, confianca]}
+  - {ref: "Sl 8.3,4", temas: [criacao, humildade]}
+  - {ref: "Sl 9.9,10", temas: [confianca, consolo]}
+  - {ref: "Sl 10.17", temas: [oracao, consolo]}
+  - {ref: "Sl 11.7", temas: [justica, santidade]}
+  - {ref: "Sl 13.5,6", temas: [confianca, louvor]}
+  - {ref: "Sl 16.1,2", temas: [confianca, gratidao]}
+  - {ref: "Sl 16.8", temas: [confianca, coragem]}
+  - {ref: "Sl 16.11", temas: [alegria, promessa]}
+  - {ref: "Sl 17.8", temas: [confianca, consolo]}
+  - {ref: "Sl 18.1,2", temas: [amor, confianca]}
+  - {ref: "Sl 18.30", temas: [confianca, palavra]}
+  - {ref: "Sl 18.32", temas: [coragem, confianca]}
+  - {ref: "Sl 19.1", temas: [criacao, louvor]}
+  - {ref: "Sl 19.7,8", temas: [palavra, alegria]}
+  - {ref: "Sl 19.14", temas: [oracao, santidade]}
+  - {ref: "Sl 20.7", temas: [confianca, fe]}
+  - {ref: "Sl 22.4,5", temas: [confianca, fe]}
+  - {ref: "Sl 23.1,2", temas: [provisao, paz]}
+  - {ref: "Sl 23.4", temas: [consolo, coragem]}
+  - {ref: "Sl 23.6", temas: [misericordia, esperanca]}
+  - {ref: "Sl 24.1", temas: [criacao, louvor]}
+  - {ref: "Sl 25.4,5", temas: [oracao, sabedoria]}
+  - {ref: "Sl 25.14", temas: [sabedoria, fe]}
+  - {ref: "Sl 26.2", temas: [santidade, oracao]}
+  - {ref: "Sl 27.1", temas: [coragem, confianca]}
+  - {ref: "Sl 27.4", temas: [louvor, oracao]}
+  - {ref: "Sl 27.13,14", temas: [esperanca, perseveranca]}
+  - {ref: "Sl 28.7", temas: [confianca, gratidao]}
+  - {ref: "Sl 29.11", temas: [paz, provisao]}
+  - {ref: "Sl 30.5", temas: [consolo, alegria]}
+  - {ref: "Sl 30.11,12", temas: [alegria, gratidao]}
+  - {ref: "Sl 31.14,15", temas: [confianca, fe]}
+  - {ref: "Sl 31.24", temas: [coragem, esperanca]}
+  - {ref: "Sl 32.1,2", temas: [perdao, graca]}
+  - {ref: "Sl 32.5", temas: [arrependimento, perdao]}
+  - {ref: "Sl 32.8", temas: [sabedoria, confianca]}
+  - {ref: "Sl 33.4,5", temas: [justica, palavra]}
+  - {ref: "Sl 33.18", temas: [esperanca, misericordia]}
+  - {ref: "Sl 33.20,21", temas: [esperanca, alegria]}
+  - {ref: "Sl 34.1", temas: [louvor, gratidao]}
+  - {ref: "Sl 34.4", temas: [oracao, coragem]}
+  - {ref: "Sl 34.8", temas: [confianca, alegria]}
+  - {ref: "Sl 34.17,18", temas: [consolo, oracao]}
+  - {ref: "Sl 34.19", temas: [consolo, perseveranca]}
+  - {ref: "Sl 36.5,6", temas: [misericordia, justica]}
+  - {ref: "Sl 36.9", temas: [criacao, graca]}
+  - {ref: "Sl 37.3", temas: [confianca, provisao]}
+  - {ref: "Sl 37.4,5", temas: [confianca, alegria]}
+  - {ref: "Sl 37.7", temas: [paz, perseveranca]}
+  - {ref: "Sl 37.23,24", temas: [confianca, misericordia]}
+  - {ref: "Sl 37.39", temas: [salvacao, confianca]}
+  - {ref: "Sl 38.15", temas: [esperanca, oracao]}
+  - {ref: "Sl 39.7", temas: [esperanca, fe]}
+  - {ref: "Sl 40.1,2", temas: [esperanca, salvacao]}
+  - {ref: "Sl 40.8", temas: [obediencia, alegria]}
+  - {ref: "Sl 40.16", temas: [alegria, louvor]}
+  - {ref: "Sl 41.1", temas: [generosidade, misericordia]}
+  - {ref: "Sl 42.1,2", temas: [oracao, esperanca]}
+  - {ref: "Sl 42.5", temas: [esperanca, consolo]}
+  - {ref: "Sl 43.3", temas: [palavra, confianca]}
+  - {ref: "Sl 46.1,2", temas: [coragem, confianca]}
+  - {ref: "Sl 46.10", temas: [paz, confianca]}
+  - {ref: "Sl 47.1", temas: [alegria, louvor]}
+  - {ref: "Sl 48.14", temas: [confianca, sabedoria]}
+  - {ref: "Sl 50.14,15", temas: [gratidao, oracao]}
+  - {ref: "Sl 51.1,2", temas: [misericordia, perdao]}
+  - {ref: "Sl 51.10", temas: [arrependimento, santidade]}
+  - {ref: "Sl 51.12", temas: [alegria, salvacao]}
+  - {ref: "Sl 51.17", temas: [humildade, arrependimento]}
+  - {ref: "Sl 55.16,17", temas: [oracao, confianca]}
+  - {ref: "Sl 55.22", temas: [consolo, confianca]}
+  - {ref: "Sl 56.3,4", temas: [coragem, confianca]}
+  - {ref: "Sl 56.8", temas: [consolo, misericordia]}
+  - {ref: "Sl 57.1", temas: [misericordia, confianca]}
+  - {ref: "Sl 57.7", temas: [louvor, confianca]}
+  - {ref: "Sl 61.1,2", temas: [oracao, consolo]}
+  - {ref: "Sl 62.1,2", temas: [confianca, paz]}
+  - {ref: "Sl 62.5,6", temas: [esperanca, confianca]}
+  - {ref: "Sl 62.8", temas: [oracao, confianca]}
+  - {ref: "Sl 63.1", temas: [oracao, louvor]}
+  - {ref: "Sl 63.3", temas: [amor, louvor]}
+  - {ref: "Sl 66.16", temas: [gratidao, louvor]}
+  - {ref: "Sl 67.1,2", temas: [graca, salvacao]}
+  - {ref: "Sl 68.19", temas: [gratidao, provisao]}
+  - {ref: "Sl 69.13", temas: [oracao, misericordia]}
+  - {ref: "Sl 71.5", temas: [esperanca, confianca]}
+  - {ref: "Sl 71.14", temas: [esperanca, louvor]}
+  - {ref: "Sl 73.23,24", temas: [confianca, esperanca]}
+  - {ref: "Sl 73.26", temas: [perseveranca, confianca]}
+  - {ref: "Sl 73.28", temas: [confianca, gratidao]}
+  - {ref: "Sl 77.11,12", temas: [gratidao, fe]}
+  - {ref: "Sl 84.1,2", temas: [alegria, louvor]}
+  - {ref: "Sl 84.10", temas: [alegria, fe]}
+  - {ref: "Sl 84.11", temas: [graca, provisao]}
+  - {ref: "Sl 85.8", temas: [paz, oracao]}
+  - {ref: "Sl 86.5", temas: [perdao, misericordia]}
+  - {ref: "Sl 86.11", temas: [sabedoria, obediencia]}
+  - {ref: "Sl 86.15", temas: [misericordia, graca]}
+  - {ref: "Sl 89.1", temas: [louvor, amor]}
+  - {ref: "Sl 90.1,2", temas: [confianca, criacao]}
+  - {ref: "Sl 90.12", temas: [sabedoria, humildade]}
+  - {ref: "Sl 90.14", temas: [alegria, misericordia]}
+  - {ref: "Sl 91.1,2", temas: [confianca, paz]}
+  - {ref: "Sl 91.11", temas: [confianca, coragem]}
+  - {ref: "Sl 92.1,2", temas: [gratidao, louvor]}
+  - {ref: "Sl 94.18,19", temas: [consolo, misericordia]}
+  - {ref: "Sl 95.1,2", temas: [louvor, alegria]}
+  - {ref: "Sl 95.6,7", temas: [humildade, louvor]}
+  - {ref: "Sl 96.1,2", temas: [louvor, salvacao]}
+  - {ref: "Sl 97.10", temas: [santidade, amor]}
+  - {ref: "Sl 98.1", temas: [louvor, salvacao]}
+  - {ref: "Sl 100.1,2", temas: [alegria, servico]}
+  - {ref: "Sl 100.4,5", temas: [gratidao, misericordia]}
+  - {ref: "Sl 103.1,2", temas: [gratidao, louvor]}
+  - {ref: "Sl 103.8", temas: [misericordia, graca]}
+  - {ref: "Sl 103.11,12", temas: [perdao, misericordia]}
+  - {ref: "Sl 103.13", temas: [misericordia, familia]}
+  - {ref: "Sl 104.33", temas: [louvor, criacao]}
+  - {ref: "Sl 105.1", temas: [gratidao, louvor]}
+  - {ref: "Sl 106.1", temas: [gratidao, misericordia]}
+  - {ref: "Sl 107.1", temas: [gratidao, misericordia]}
+  - {ref: "Sl 107.8,9", temas: [gratidao, provisao]}
+  - {ref: "Sl 111.10", temas: [sabedoria, obediencia]}
+  - {ref: "Sl 112.1", temas: [obediencia, alegria]}
+  - {ref: "Sl 112.7", temas: [confianca, coragem]}
+  - {ref: "Sl 113.3", temas: [louvor, gratidao]}
+  - {ref: "Sl 116.1,2", temas: [amor, oracao]}
+  - {ref: "Sl 116.12", temas: [gratidao, servico]}
+  - {ref: "Sl 118.1", temas: [gratidao, misericordia]}
+  - {ref: "Sl 118.6", temas: [coragem, confianca]}
+  - {ref: "Sl 118.8,9", temas: [confianca, fe]}
+  - {ref: "Sl 118.24", temas: [alegria, gratidao]}
+  - {ref: "Sl 119.9,11", temas: [palavra, santidade]}
+  - {ref: "Sl 119.18", temas: [palavra, oracao]}
+  - {ref: "Sl 119.50", temas: [consolo, palavra]}
+  - {ref: "Sl 119.105", temas: [palavra, sabedoria]}
+  - {ref: "Sl 119.130", temas: [palavra, sabedoria]}
+  - {ref: "Sl 119.165", temas: [paz, palavra]}
+  - {ref: "Sl 121.1,2", temas: [confianca, esperanca]}
+  - {ref: "Sl 121.7,8", temas: [confianca, paz]}
+  - {ref: "Sl 122.1", temas: [alegria, louvor]}
+  - {ref: "Sl 123.1,2", temas: [oracao, humildade]}
+  - {ref: "Sl 125.1,2", temas: [confianca, paz]}
+  - {ref: "Sl 126.5,6", temas: [alegria, perseveranca]}
+  - {ref: "Sl 127.1", temas: [familia, confianca]}
+  - {ref: "Sl 127.3", temas: [familia, gratidao]}
+  - {ref: "Sl 130.5,6", temas: [esperanca, perseveranca]}
+  - {ref: "Sl 131.1,2", temas: [humildade, paz]}
+  - {ref: "Sl 133.1", temas: [unidade, alegria]}
+  - {ref: "Sl 136.1", temas: [gratidao, misericordia]}
+  - {ref: "Sl 138.1,2", temas: [gratidao, louvor]}
+  - {ref: "Sl 138.8", temas: [confianca, misericordia]}
+  - {ref: "Sl 139.1,2", temas: [confianca, sabedoria]}
+  - {ref: "Sl 139.13,14", temas: [criacao, gratidao]}
+  - {ref: "Sl 139.23,24", temas: [santidade, oracao]}
+  - {ref: "Sl 143.8", temas: [oracao, confianca]}
+  - {ref: "Sl 143.10", temas: [obediencia, oracao]}
+  - {ref: "Sl 145.8,9", temas: [misericordia, graca]}
+  - {ref: "Sl 145.18", temas: [oracao, confianca]}
+  - {ref: "Sl 146.5", temas: [esperanca, alegria]}
+  - {ref: "Sl 147.3", temas: [consolo, misericordia]}
+  - {ref: "Sl 147.11", temas: [esperanca, misericordia]}
+  - {ref: "Sl 150.6", temas: [louvor, alegria]}
+
+  # ===== Provérbios =====
+  - {ref: "Pv 1.7", temas: [sabedoria, humildade]}
+  - {ref: "Pv 1.33", temas: [paz, confianca]}
+  - {ref: "Pv 2.6", temas: [sabedoria, palavra]}
+  - {ref: "Pv 3.5,6", temas: [confianca, sabedoria]}
+  - {ref: "Pv 3.7,8", temas: [humildade, sabedoria]}
+  - {ref: "Pv 3.9,10", temas: [generosidade, provisao]}
+  - {ref: "Pv 3.11,12", temas: [amor, obediencia]}
+  - {ref: "Pv 3.13", temas: [sabedoria, alegria]}
+  - {ref: "Pv 3.27", temas: [generosidade, justica]}
+  - {ref: "Pv 4.7", temas: [sabedoria, perseveranca]}
+  - {ref: "Pv 4.18", temas: [esperanca, perseveranca]}
+  - {ref: "Pv 4.23", temas: [santidade, sabedoria]}
+  - {ref: "Pv 4.25,26", temas: [perseveranca, sabedoria]}
+  - {ref: "Pv 6.6", temas: [sabedoria, perseveranca]}
+  - {ref: "Pv 8.11", temas: [sabedoria, palavra]}
+  - {ref: "Pv 8.17", temas: [amor, sabedoria]}
+  - {ref: "Pv 9.10", temas: [sabedoria, fe]}
+  - {ref: "Pv 10.4", temas: [perseveranca, provisao]}
+  - {ref: "Pv 10.9", temas: [justica, sabedoria]}
+  - {ref: "Pv 10.12", temas: [amor, perdao]}
+  - {ref: "Pv 10.22", temas: [provisao, graca]}
+  - {ref: "Pv 11.2", temas: [humildade, sabedoria]}
+  - {ref: "Pv 11.14", temas: [sabedoria, unidade]}
+  - {ref: "Pv 11.24,25", temas: [generosidade, provisao]}
+  - {ref: "Pv 11.30", temas: [justica, servico]}
+  - {ref: "Pv 12.15", temas: [sabedoria, humildade]}
+  - {ref: "Pv 12.18", temas: [sabedoria, consolo]}
+  - {ref: "Pv 12.25", temas: [consolo, alegria]}
+  - {ref: "Pv 13.3", temas: [sabedoria, santidade]}
+  - {ref: "Pv 13.20", temas: [sabedoria, unidade]}
+  - {ref: "Pv 14.12", temas: [sabedoria, justica]}
+  - {ref: "Pv 14.21", temas: [misericordia, generosidade]}
+  - {ref: "Pv 14.26", temas: [confianca, familia]}
+  - {ref: "Pv 14.29", temas: [paz, sabedoria]}
+  - {ref: "Pv 14.34", temas: [justica, santidade]}
+  - {ref: "Pv 15.1", temas: [paz, sabedoria]}
+  - {ref: "Pv 15.13", temas: [alegria, consolo]}
+  - {ref: "Pv 15.22", temas: [sabedoria, unidade]}
+  - {ref: "Pv 15.23", temas: [alegria, sabedoria]}
+  - {ref: "Pv 15.33", temas: [humildade, sabedoria]}
+  - {ref: "Pv 16.1", temas: [confianca, oracao]}
+  - {ref: "Pv 16.3", temas: [confianca, fe]}
+  - {ref: "Pv 16.7", temas: [paz, obediencia]}
+  - {ref: "Pv 16.9", temas: [confianca, sabedoria]}
+  - {ref: "Pv 16.18,19", temas: [humildade, sabedoria]}
+  - {ref: "Pv 16.20", temas: [confianca, alegria]}
+  - {ref: "Pv 16.24", temas: [sabedoria, consolo]}
+  - {ref: "Pv 16.32", temas: [paz, humildade]}
+  - {ref: "Pv 17.1", temas: [paz, familia]}
+  - {ref: "Pv 17.9", temas: [amor, perdao]}
+  - {ref: "Pv 17.17", temas: [amor, unidade]}
+  - {ref: "Pv 17.22", temas: [alegria, consolo]}
+  - {ref: "Pv 18.10", temas: [confianca, coragem]}
+  - {ref: "Pv 18.13", temas: [sabedoria, humildade]}
+  - {ref: "Pv 18.21", temas: [sabedoria, palavra]}
+  - {ref: "Pv 18.24", temas: [unidade, amor]}
+  - {ref: "Pv 19.11", temas: [paz, perdao]}
+  - {ref: "Pv 19.17", temas: [generosidade, misericordia]}
+  - {ref: "Pv 19.20", temas: [sabedoria, obediencia]}
+  - {ref: "Pv 19.21", temas: [confianca, sabedoria]}
+  - {ref: "Pv 20.7", temas: [familia, justica]}
+  - {ref: "Pv 20.24", temas: [confianca, fe]}
+  - {ref: "Pv 21.2", temas: [sabedoria, santidade]}
+  - {ref: "Pv 21.3", temas: [justica, obediencia]}
+  - {ref: "Pv 21.21", temas: [justica, misericordia]}
+  - {ref: "Pv 22.1", temas: [santidade, sabedoria]}
+  - {ref: "Pv 22.4", temas: [humildade, provisao]}
+  - {ref: "Pv 22.6", temas: [familia, sabedoria]}
+  - {ref: "Pv 22.9", temas: [generosidade, alegria]}
+  - {ref: "Pv 24.3,4", temas: [familia, sabedoria]}
+  - {ref: "Pv 24.10", temas: [coragem, perseveranca]}
+  - {ref: "Pv 24.16", temas: [perseveranca, esperanca]}
+  - {ref: "Pv 25.11", temas: [sabedoria, palavra]}
+  - {ref: "Pv 25.21,22", temas: [misericordia, perdao]}
+  - {ref: "Pv 26.20", temas: [paz, sabedoria]}
+  - {ref: "Pv 27.1", temas: [humildade, sabedoria]}
+  - {ref: "Pv 27.2", temas: [humildade, sabedoria]}
+  - {ref: "Pv 27.9", temas: [alegria, unidade]}
+  - {ref: "Pv 27.17", temas: [unidade, sabedoria]}
+  - {ref: "Pv 28.13", temas: [arrependimento, misericordia]}
+  - {ref: "Pv 28.20", temas: [justica, perseveranca]}
+  - {ref: "Pv 28.27", temas: [generosidade, misericordia]}
+  - {ref: "Pv 29.18", temas: [palavra, esperanca]}
+  - {ref: "Pv 29.25", temas: [coragem, confianca]}
+  - {ref: "Pv 30.5", temas: [palavra, confianca]}
+  - {ref: "Pv 30.8,9", temas: [provisao, humildade]}
+  - {ref: "Pv 31.10", temas: [familia, sabedoria]}
+  - {ref: "Pv 31.25,26", temas: [familia, sabedoria]}
+  - {ref: "Pv 31.30", temas: [fe, sabedoria]}
+
+  # ===== Jó =====
+  - {ref: "Jó 1.21", temas: [confianca, gratidao]}
+  - {ref: "Jó 2.10", temas: [perseveranca, fe]}
+  - {ref: "Jó 5.17", temas: [esperanca, consolo]}
+  - {ref: "Jó 5.8,9", temas: [oracao, confianca]}
+  - {ref: "Jó 8.7", temas: [esperanca, promessa]}
+  - {ref: "Jó 11.18", temas: [esperanca, paz]}
+  - {ref: "Jó 12.12", temas: [sabedoria, humildade]}
+  - {ref: "Jó 13.15", temas: [fe, confianca]}
+  - {ref: "Jó 14.14", temas: [esperanca, perseveranca]}
+  - {ref: "Jó 19.25,26", temas: [esperanca, salvacao]}
+  - {ref: "Jó 22.21", temas: [paz, arrependimento]}
+  - {ref: "Jó 23.10", temas: [perseveranca, fe]}
+  - {ref: "Jó 28.28", temas: [sabedoria, obediencia]}
+  - {ref: "Jó 33.4", temas: [criacao, gratidao]}
+  - {ref: "Jó 34.21", temas: [justica, sabedoria]}
+  - {ref: "Jó 36.5", temas: [justica, misericordia]}
+  - {ref: "Jó 37.14", temas: [criacao, humildade]}
+  - {ref: "Jó 38.4", temas: [criacao, humildade]}
+  - {ref: "Jó 40.4", temas: [humildade, arrependimento]}
+  - {ref: "Jó 42.2", temas: [fe, confianca]}
+  - {ref: "Jó 42.5,6", temas: [arrependimento, humildade]}
+  - {ref: "Jó 42.10", temas: [esperanca, oracao]}
+
+  # ===== Eclesiastes =====
+  - {ref: "Ec 3.1", temas: [sabedoria, confianca]}
+  - {ref: "Ec 3.11", temas: [criacao, esperanca]}
+  - {ref: "Ec 3.12,13", temas: [alegria, gratidao]}
+  - {ref: "Ec 4.9,10", temas: [unidade, amor]}
+  - {ref: "Ec 4.12", temas: [unidade, perseveranca]}
+  - {ref: "Ec 5.1", temas: [humildade, oracao]}
+  - {ref: "Ec 5.10", temas: [sabedoria, generosidade]}
+  - {ref: "Ec 5.19", temas: [gratidao, provisao]}
+  - {ref: "Ec 7.8", temas: [perseveranca, humildade]}
+  - {ref: "Ec 7.14", temas: [gratidao, sabedoria]}
+  - {ref: "Ec 7.29", temas: [justica, sabedoria]}
+  - {ref: "Ec 8.5", temas: [obediencia, sabedoria]}
+  - {ref: "Ec 9.7", temas: [alegria, gratidao]}
+  - {ref: "Ec 9.10", temas: [servico, perseveranca]}
+  - {ref: "Ec 9.17", temas: [sabedoria, paz]}
+  - {ref: "Ec 10.12", temas: [sabedoria, palavra]}
+  - {ref: "Ec 11.1", temas: [generosidade, esperanca]}
+  - {ref: "Ec 11.4", temas: [perseveranca, coragem]}
+  - {ref: "Ec 11.5", temas: [confianca, criacao]}
+  - {ref: "Ec 11.9", temas: [alegria, sabedoria]}
+  - {ref: "Ec 12.1", temas: [sabedoria, criacao]}
+  - {ref: "Ec 12.13", temas: [obediencia, sabedoria]}
+
+  # ===== Cantares =====
+  - {ref: "Ct 2.4", temas: [amor, alegria]}
+  - {ref: "Ct 2.10,11", temas: [amor, esperanca]}
+  - {ref: "Ct 2.15", temas: [familia, sabedoria]}
+  - {ref: "Ct 3.4", temas: [amor, perseveranca]}
+  - {ref: "Ct 4.7", temas: [amor, santidade]}
+  - {ref: "Ct 6.3", temas: [amor, unidade]}
+  - {ref: "Ct 8.6,7", temas: [amor, familia]}
+
+  # ===== Gênesis =====
+  - {ref: "Gn 1.1", temas: [criacao, fe]}
+  - {ref: "Gn 1.27", temas: [criacao, amor]}
+  - {ref: "Gn 1.31", temas: [criacao, gratidao]}
+  - {ref: "Gn 2.2,3", temas: [paz, santidade]}
+  - {ref: "Gn 2.18", temas: [familia, unidade]}
+  - {ref: "Gn 2.24", temas: [familia, amor]}
+  - {ref: "Gn 3.9", temas: [misericordia, arrependimento]}
+  - {ref: "Gn 4.9", temas: [servico, justica]}
+  - {ref: "Gn 6.8", temas: [graca, fe]}
+  - {ref: "Gn 8.22", temas: [promessa, criacao]}
+  - {ref: "Gn 9.13", temas: [promessa, misericordia]}
+  - {ref: "Gn 12.1,2", temas: [fe, promessa]}
+  - {ref: "Gn 12.3", temas: [promessa, generosidade]}
+  - {ref: "Gn 15.1", temas: [coragem, promessa]}
+  - {ref: "Gn 15.6", temas: [fe, justica]}
+  - {ref: "Gn 16.13", temas: [consolo, confianca]}
+  - {ref: "Gn 17.1", temas: [santidade, obediencia]}
+  - {ref: "Gn 18.14", temas: [fe, promessa]}
+  - {ref: "Gn 18.19", temas: [familia, obediencia]}
+  - {ref: "Gn 21.1,2", temas: [promessa, alegria]}
+  - {ref: "Gn 22.8", temas: [fe, provisao]}
+  - {ref: "Gn 22.14", temas: [provisao, fe]}
+  - {ref: "Gn 24.27", temas: [gratidao, misericordia]}
+  - {ref: "Gn 26.24", temas: [coragem, promessa]}
+  - {ref: "Gn 28.15", temas: [promessa, consolo]}
+  - {ref: "Gn 28.16", temas: [fe, humildade]}
+  - {ref: "Gn 32.10", temas: [humildade, gratidao]}
+  - {ref: "Gn 32.26", temas: [perseveranca, oracao]}
+  - {ref: "Gn 33.4", temas: [perdao, familia]}
+  - {ref: "Gn 39.2", temas: [confianca, servico]}
+  - {ref: "Gn 39.9", temas: [santidade, obediencia]}
+  - {ref: "Gn 45.5", temas: [perdao, confianca]}
+  - {ref: "Gn 50.20", temas: [perdao, esperanca]}
+
+  # ===== Êxodo =====
+  - {ref: "Êx 3.14", temas: [fe, promessa]}
+  - {ref: "Êx 4.12", temas: [coragem, promessa]}
+  - {ref: "Êx 12.13", temas: [salvacao, misericordia]}
+  - {ref: "Êx 14.13,14", temas: [coragem, confianca]}
+  - {ref: "Êx 15.2", temas: [louvor, salvacao]}
+  - {ref: "Êx 15.26", temas: [obediencia, promessa]}
+  - {ref: "Êx 16.4", temas: [provisao, obediencia]}
+  - {ref: "Êx 16.31", temas: [provisao, gratidao]}
+  - {ref: "Êx 17.12", temas: [unidade, perseveranca]}
+  - {ref: "Êx 19.5,6", temas: [obediencia, santidade]}
+  - {ref: "Êx 20.2,3", temas: [fe, obediencia]}
+  - {ref: "Êx 20.8", temas: [santidade, paz]}
+  - {ref: "Êx 20.12", temas: [familia, obediencia]}
+  - {ref: "Êx 23.25", temas: [servico, provisao]}
+  - {ref: "Êx 33.14", temas: [paz, promessa]}
+  - {ref: "Êx 34.6,7", temas: [misericordia, graca]}
+
+  # ===== Levítico =====
+  - {ref: "Lv 11.44", temas: [santidade, obediencia]}
+  - {ref: "Lv 19.2", temas: [santidade, obediencia]}
+  - {ref: "Lv 19.9,10", temas: [generosidade, justica]}
+  - {ref: "Lv 19.18", temas: [amor, perdao]}
+  - {ref: "Lv 19.32", temas: [humildade, justica]}
+  - {ref: "Lv 25.10", temas: [justica, esperanca]}
+  - {ref: "Lv 26.3,4", temas: [obediencia, provisao]}
+  - {ref: "Lv 26.12", temas: [promessa, amor]}
+
+  # ===== Números =====
+  - {ref: "Nm 6.24,25", temas: [graca, paz]}
+  - {ref: "Nm 6.26", temas: [paz, promessa]}
+  - {ref: "Nm 11.23", temas: [fe, promessa]}
+  - {ref: "Nm 14.18", temas: [misericordia, perdao]}
+  - {ref: "Nm 14.24", temas: [fe, perseveranca]}
+  - {ref: "Nm 21.8", temas: [fe, salvacao]}
+  - {ref: "Nm 23.19", temas: [promessa, confianca]}
+  - {ref: "Nm 32.23", temas: [justica, arrependimento]}
+
+  # ===== Deuteronômio =====
+  - {ref: "Dt 4.7", temas: [oracao, confianca]}
+  - {ref: "Dt 4.29", temas: [oracao, promessa]}
+  - {ref: "Dt 5.16", temas: [familia, obediencia]}
+  - {ref: "Dt 6.4,5", temas: [amor, fe]}
+  - {ref: "Dt 6.6,7", temas: [familia, palavra]}
+  - {ref: "Dt 7.9", temas: [promessa, misericordia]}
+  - {ref: "Dt 8.3", temas: [palavra, provisao]}
+  - {ref: "Dt 8.18", temas: [gratidao, provisao]}
+  - {ref: "Dt 10.12", temas: [obediencia, amor]}
+  - {ref: "Dt 11.18,19", temas: [palavra, familia]}
+  - {ref: "Dt 15.10", temas: [generosidade, alegria]}
+  - {ref: "Dt 16.17", temas: [generosidade, gratidao]}
+  - {ref: "Dt 20.4", temas: [coragem, confianca]}
+  - {ref: "Dt 30.11", temas: [palavra, obediencia]}
+  - {ref: "Dt 30.19,20", temas: [obediencia, amor]}
+  - {ref: "Dt 31.6", temas: [coragem, promessa]}
+  - {ref: "Dt 31.8", temas: [coragem, confianca]}
+  - {ref: "Dt 32.4", temas: [justica, confianca]}
+  - {ref: "Dt 33.27", temas: [confianca, consolo]}
+
+  # ===== Josué =====
+  - {ref: "Js 1.5", temas: [promessa, coragem]}
+  - {ref: "Js 1.8", temas: [palavra, obediencia]}
+  - {ref: "Js 1.9", temas: [coragem, promessa]}
+  - {ref: "Js 3.5", temas: [santidade, fe]}
+  - {ref: "Js 4.24", temas: [fe, louvor]}
+  - {ref: "Js 21.45", temas: [promessa, confianca]}
+  - {ref: "Js 23.14", temas: [promessa, gratidao]}
+  - {ref: "Js 24.15", temas: [servico, familia]}
+
+  # ===== Juízes =====
+  - {ref: "Jz 2.18", temas: [misericordia, salvacao]}
+  - {ref: "Jz 5.31", temas: [amor, esperanca]}
+  - {ref: "Jz 6.12", temas: [coragem, promessa]}
+  - {ref: "Jz 6.23", temas: [paz, consolo]}
+  - {ref: "Jz 7.7", temas: [fe, salvacao]}
+  - {ref: "Jz 16.28", temas: [oracao, perseveranca]}
+
+  # ===== Rute =====
+  - {ref: "Rt 1.16", temas: [amor, familia]}
+  - {ref: "Rt 2.12", temas: [confianca, provisao]}
+  - {ref: "Rt 3.11", temas: [justica, humildade]}
+  - {ref: "Rt 4.14", temas: [gratidao, familia]}
+
+  # ===== 1 Samuel =====
+  - {ref: "1Sm 1.27", temas: [oracao, gratidao]}
+  - {ref: "1Sm 2.2", temas: [santidade, confianca]}
+  - {ref: "1Sm 2.30", temas: [humildade, obediencia]}
+  - {ref: "1Sm 3.10", temas: [obediencia, palavra]}
+  - {ref: "1Sm 7.12", temas: [gratidao, esperanca]}
+  - {ref: "1Sm 12.24", temas: [servico, gratidao]}
+  - {ref: "1Sm 15.22", temas: [obediencia, humildade]}
+  - {ref: "1Sm 16.7", temas: [santidade, sabedoria]}
+  - {ref: "1Sm 17.37", temas: [coragem, fe]}
+  - {ref: "1Sm 17.45", temas: [coragem, confianca]}
+  - {ref: "1Sm 23.16", temas: [unidade, coragem]}
+  - {ref: "1Sm 30.6", temas: [coragem, esperanca]}
+
+  # ===== 2 Samuel =====
+  - {ref: "2Sm 7.28", temas: [promessa, confianca]}
+  - {ref: "2Sm 9.7", temas: [misericordia, generosidade]}
+  - {ref: "2Sm 22.2,3", temas: [confianca, salvacao]}
+  - {ref: "2Sm 22.31", temas: [confianca, palavra]}
+  - {ref: "2Sm 22.33", temas: [coragem, confianca]}
+  - {ref: "2Sm 24.14", temas: [misericordia, humildade]}
+
+  # ===== 1 Reis =====
+  - {ref: "1Rs 3.9", temas: [sabedoria, oracao]}
+  - {ref: "1Rs 8.23", temas: [promessa, amor]}
+  - {ref: "1Rs 8.57,58", temas: [obediencia, promessa]}
+  - {ref: "1Rs 17.14", temas: [provisao, fe]}
+  - {ref: "1Rs 18.21", temas: [obediencia, coragem]}
+  - {ref: "1Rs 19.11,12", temas: [paz, oracao]}
+  - {ref: "1Rs 19.18", temas: [esperanca, consolo]}
+
+  # ===== 2 Reis =====
+  - {ref: "2Rs 6.16", temas: [coragem, confianca]}
+  - {ref: "2Rs 6.17", temas: [fe, oracao]}
+  - {ref: "2Rs 20.5", temas: [oracao, misericordia]}
+
+  # ===== 1 Crônicas =====
+  - {ref: "1Cr 16.8", temas: [gratidao, louvor]}
+  - {ref: "1Cr 16.11", temas: [oracao, perseveranca]}
+  - {ref: "1Cr 16.34", temas: [gratidao, misericordia]}
+  - {ref: "1Cr 28.9", temas: [servico, oracao]}
+  - {ref: "1Cr 28.20", temas: [coragem, servico]}
+  - {ref: "1Cr 29.11", temas: [louvor, humildade]}
+  - {ref: "1Cr 29.14", temas: [generosidade, gratidao]}
+
+  # ===== 2 Crônicas =====
+  - {ref: "2Cr 7.14", temas: [arrependimento, oracao, promessa]}
+  - {ref: "2Cr 15.7", temas: [coragem, perseveranca]}
+  - {ref: "2Cr 16.9", temas: [confianca, fe]}
+  - {ref: "2Cr 20.15", temas: [coragem, confianca]}
+  - {ref: "2Cr 20.17", temas: [coragem, fe]}
+  - {ref: "2Cr 20.21", temas: [louvor, fe]}
+  - {ref: "2Cr 30.9", temas: [misericordia, graca]}
+
+  # ===== Esdras, Neemias, Ester =====
+  - {ref: "Ed 7.10", temas: [palavra, obediencia]}
+  - {ref: "Ed 8.22", temas: [confianca, oracao]}
+  - {ref: "Ne 1.5", temas: [oracao, promessa]}
+  - {ref: "Ne 2.18", temas: [unidade, servico]}
+  - {ref: "Ne 4.6", temas: [perseveranca, unidade]}
+  - {ref: "Ne 4.14", temas: [coragem, familia]}
+  - {ref: "Ne 8.10", temas: [alegria, perseveranca]}
+  - {ref: "Ne 9.17", temas: [perdao, graca]}
+  - {ref: "Et 4.14", temas: [coragem, servico]}
+  - {ref: "Et 4.16", temas: [coragem, oracao]}
+
+  # ===== Isaías =====
+  - {ref: "Is 1.18", temas: [perdao, arrependimento]}
+  - {ref: "Is 2.4", temas: [paz, esperanca]}
+  - {ref: "Is 6.3", temas: [santidade, louvor]}
+  - {ref: "Is 6.8", temas: [servico, obediencia]}
+  - {ref: "Is 9.2", temas: [esperanca, salvacao]}
+  - {ref: "Is 9.6", temas: [paz, esperanca, promessa]}
+  - {ref: "Is 11.1,2", temas: [promessa, sabedoria]}
+  - {ref: "Is 12.2", temas: [salvacao, confianca]}
+  - {ref: "Is 12.3", temas: [alegria, salvacao]}
+  - {ref: "Is 25.1", temas: [louvor, confianca]}
+  - {ref: "Is 25.8", temas: [consolo, esperanca]}
+  - {ref: "Is 26.3", temas: [paz, confianca]}
+  - {ref: "Is 26.4", temas: [confianca, perseveranca]}
+  - {ref: "Is 28.16", temas: [fe, confianca]}
+  - {ref: "Is 30.15", temas: [paz, confianca]}
+  - {ref: "Is 30.18", temas: [esperanca, graca]}
+  - {ref: "Is 30.21", temas: [sabedoria, obediencia]}
+  - {ref: "Is 32.17", temas: [paz, justica]}
+  - {ref: "Is 33.6", temas: [sabedoria, confianca]}
+  - {ref: "Is 35.3,4", temas: [coragem, esperanca]}
+  - {ref: "Is 35.10", temas: [alegria, salvacao]}
+  - {ref: "Is 40.1,2", temas: [consolo, perdao]}
+  - {ref: "Is 40.8", temas: [palavra, confianca]}
+  - {ref: "Is 40.11", temas: [consolo, misericordia]}
+  - {ref: "Is 40.28", temas: [criacao, confianca]}
+  - {ref: "Is 40.29", temas: [coragem, provisao]}
+  - {ref: "Is 40.31", temas: [esperanca, perseveranca]}
+  - {ref: "Is 41.10", temas: [coragem, promessa]}
+  - {ref: "Is 41.13", temas: [coragem, consolo]}
+  - {ref: "Is 42.3", temas: [misericordia, consolo]}
+  - {ref: "Is 42.16", temas: [esperanca, promessa]}
+  - {ref: "Is 43.1", temas: [coragem, salvacao]}
+  - {ref: "Is 43.2", temas: [promessa, consolo]}
+  - {ref: "Is 43.4", temas: [amor, graca]}
+  - {ref: "Is 43.18,19", temas: [esperanca, promessa]}
+  - {ref: "Is 43.25", temas: [perdao, graca]}
+  - {ref: "Is 44.3", temas: [promessa, graca]}
+  - {ref: "Is 44.22", temas: [perdao, arrependimento]}
+  - {ref: "Is 45.22", temas: [salvacao, arrependimento]}
+  - {ref: "Is 46.4", temas: [confianca, consolo]}
+  - {ref: "Is 48.17", temas: [sabedoria, obediencia]}
+  - {ref: "Is 49.15,16", temas: [amor, consolo]}
+  - {ref: "Is 50.4", temas: [palavra, consolo]}
+  - {ref: "Is 51.12", temas: [consolo, coragem]}
+  - {ref: "Is 52.7", temas: [paz, servico]}
+  - {ref: "Is 53.4,5", temas: [salvacao, graca]}
+  - {ref: "Is 53.6", temas: [salvacao, arrependimento]}
+  - {ref: "Is 54.10", temas: [misericordia, paz, promessa]}
+  - {ref: "Is 54.17", temas: [promessa, confianca]}
+  - {ref: "Is 55.1", temas: [graca, generosidade]}
+  - {ref: "Is 55.6,7", temas: [arrependimento, perdao]}
+  - {ref: "Is 55.8,9", temas: [sabedoria, humildade]}
+  - {ref: "Is 55.10,11", temas: [palavra, promessa]}
+  - {ref: "Is 55.12", temas: [alegria, paz]}
+  - {ref: "Is 57.15", temas: [humildade, consolo]}
+  - {ref: "Is 58.6,7", temas: [justica, generosidade]}
+  - {ref: "Is 58.11", temas: [provisao, promessa]}
+  - {ref: "Is 59.1", temas: [oracao, confianca]}
+  - {ref: "Is 60.1", temas: [esperanca, alegria]}
+  - {ref: "Is 61.1", temas: [consolo, salvacao]}
+  - {ref: "Is 61.3", temas: [alegria, consolo]}
+  - {ref: "Is 61.10", temas: [alegria, salvacao]}
+  - {ref: "Is 62.3", temas: [amor, promessa]}
+  - {ref: "Is 63.9", temas: [misericordia, salvacao]}
+  - {ref: "Is 64.8", temas: [humildade, confianca]}
+  - {ref: "Is 65.24", temas: [oracao, promessa]}
+  - {ref: "Is 66.2", temas: [humildade, palavra]}
+  - {ref: "Is 66.13", temas: [consolo, amor]}
+
+  # ===== Jeremias =====
+  - {ref: "Jr 1.7,8", temas: [coragem, promessa]}
+  - {ref: "Jr 9.23,24", temas: [sabedoria, humildade]}
+  - {ref: "Jr 10.6", temas: [louvor, humildade]}
+  - {ref: "Jr 15.16", temas: [palavra, alegria]}
+  - {ref: "Jr 17.7,8", temas: [confianca, perseveranca]}
+  - {ref: "Jr 17.14", temas: [salvacao, oracao]}
+  - {ref: "Jr 18.6", temas: [humildade, confianca]}
+  - {ref: "Jr 20.9", temas: [palavra, perseveranca]}
+  - {ref: "Jr 23.23,24", temas: [confianca, santidade]}
+  - {ref: "Jr 29.7", temas: [paz, servico]}
+  - {ref: "Jr 29.11", temas: [esperanca, promessa]}
+  - {ref: "Jr 29.12,13", temas: [oracao, promessa]}
+  - {ref: "Jr 30.17", temas: [consolo, promessa]}
+  - {ref: "Jr 31.3", temas: [amor, misericordia]}
+  - {ref: "Jr 31.13", temas: [alegria, consolo]}
+  - {ref: "Jr 31.25", temas: [consolo, provisao]}
+  - {ref: "Jr 31.33", temas: [promessa, palavra]}
+  - {ref: "Jr 32.17", temas: [fe, criacao]}
+  - {ref: "Jr 32.27", temas: [fe, confianca]}
+  - {ref: "Jr 33.3", temas: [oracao, promessa]}
+  - {ref: "Jr 33.8", temas: [perdao, graca]}
+
+  # ===== Lamentações =====
+  - {ref: "Lm 3.21,22", temas: [esperanca, misericordia]}
+  - {ref: "Lm 3.23", temas: [gratidao, confianca]}
+  - {ref: "Lm 3.24", temas: [esperanca, confianca]}
+  - {ref: "Lm 3.25,26", temas: [esperanca, perseveranca]}
+  - {ref: "Lm 3.40", temas: [arrependimento, oracao]}
+  - {ref: "Lm 5.21", temas: [arrependimento, oracao]}
+
+  # ===== Ezequiel =====
+  - {ref: "Ez 11.19", temas: [promessa, santidade]}
+  - {ref: "Ez 18.23", temas: [misericordia, arrependimento]}
+  - {ref: "Ez 33.11", temas: [arrependimento, misericordia]}
+  - {ref: "Ez 34.11", temas: [misericordia, consolo]}
+  - {ref: "Ez 34.15,16", temas: [consolo, provisao]}
+  - {ref: "Ez 34.26", temas: [graca, provisao]}
+  - {ref: "Ez 36.26", temas: [promessa, salvacao]}
+  - {ref: "Ez 36.27", temas: [obediencia, promessa]}
+  - {ref: "Ez 37.5", temas: [esperanca, promessa]}
+  - {ref: "Ez 37.14", temas: [esperanca, promessa]}
+  - {ref: "Ez 47.9", temas: [esperanca, graca]}
+
+  # ===== Daniel =====
+  - {ref: "Dn 2.20,21", temas: [sabedoria, louvor]}
+  - {ref: "Dn 3.17,18", temas: [coragem, fe]}
+  - {ref: "Dn 4.37", temas: [humildade, louvor]}
+  - {ref: "Dn 6.10", temas: [oracao, coragem]}
+  - {ref: "Dn 6.26", temas: [louvor, fe]}
+  - {ref: "Dn 9.9", temas: [perdao, misericordia]}
+  - {ref: "Dn 9.18", temas: [oracao, misericordia]}
+  - {ref: "Dn 10.12", temas: [oracao, coragem]}
+  - {ref: "Dn 10.19", temas: [paz, coragem]}
+  - {ref: "Dn 12.3", temas: [sabedoria, servico]}
+
+  # ===== Oseias =====
+  - {ref: "Os 2.19,20", temas: [amor, promessa]}
+  - {ref: "Os 6.1", temas: [arrependimento, esperanca]}
+  - {ref: "Os 6.3", temas: [perseveranca, sabedoria]}
+  - {ref: "Os 6.6", temas: [misericordia, amor]}
+  - {ref: "Os 10.12", temas: [justica, arrependimento]}
+  - {ref: "Os 11.4", temas: [amor, misericordia]}
+  - {ref: "Os 14.1", temas: [arrependimento, graca]}
+  - {ref: "Os 14.4", temas: [amor, perdao]}
+
+  # ===== Joel =====
+  - {ref: "Jl 2.12,13", temas: [arrependimento, misericordia]}
+  - {ref: "Jl 2.25", temas: [promessa, graca]}
+  - {ref: "Jl 2.28", temas: [promessa, fe]}
+  - {ref: "Jl 2.32", temas: [salvacao, oracao]}
+  - {ref: "Jl 3.16", temas: [coragem, confianca]}
+
+  # ===== Amós =====
+  - {ref: "Am 3.3", temas: [unidade, sabedoria]}
+  - {ref: "Am 5.4", temas: [oracao, esperanca]}
+  - {ref: "Am 5.14", temas: [justica, esperanca]}
+  - {ref: "Am 5.24", temas: [justica, esperanca]}
+  - {ref: "Am 9.13", temas: [provisao, promessa]}
+
+  # ===== Obadias, Jonas =====
+  - {ref: "Ob 15", temas: [justica, humildade]}
+  - {ref: "Ob 17", temas: [salvacao, esperanca]}
+  - {ref: "Jn 2.2", temas: [oracao, salvacao]}
+  - {ref: "Jn 2.9", temas: [gratidao, salvacao]}
+  - {ref: "Jn 3.10", temas: [arrependimento, misericordia]}
+  - {ref: "Jn 4.2", temas: [misericordia, graca]}
+  - {ref: "Jn 4.11", temas: [misericordia, amor]}
+
+  # ===== Miqueias, Naum, Habacuque =====
+  - {ref: "Mq 4.3", temas: [paz, esperanca]}
+  - {ref: "Mq 5.2", temas: [promessa, esperanca]}
+  - {ref: "Mq 6.8", temas: [justica, humildade, misericordia]}
+  - {ref: "Mq 7.7", temas: [esperanca, oracao]}
+  - {ref: "Mq 7.18,19", temas: [perdao, misericordia]}
+  - {ref: "Na 1.7", temas: [confianca, consolo]}
+  - {ref: "Na 1.15", temas: [paz, alegria]}
+  - {ref: "Hc 1.5", temas: [fe, esperanca]}
+  - {ref: "Hc 2.3", temas: [esperanca, perseveranca, promessa]}
+  - {ref: "Hc 2.4", temas: [fe, justica]}
+  - {ref: "Hc 2.14", temas: [esperanca, louvor]}
+  - {ref: "Hc 3.17,18", temas: [alegria, fe]}
+  - {ref: "Hc 3.19", temas: [coragem, confianca]}
+
+  # ===== Sofonias, Ageu, Zacarias, Malaquias =====
+  - {ref: "Sf 3.17", temas: [amor, alegria]}
+  - {ref: "Sf 3.19", temas: [esperanca, consolo]}
+  - {ref: "Ag 1.5", temas: [sabedoria, perseveranca]}
+  - {ref: "Ag 2.4", temas: [coragem, promessa]}
+  - {ref: "Ag 2.9", temas: [paz, promessa]}
+  - {ref: "Zc 2.10", temas: [alegria, promessa]}
+  - {ref: "Zc 4.6", temas: [humildade, confianca]}
+  - {ref: "Zc 4.10", temas: [perseveranca, esperanca]}
+  - {ref: "Zc 8.16", temas: [justica, paz]}
+  - {ref: "Zc 9.9", temas: [alegria, esperanca]}
+  - {ref: "Zc 9.12", temas: [esperanca, promessa]}
+  - {ref: "Zc 13.9", temas: [perseveranca, fe]}
+  - {ref: "Ml 3.1", temas: [promessa, esperanca]}
+  - {ref: "Ml 3.6", temas: [confianca, misericordia]}
+  - {ref: "Ml 3.10", temas: [generosidade, provisao]}
+  - {ref: "Ml 4.2", temas: [esperanca, alegria]}
+
+  # ===== Mateus =====
+  - {ref: "Mt 1.21", temas: [salvacao, promessa]}
+  - {ref: "Mt 2.10", temas: [alegria, fe]}
+  - {ref: "Mt 3.8", temas: [arrependimento, obediencia]}
+  - {ref: "Mt 4.4", temas: [palavra, provisao]}
+  - {ref: "Mt 4.19", temas: [servico, obediencia]}
+  - {ref: "Mt 5.3", temas: [humildade, alegria]}
+  - {ref: "Mt 5.4", temas: [consolo, alegria]}
+  - {ref: "Mt 5.5", temas: [humildade, promessa]}
+  - {ref: "Mt 5.6", temas: [justica, alegria]}
+  - {ref: "Mt 5.7", temas: [misericordia, alegria]}
+  - {ref: "Mt 5.8", temas: [santidade, promessa]}
+  - {ref: "Mt 5.9", temas: [paz, alegria]}
+  - {ref: "Mt 5.13", temas: [servico, santidade]}
+  - {ref: "Mt 5.14-16", temas: [servico, santidade]}
+  - {ref: "Mt 5.23,24", temas: [perdao, unidade]}
+  - {ref: "Mt 5.44,45", temas: [amor, perdao]}
+  - {ref: "Mt 5.48", temas: [santidade, obediencia]}
+  - {ref: "Mt 6.3,4", temas: [generosidade, humildade]}
+  - {ref: "Mt 6.6", temas: [oracao, confianca]}
+  - {ref: "Mt 6.9,10", temas: [oracao, louvor]}
+  - {ref: "Mt 6.11", temas: [provisao, oracao]}
+  - {ref: "Mt 6.12", temas: [perdao, oracao]}
+  - {ref: "Mt 6.14,15", temas: [perdao, misericordia]}
+  - {ref: "Mt 6.19,20", temas: [generosidade, sabedoria]}
+  - {ref: "Mt 6.21", temas: [sabedoria, santidade]}
+  - {ref: "Mt 6.24", temas: [obediencia, sabedoria]}
+  - {ref: "Mt 6.26", temas: [provisao, confianca]}
+  - {ref: "Mt 6.31,32", temas: [provisao, confianca]}
+  - {ref: "Mt 6.33", temas: [provisao, fe, promessa]}
+  - {ref: "Mt 6.34", temas: [paz, confianca]}
+  - {ref: "Mt 7.1,2", temas: [misericordia, humildade]}
+  - {ref: "Mt 7.7,8", temas: [oracao, promessa]}
+  - {ref: "Mt 7.11", temas: [oracao, amor]}
+  - {ref: "Mt 7.12", temas: [amor, justica]}
+  - {ref: "Mt 7.13,14", temas: [sabedoria, obediencia]}
+  - {ref: "Mt 7.24,25", temas: [palavra, perseveranca]}
+  - {ref: "Mt 8.8", temas: [fe, humildade]}
+  - {ref: "Mt 8.26", temas: [fe, coragem]}
+  - {ref: "Mt 9.12,13", temas: [misericordia, graca]}
+  - {ref: "Mt 9.22", temas: [fe, consolo]}
+  - {ref: "Mt 9.36", temas: [misericordia, servico]}
+  - {ref: "Mt 9.37,38", temas: [servico, oracao]}
+  - {ref: "Mt 10.8", temas: [generosidade, servico]}
+  - {ref: "Mt 10.29-31", temas: [confianca, coragem]}
+  - {ref: "Mt 10.32", temas: [coragem, fe]}
+  - {ref: "Mt 10.42", temas: [servico, generosidade]}
+  - {ref: "Mt 11.28", temas: [consolo, graca]}
+  - {ref: "Mt 11.29,30", temas: [humildade, paz]}
+  - {ref: "Mt 12.34", temas: [sabedoria, santidade]}
+  - {ref: "Mt 12.50", temas: [familia, obediencia]}
+  - {ref: "Mt 13.44", temas: [alegria, sabedoria]}
+  - {ref: "Mt 13.45,46", temas: [sabedoria, fe]}
+  - {ref: "Mt 14.27", temas: [coragem, consolo]}
+  - {ref: "Mt 14.29,30", temas: [fe, confianca]}
+  - {ref: "Mt 15.8", temas: [santidade, obediencia]}
+  - {ref: "Mt 16.15,16", temas: [fe, salvacao]}
+  - {ref: "Mt 16.24", temas: [obediencia, servico]}
+  - {ref: "Mt 16.26", temas: [sabedoria, salvacao]}
+  - {ref: "Mt 17.20", temas: [fe, promessa]}
+  - {ref: "Mt 18.3,4", temas: [humildade, fe]}
+  - {ref: "Mt 18.12-14", temas: [misericordia, amor]}
+  - {ref: "Mt 18.19,20", temas: [oracao, unidade]}
+  - {ref: "Mt 18.21,22", temas: [perdao, misericordia]}
+  - {ref: "Mt 19.14", temas: [familia, humildade]}
+  - {ref: "Mt 19.26", temas: [fe, promessa]}
+  - {ref: "Mt 20.26,27", temas: [servico, humildade]}
+  - {ref: "Mt 20.28", temas: [servico, salvacao]}
+  - {ref: "Mt 21.22", temas: [oracao, fe]}
+  - {ref: "Mt 22.37,38", temas: [amor, obediencia]}
+  - {ref: "Mt 22.39", temas: [amor, servico]}
+  - {ref: "Mt 23.11,12", temas: [humildade, servico]}
+  - {ref: "Mt 24.35", temas: [palavra, esperanca]}
+  - {ref: "Mt 24.42", temas: [perseveranca, fe]}
+  - {ref: "Mt 25.21", temas: [servico, alegria]}
+  - {ref: "Mt 25.35,36", temas: [generosidade, misericordia]}
+  - {ref: "Mt 25.40", temas: [servico, misericordia]}
+  - {ref: "Mt 26.41", temas: [oracao, perseveranca]}
+  - {ref: "Mt 26.39", temas: [oracao, obediencia]}
+  - {ref: "Mt 28.19,20", temas: [servico, promessa]}
+
+  # ===== Marcos =====
+  - {ref: "Mc 1.15", temas: [arrependimento, fe]}
+  - {ref: "Mc 1.17", temas: [servico, obediencia]}
+  - {ref: "Mc 1.35", temas: [oracao, perseveranca]}
+  - {ref: "Mc 2.17", temas: [misericordia, graca]}
+  - {ref: "Mc 2.27", temas: [paz, misericordia]}
+  - {ref: "Mc 3.35", temas: [familia, obediencia]}
+  - {ref: "Mc 4.39", temas: [paz, confianca]}
+  - {ref: "Mc 4.40", temas: [fe, coragem]}
+  - {ref: "Mc 5.34", temas: [fe, paz]}
+  - {ref: "Mc 5.36", temas: [fe, coragem]}
+  - {ref: "Mc 6.31", temas: [paz, consolo]}
+  - {ref: "Mc 6.50", temas: [coragem, consolo]}
+  - {ref: "Mc 8.34", temas: [obediencia, servico]}
+  - {ref: "Mc 8.36", temas: [sabedoria, salvacao]}
+  - {ref: "Mc 9.23", temas: [fe, promessa]}
+  - {ref: "Mc 9.24", temas: [fe, oracao]}
+  - {ref: "Mc 9.35", temas: [servico, humildade]}
+  - {ref: "Mc 10.14", temas: [familia, humildade]}
+  - {ref: "Mc 10.27", temas: [fe, promessa]}
+  - {ref: "Mc 10.45", temas: [servico, salvacao]}
+  - {ref: "Mc 10.52", temas: [fe, salvacao]}
+  - {ref: "Mc 11.22,23", temas: [fe, oracao]}
+  - {ref: "Mc 11.24", temas: [oracao, fe]}
+  - {ref: "Mc 11.25", temas: [perdao, oracao]}
+  - {ref: "Mc 12.30,31", temas: [amor, obediencia]}
+  - {ref: "Mc 12.43,44", temas: [generosidade, fe]}
+  - {ref: "Mc 13.31", temas: [palavra, esperanca]}
+  - {ref: "Mc 13.33", temas: [perseveranca, oracao]}
+  - {ref: "Mc 14.36", temas: [oracao, obediencia]}
+  - {ref: "Mc 16.15", temas: [servico, salvacao]}
+
+  # ===== Lucas =====
+  - {ref: "Lc 1.37", temas: [fe, promessa]}
+  - {ref: "Lc 1.38", temas: [obediencia, humildade]}
+  - {ref: "Lc 1.46,47", temas: [louvor, alegria]}
+  - {ref: "Lc 1.50", temas: [misericordia, fe]}
+  - {ref: "Lc 1.78,79", temas: [misericordia, paz]}
+  - {ref: "Lc 2.10,11", temas: [alegria, salvacao]}
+  - {ref: "Lc 2.14", temas: [paz, louvor]}
+  - {ref: "Lc 2.19", temas: [fe, sabedoria]}
+  - {ref: "Lc 2.52", temas: [sabedoria, familia]}
+  - {ref: "Lc 4.18,19", temas: [salvacao, consolo]}
+  - {ref: "Lc 5.4", temas: [obediencia, fe]}
+  - {ref: "Lc 5.31,32", temas: [arrependimento, misericordia]}
+  - {ref: "Lc 6.27,28", temas: [amor, perdao]}
+  - {ref: "Lc 6.31", temas: [amor, justica]}
+  - {ref: "Lc 6.35", temas: [misericordia, generosidade]}
+  - {ref: "Lc 6.36", temas: [misericordia, santidade]}
+  - {ref: "Lc 6.37", temas: [perdao, misericordia]}
+  - {ref: "Lc 6.38", temas: [generosidade, promessa]}
+  - {ref: "Lc 6.47,48", temas: [palavra, perseveranca]}
+  - {ref: "Lc 7.47", temas: [perdao, amor]}
+  - {ref: "Lc 7.50", temas: [fe, paz]}
+  - {ref: "Lc 8.15", temas: [palavra, perseveranca]}
+  - {ref: "Lc 8.48", temas: [fe, consolo]}
+  - {ref: "Lc 8.50", temas: [fe, coragem]}
+  - {ref: "Lc 9.23", temas: [obediencia, perseveranca]}
+  - {ref: "Lc 9.62", temas: [perseveranca, obediencia]}
+  - {ref: "Lc 10.2", temas: [servico, oracao]}
+  - {ref: "Lc 10.27", temas: [amor, obediencia]}
+  - {ref: "Lc 10.33,34", temas: [misericordia, servico]}
+  - {ref: "Lc 10.36,37", temas: [misericordia, servico]}
+  - {ref: "Lc 10.41,42", temas: [paz, sabedoria]}
+  - {ref: "Lc 11.9,10", temas: [oracao, promessa]}
+  - {ref: "Lc 11.13", temas: [oracao, amor]}
+  - {ref: "Lc 11.28", temas: [palavra, obediencia]}
+  - {ref: "Lc 12.6,7", temas: [confianca, coragem]}
+  - {ref: "Lc 12.15", temas: [sabedoria, generosidade]}
+  - {ref: "Lc 12.22,23", temas: [provisao, paz]}
+  - {ref: "Lc 12.32", temas: [coragem, promessa]}
+  - {ref: "Lc 12.34", temas: [sabedoria, generosidade]}
+  - {ref: "Lc 12.48", temas: [servico, justica]}
+  - {ref: "Lc 14.11", temas: [humildade, sabedoria]}
+  - {ref: "Lc 14.13,14", temas: [generosidade, misericordia]}
+  - {ref: "Lc 15.4,5", temas: [misericordia, alegria]}
+  - {ref: "Lc 15.7", temas: [arrependimento, alegria]}
+  - {ref: "Lc 15.20", temas: [misericordia, perdao, familia]}
+  - {ref: "Lc 15.31,32", temas: [alegria, familia]}
+  - {ref: "Lc 16.10", temas: [servico, justica]}
+  - {ref: "Lc 17.5,6", temas: [fe, oracao]}
+  - {ref: "Lc 17.15,16", temas: [gratidao, louvor]}
+  - {ref: "Lc 17.21", temas: [esperanca, paz]}
+  - {ref: "Lc 18.1", temas: [oracao, perseveranca]}
+  - {ref: "Lc 18.13,14", temas: [humildade, arrependimento]}
+  - {ref: "Lc 18.27", temas: [fe, promessa]}
+  - {ref: "Lc 19.10", temas: [salvacao, misericordia]}
+  - {ref: "Lc 21.19", temas: [perseveranca, promessa]}
+  - {ref: "Lc 21.33", temas: [palavra, esperanca]}
+  - {ref: "Lc 22.32", temas: [fe, oracao]}
+  - {ref: "Lc 22.42", temas: [oracao, obediencia]}
+  - {ref: "Lc 23.34", temas: [perdao, amor]}
+  - {ref: "Lc 23.43", temas: [esperanca, salvacao]}
+  - {ref: "Lc 24.32", temas: [palavra, alegria]}
+  - {ref: "Lc 24.49", temas: [promessa, esperanca]}
+
+  # ===== João =====
+  - {ref: "Jo 1.1,2", temas: [palavra, fe]}
+  - {ref: "Jo 1.4,5", temas: [esperanca, salvacao]}
+  - {ref: "Jo 1.9", temas: [salvacao, esperanca]}
+  - {ref: "Jo 1.12", temas: [fe, familia, graca]}
+  - {ref: "Jo 1.14", temas: [graca, amor]}
+  - {ref: "Jo 1.16", temas: [graca, gratidao]}
+  - {ref: "Jo 1.29", temas: [salvacao, perdao]}
+  - {ref: "Jo 3.3", temas: [fe, salvacao]}
+  - {ref: "Jo 3.16", temas: [amor, salvacao]}
+  - {ref: "Jo 3.17", temas: [salvacao, misericordia]}
+  - {ref: "Jo 3.30", temas: [humildade, servico]}
+  - {ref: "Jo 4.14", temas: [salvacao, promessa]}
+  - {ref: "Jo 4.23,24", temas: [oracao, louvor]}
+  - {ref: "Jo 4.34", temas: [obediencia, servico]}
+  - {ref: "Jo 5.24", temas: [fe, salvacao]}
+  - {ref: "Jo 6.35", temas: [provisao, salvacao]}
+  - {ref: "Jo 6.37", temas: [graca, promessa]}
+  - {ref: "Jo 6.63", temas: [palavra, salvacao]}
+  - {ref: "Jo 6.68", temas: [fe, palavra]}
+  - {ref: "Jo 7.37,38", temas: [promessa, graca]}
+  - {ref: "Jo 8.12", temas: [esperanca, salvacao]}
+  - {ref: "Jo 8.31,32", temas: [palavra, perseveranca]}
+  - {ref: "Jo 8.36", temas: [salvacao, graca]}
+  - {ref: "Jo 9.4", temas: [servico, perseveranca]}
+  - {ref: "Jo 10.9", temas: [salvacao, confianca]}
+  - {ref: "Jo 10.10", temas: [alegria, promessa]}
+  - {ref: "Jo 10.11", temas: [amor, confianca]}
+  - {ref: "Jo 10.27,28", temas: [confianca, promessa]}
+  - {ref: "Jo 11.25,26", temas: [esperanca, fe]}
+  - {ref: "Jo 11.40", temas: [fe, promessa]}
+  - {ref: "Jo 12.24", temas: [esperanca, servico]}
+  - {ref: "Jo 12.26", temas: [servico, promessa]}
+  - {ref: "Jo 12.46", temas: [fe, esperanca]}
+  - {ref: "Jo 13.14,15", temas: [servico, humildade]}
+  - {ref: "Jo 13.34,35", temas: [amor, unidade]}
+  - {ref: "Jo 14.1", temas: [consolo, fe]}
+  - {ref: "Jo 14.2,3", temas: [esperanca, promessa]}
+  - {ref: "Jo 14.6", temas: [salvacao, fe]}
+  - {ref: "Jo 14.13,14", temas: [oracao, promessa]}
+  - {ref: "Jo 14.15", temas: [amor, obediencia]}
+  - {ref: "Jo 14.16,17", temas: [promessa, consolo]}
+  - {ref: "Jo 14.21", temas: [amor, obediencia]}
+  - {ref: "Jo 14.26", temas: [consolo, palavra]}
+  - {ref: "Jo 14.27", temas: [paz, coragem]}
+  - {ref: "Jo 15.4", temas: [perseveranca, unidade]}
+  - {ref: "Jo 15.5", temas: [perseveranca, fe]}
+  - {ref: "Jo 15.7", temas: [oracao, palavra]}
+  - {ref: "Jo 15.9,10", temas: [amor, obediencia]}
+  - {ref: "Jo 15.11", temas: [alegria, promessa]}
+  - {ref: "Jo 15.12,13", temas: [amor, servico]}
+  - {ref: "Jo 15.16", temas: [servico, oracao]}
+  - {ref: "Jo 16.22", temas: [alegria, esperanca]}
+  - {ref: "Jo 16.24", temas: [oracao, alegria]}
+  - {ref: "Jo 16.33", temas: [paz, coragem]}
+  - {ref: "Jo 17.3", temas: [salvacao, sabedoria]}
+  - {ref: "Jo 17.17", temas: [palavra, santidade]}
+  - {ref: "Jo 17.20,21", temas: [unidade, oracao]}
+  - {ref: "Jo 19.30", temas: [salvacao, obediencia]}
+  - {ref: "Jo 20.21", temas: [paz, servico]}
+  - {ref: "Jo 20.29", temas: [fe, alegria]}
+  - {ref: "Jo 20.31", temas: [fe, palavra]}
+  - {ref: "Jo 21.15", temas: [amor, servico]}
+
+  # ===== Atos =====
+  - {ref: "At 1.8", temas: [servico, promessa]}
+  - {ref: "At 1.14", temas: [oracao, unidade]}
+  - {ref: "At 2.38", temas: [arrependimento, perdao]}
+  - {ref: "At 2.42", temas: [unidade, perseveranca]}
+  - {ref: "At 2.44,45", temas: [generosidade, unidade]}
+  - {ref: "At 2.46,47", temas: [alegria, louvor]}
+  - {ref: "At 3.6", temas: [generosidade, fe]}
+  - {ref: "At 3.19", temas: [arrependimento, perdao]}
+  - {ref: "At 4.12", temas: [salvacao, fe]}
+  - {ref: "At 4.13", temas: [coragem, humildade]}
+  - {ref: "At 4.31", temas: [oracao, coragem]}
+  - {ref: "At 4.32", temas: [unidade, generosidade]}
+  - {ref: "At 5.29", temas: [obediencia, coragem]}
+  - {ref: "At 6.4", temas: [oracao, palavra]}
+  - {ref: "At 7.59,60", temas: [perdao, coragem]}
+  - {ref: "At 8.35", temas: [palavra, servico]}
+  - {ref: "At 9.15", temas: [servico, graca]}
+  - {ref: "At 10.34,35", temas: [justica, amor]}
+  - {ref: "At 10.38", temas: [servico, misericordia]}
+  - {ref: "At 11.23", temas: [perseveranca, alegria]}
+  - {ref: "At 12.5", temas: [oracao, unidade]}
+  - {ref: "At 13.2", temas: [servico, obediencia]}
+  - {ref: "At 13.38,39", temas: [perdao, salvacao]}
+  - {ref: "At 14.22", temas: [perseveranca, esperanca]}
+  - {ref: "At 15.11", temas: [graca, salvacao]}
+  - {ref: "At 16.25", temas: [louvor, oracao]}
+  - {ref: "At 16.31", temas: [fe, salvacao, familia]}
+  - {ref: "At 17.11", temas: [palavra, sabedoria]}
+  - {ref: "At 17.27,28", temas: [criacao, confianca]}
+  - {ref: "At 18.9,10", temas: [coragem, promessa]}
+  - {ref: "At 20.24", temas: [perseveranca, servico]}
+  - {ref: "At 20.32", temas: [palavra, graca]}
+  - {ref: "At 20.35", temas: [generosidade, alegria]}
+  - {ref: "At 22.16", temas: [arrependimento, salvacao]}
+  - {ref: "At 23.11", temas: [coragem, promessa]}
+  - {ref: "At 26.18", temas: [salvacao, perdao]}
+  - {ref: "At 27.25", temas: [fe, coragem]}
+
+  # ===== Romanos =====
+  - {ref: "Rm 1.16", temas: [salvacao, coragem]}
+  - {ref: "Rm 1.17", temas: [fe, justica]}
+  - {ref: "Rm 2.4", temas: [misericordia, arrependimento]}
+  - {ref: "Rm 3.23,24", temas: [graca, salvacao]}
+  - {ref: "Rm 3.28", temas: [fe, justica]}
+  - {ref: "Rm 4.20,21", temas: [fe, promessa]}
+  - {ref: "Rm 5.1", temas: [paz, fe]}
+  - {ref: "Rm 5.3,4", temas: [perseveranca, esperanca]}
+  - {ref: "Rm 5.5", temas: [esperanca, amor]}
+  - {ref: "Rm 5.8", temas: [amor, salvacao]}
+  - {ref: "Rm 5.20", temas: [graca, perdao]}
+  - {ref: "Rm 6.4", temas: [salvacao, esperanca]}
+  - {ref: "Rm 6.14", temas: [graca, salvacao]}
+  - {ref: "Rm 6.23", temas: [salvacao, graca]}
+  - {ref: "Rm 7.24,25", temas: [salvacao, gratidao]}
+  - {ref: "Rm 8.1", temas: [salvacao, perdao]}
+  - {ref: "Rm 8.6", temas: [paz, sabedoria]}
+  - {ref: "Rm 8.14,15", temas: [familia, salvacao]}
+  - {ref: "Rm 8.18", temas: [esperanca, perseveranca]}
+  - {ref: "Rm 8.24,25", temas: [esperanca, perseveranca]}
+  - {ref: "Rm 8.26", temas: [oracao, consolo]}
+  - {ref: "Rm 8.28", temas: [esperanca, confianca, promessa]}
+  - {ref: "Rm 8.31", temas: [coragem, confianca]}
+  - {ref: "Rm 8.35", temas: [amor, perseveranca]}
+  - {ref: "Rm 8.37", temas: [coragem, amor]}
+  - {ref: "Rm 8.38,39", temas: [amor, confianca, promessa]}
+  - {ref: "Rm 10.9", temas: [fe, salvacao]}
+  - {ref: "Rm 10.13", temas: [oracao, salvacao]}
+  - {ref: "Rm 10.17", temas: [fe, palavra]}
+  - {ref: "Rm 11.33", temas: [sabedoria, louvor]}
+  - {ref: "Rm 11.36", temas: [louvor, criacao]}
+  - {ref: "Rm 12.1", temas: [servico, santidade]}
+  - {ref: "Rm 12.2", temas: [sabedoria, santidade]}
+  - {ref: "Rm 12.9,10", temas: [amor, unidade]}
+  - {ref: "Rm 12.12", temas: [esperanca, oracao, perseveranca]}
+  - {ref: "Rm 12.15", temas: [unidade, consolo]}
+  - {ref: "Rm 12.17,18", temas: [paz, justica]}
+  - {ref: "Rm 12.21", temas: [coragem, justica]}
+  - {ref: "Rm 13.8", temas: [amor, justica]}
+  - {ref: "Rm 13.10", temas: [amor, obediencia]}
+  - {ref: "Rm 14.8", temas: [servico, fe]}
+  - {ref: "Rm 14.17", temas: [paz, alegria]}
+  - {ref: "Rm 14.19", temas: [paz, unidade]}
+  - {ref: "Rm 15.4", temas: [palavra, esperanca]}
+  - {ref: "Rm 15.5,6", temas: [unidade, perseveranca]}
+  - {ref: "Rm 15.7", temas: [unidade, graca]}
+  - {ref: "Rm 15.13", temas: [esperanca, alegria, paz]}
+
+  # ===== 1 Coríntios =====
+  - {ref: "1Co 1.9", temas: [fe, confianca]}
+  - {ref: "1Co 1.18", temas: [salvacao, sabedoria]}
+  - {ref: "1Co 1.27", temas: [humildade, sabedoria]}
+  - {ref: "1Co 1.30", temas: [salvacao, sabedoria]}
+  - {ref: "1Co 2.9", temas: [esperanca, promessa]}
+  - {ref: "1Co 3.6,7", temas: [humildade, servico]}
+  - {ref: "1Co 3.16", temas: [santidade, fe]}
+  - {ref: "1Co 4.2", temas: [servico, justica]}
+  - {ref: "1Co 6.19,20", temas: [santidade, gratidao]}
+  - {ref: "1Co 9.24", temas: [perseveranca, coragem]}
+  - {ref: "1Co 10.13", temas: [promessa, confianca]}
+  - {ref: "1Co 10.31", temas: [louvor, servico]}
+  - {ref: "1Co 11.1", temas: [obediencia, servico]}
+  - {ref: "1Co 12.4,5", temas: [unidade, servico]}
+  - {ref: "1Co 12.12", temas: [unidade, servico]}
+  - {ref: "1Co 12.26", temas: [unidade, consolo]}
+  - {ref: "1Co 13.1", temas: [amor, humildade]}
+  - {ref: "1Co 13.4,5", temas: [amor, humildade]}
+  - {ref: "1Co 13.6,7", temas: [amor, justica]}
+  - {ref: "1Co 13.12", temas: [esperanca, amor]}
+  - {ref: "1Co 13.13", temas: [fe, esperanca, amor]}
+  - {ref: "1Co 14.33", temas: [paz, unidade]}
+  - {ref: "1Co 15.3,4", temas: [salvacao, esperanca]}
+  - {ref: "1Co 15.10", temas: [graca, humildade]}
+  - {ref: "1Co 15.55", temas: [esperanca, coragem]}
+  - {ref: "1Co 15.57", temas: [gratidao, esperanca]}
+  - {ref: "1Co 15.58", temas: [perseveranca, servico]}
+  - {ref: "1Co 16.13,14", temas: [coragem, amor]}
+
+  # ===== 2 Coríntios =====
+  - {ref: "2Co 1.3,4", temas: [consolo, misericordia]}
+  - {ref: "2Co 1.20", temas: [promessa, gratidao]}
+  - {ref: "2Co 2.14", temas: [gratidao, esperanca]}
+  - {ref: "2Co 3.17", temas: [salvacao, graca]}
+  - {ref: "2Co 3.18", temas: [santidade, esperanca]}
+  - {ref: "2Co 4.6", temas: [esperanca, criacao]}
+  - {ref: "2Co 4.8,9", temas: [perseveranca, coragem]}
+  - {ref: "2Co 4.16", temas: [esperanca, perseveranca]}
+  - {ref: "2Co 4.17,18", temas: [esperanca, fe]}
+  - {ref: "2Co 5.7", temas: [fe, confianca]}
+  - {ref: "2Co 5.17", temas: [salvacao, esperanca]}
+  - {ref: "2Co 5.18,19", temas: [perdao, paz]}
+  - {ref: "2Co 5.21", temas: [salvacao, justica]}
+  - {ref: "2Co 6.2", temas: [salvacao, esperanca]}
+  - {ref: "2Co 8.9", temas: [graca, generosidade]}
+  - {ref: "2Co 9.6", temas: [generosidade, promessa]}
+  - {ref: "2Co 9.7", temas: [generosidade, alegria]}
+  - {ref: "2Co 9.8", temas: [graca, provisao]}
+  - {ref: "2Co 9.15", temas: [gratidao, graca]}
+  - {ref: "2Co 10.5", temas: [obediencia, santidade]}
+  - {ref: "2Co 12.9", temas: [graca, humildade, coragem]}
+  - {ref: "2Co 13.11", temas: [paz, unidade, alegria]}
+  - {ref: "2Co 13.14", temas: [graca, amor, unidade]}
+
+  # ===== Gálatas =====
+  - {ref: "Gl 2.20", temas: [fe, amor]}
+  - {ref: "Gl 3.26,27", temas: [familia, fe]}
+  - {ref: "Gl 3.28", temas: [unidade, graca]}
+  - {ref: "Gl 4.4,5", temas: [salvacao, promessa]}
+  - {ref: "Gl 5.1", temas: [salvacao, perseveranca]}
+  - {ref: "Gl 5.13", temas: [servico, amor]}
+  - {ref: "Gl 5.16", temas: [obediencia, santidade]}
+  - {ref: "Gl 5.22,23", temas: [santidade, amor, paz]}
+  - {ref: "Gl 6.2", temas: [servico, unidade]}
+  - {ref: "Gl 6.9", temas: [perseveranca, esperanca]}
+  - {ref: "Gl 6.10", temas: [generosidade, servico]}
+  - {ref: "Gl 6.14", temas: [humildade, salvacao]}
+
+  # ===== Efésios =====
+  - {ref: "Ef 1.3", temas: [gratidao, graca]}
+  - {ref: "Ef 1.7", temas: [perdao, graca]}
+  - {ref: "Ef 1.18", temas: [esperanca, oracao]}
+  - {ref: "Ef 2.4,5", temas: [misericordia, amor, salvacao]}
+  - {ref: "Ef 2.8,9", temas: [graca, salvacao, fe]}
+  - {ref: "Ef 2.10", temas: [servico, criacao]}
+  - {ref: "Ef 2.14", temas: [paz, unidade]}
+  - {ref: "Ef 3.16,17", temas: [coragem, amor]}
+  - {ref: "Ef 3.18,19", temas: [amor, sabedoria]}
+  - {ref: "Ef 3.20", temas: [oracao, promessa]}
+  - {ref: "Ef 4.2,3", temas: [humildade, unidade, paz]}
+  - {ref: "Ef 4.15", temas: [amor, unidade]}
+  - {ref: "Ef 4.26,27", temas: [paz, santidade]}
+  - {ref: "Ef 4.29", temas: [palavra, sabedoria]}
+  - {ref: "Ef 4.31,32", temas: [perdao, misericordia]}
+  - {ref: "Ef 5.1,2", temas: [amor, obediencia]}
+  - {ref: "Ef 5.8", temas: [santidade, esperanca]}
+  - {ref: "Ef 5.15,16", temas: [sabedoria, perseveranca]}
+  - {ref: "Ef 5.20", temas: [gratidao, louvor]}
+  - {ref: "Ef 5.25", temas: [amor, familia]}
+  - {ref: "Ef 6.1,2", temas: [familia, obediencia]}
+  - {ref: "Ef 6.4", temas: [familia, sabedoria]}
+  - {ref: "Ef 6.10", temas: [coragem, confianca]}
+  - {ref: "Ef 6.11", temas: [coragem, santidade]}
+  - {ref: "Ef 6.18", temas: [oracao, perseveranca]}
+
+  # ===== Filipenses =====
+  - {ref: "Fp 1.3,4", temas: [gratidao, alegria]}
+  - {ref: "Fp 1.6", temas: [promessa, confianca]}
+  - {ref: "Fp 1.9,10", temas: [amor, sabedoria]}
+  - {ref: "Fp 1.21", temas: [fe, esperanca]}
+  - {ref: "Fp 2.3,4", temas: [humildade, servico]}
+  - {ref: "Fp 2.5", temas: [humildade, servico]}
+  - {ref: "Fp 2.13", temas: [obediencia, graca]}
+  - {ref: "Fp 3.8", temas: [fe, sabedoria]}
+  - {ref: "Fp 3.13,14", temas: [perseveranca, esperanca]}
+  - {ref: "Fp 3.20", temas: [esperanca, salvacao]}
+  - {ref: "Fp 4.4", temas: [alegria, louvor]}
+  - {ref: "Fp 4.5", temas: [humildade, paz]}
+  - {ref: "Fp 4.6", temas: [oracao, paz, gratidao]}
+  - {ref: "Fp 4.7", temas: [paz, confianca]}
+  - {ref: "Fp 4.8", temas: [santidade, sabedoria]}
+  - {ref: "Fp 4.11,12", temas: [gratidao, paz]}
+  - {ref: "Fp 4.13", temas: [coragem, perseveranca]}
+  - {ref: "Fp 4.19", temas: [provisao, promessa]}
+
+  # ===== Colossenses =====
+  - {ref: "Cl 1.13,14", temas: [salvacao, perdao]}
+  - {ref: "Cl 1.17", temas: [criacao, confianca]}
+  - {ref: "Cl 2.6,7", temas: [fe, gratidao]}
+  - {ref: "Cl 3.1,2", temas: [esperanca, santidade]}
+  - {ref: "Cl 3.12", temas: [misericordia, humildade]}
+  - {ref: "Cl 3.13", temas: [perdao, unidade]}
+  - {ref: "Cl 3.14", temas: [amor, unidade]}
+  - {ref: "Cl 3.15", temas: [paz, gratidao]}
+  - {ref: "Cl 3.16", temas: [palavra, louvor]}
+  - {ref: "Cl 3.17", temas: [gratidao, servico]}
+  - {ref: "Cl 3.23,24", temas: [servico, perseveranca]}
+  - {ref: "Cl 4.2", temas: [oracao, gratidao]}
+  - {ref: "Cl 4.6", temas: [sabedoria, palavra]}
+
+  # ===== 1 e 2 Tessalonicenses =====
+  - {ref: "1Ts 1.3", temas: [fe, amor, esperanca]}
+  - {ref: "1Ts 2.13", temas: [palavra, gratidao]}
+  - {ref: "1Ts 3.12", temas: [amor, unidade]}
+  - {ref: "1Ts 4.11,12", temas: [servico, paz]}
+  - {ref: "1Ts 4.16,17", temas: [esperanca, promessa]}
+  - {ref: "1Ts 5.11", temas: [consolo, unidade]}
+  - {ref: "1Ts 5.14", temas: [servico, misericordia]}
+  - {ref: "1Ts 5.16-18", temas: [alegria, oracao, gratidao]}
+  - {ref: "1Ts 5.23", temas: [santidade, paz]}
+  - {ref: "1Ts 5.24", temas: [confianca, promessa]}
+  - {ref: "2Ts 1.3", temas: [fe, amor]}
+  - {ref: "2Ts 2.16,17", temas: [consolo, esperanca]}
+  - {ref: "2Ts 3.3", temas: [confianca, coragem]}
+  - {ref: "2Ts 3.5", temas: [amor, perseveranca]}
+  - {ref: "2Ts 3.13", temas: [perseveranca, servico]}
+  - {ref: "2Ts 3.16", temas: [paz, promessa]}
+
+  # ===== 1 e 2 Timóteo, Tito, Filemom =====
+  - {ref: "1Tm 1.15", temas: [salvacao, humildade]}
+  - {ref: "1Tm 2.1,2", temas: [oracao, paz]}
+  - {ref: "1Tm 2.5", temas: [salvacao, fe]}
+  - {ref: "1Tm 4.12", temas: [coragem, santidade]}
+  - {ref: "1Tm 4.15", temas: [perseveranca, servico]}
+  - {ref: "1Tm 6.6", temas: [gratidao, paz]}
+  - {ref: "1Tm 6.11", temas: [santidade, perseveranca]}
+  - {ref: "1Tm 6.12", temas: [fe, perseveranca]}
+  - {ref: "1Tm 6.17", temas: [humildade, generosidade]}
+  - {ref: "2Tm 1.7", temas: [coragem, amor]}
+  - {ref: "2Tm 1.12", temas: [fe, confianca]}
+  - {ref: "2Tm 2.1", temas: [graca, coragem]}
+  - {ref: "2Tm 2.15", temas: [palavra, servico]}
+  - {ref: "2Tm 2.22", temas: [santidade, paz]}
+  - {ref: "2Tm 3.14,15", temas: [palavra, familia]}
+  - {ref: "2Tm 3.16,17", temas: [palavra, sabedoria]}
+  - {ref: "2Tm 4.2", temas: [palavra, perseveranca]}
+  - {ref: "2Tm 4.7,8", temas: [perseveranca, esperanca]}
+  - {ref: "2Tm 4.17", temas: [coragem, confianca]}
+  - {ref: "Tt 2.11,12", temas: [graca, santidade]}
+  - {ref: "Tt 2.13", temas: [esperanca, salvacao]}
+  - {ref: "Tt 3.4,5", temas: [misericordia, salvacao]}
+  - {ref: "Tt 3.8", temas: [servico, fe]}
+  - {ref: "Fm 4,5", temas: [gratidao, amor]}
+  - {ref: "Fm 6", temas: [fe, generosidade]}
+  - {ref: "Fm 15,16", temas: [perdao, unidade]}
+
+  # ===== Hebreus =====
+  - {ref: "Hb 1.3", temas: [criacao, salvacao]}
+  - {ref: "Hb 2.18", temas: [consolo, misericordia]}
+  - {ref: "Hb 3.13", temas: [unidade, perseveranca]}
+  - {ref: "Hb 4.12", temas: [palavra, sabedoria]}
+  - {ref: "Hb 4.15,16", temas: [graca, misericordia, oracao]}
+  - {ref: "Hb 6.10", temas: [justica, servico]}
+  - {ref: "Hb 6.18,19", temas: [esperanca, promessa]}
+  - {ref: "Hb 7.25", temas: [salvacao, oracao]}
+  - {ref: "Hb 8.12", temas: [perdao, promessa]}
+  - {ref: "Hb 9.14", temas: [salvacao, santidade]}
+  - {ref: "Hb 10.19,20", temas: [salvacao, confianca]}
+  - {ref: "Hb 10.22", temas: [fe, confianca]}
+  - {ref: "Hb 10.23", temas: [esperanca, promessa]}
+  - {ref: "Hb 10.24,25", temas: [unidade, amor]}
+  - {ref: "Hb 10.35,36", temas: [perseveranca, promessa]}
+  - {ref: "Hb 10.38", temas: [fe, perseveranca]}
+  - {ref: "Hb 11.1", temas: [fe, esperanca]}
+  - {ref: "Hb 11.3", temas: [fe, criacao]}
+  - {ref: "Hb 11.6", temas: [fe, oracao]}
+  - {ref: "Hb 11.8", temas: [fe, obediencia]}
+  - {ref: "Hb 11.24,25", temas: [fe, coragem]}
+  - {ref: "Hb 12.1", temas: [perseveranca, fe]}
+  - {ref: "Hb 12.2", temas: [fe, alegria]}
+  - {ref: "Hb 12.6", temas: [amor, obediencia]}
+  - {ref: "Hb 12.11", temas: [perseveranca, paz]}
+  - {ref: "Hb 12.14", temas: [paz, santidade]}
+  - {ref: "Hb 12.28", temas: [gratidao, louvor]}
+  - {ref: "Hb 13.1,2", temas: [amor, generosidade]}
+  - {ref: "Hb 13.5", temas: [promessa, confianca]}
+  - {ref: "Hb 13.6", temas: [coragem, confianca]}
+  - {ref: "Hb 13.8", temas: [confianca, fe]}
+  - {ref: "Hb 13.15,16", temas: [louvor, generosidade]}
+  - {ref: "Hb 13.20,21", temas: [paz, servico]}
+
+  # ===== Tiago =====
+  - {ref: "Tg 1.2-4", temas: [perseveranca, alegria]}
+  - {ref: "Tg 1.5", temas: [sabedoria, oracao]}
+  - {ref: "Tg 1.12", temas: [perseveranca, promessa]}
+  - {ref: "Tg 1.17", temas: [gratidao, graca]}
+  - {ref: "Tg 1.19,20", temas: [paz, sabedoria]}
+  - {ref: "Tg 1.22", temas: [obediencia, palavra]}
+  - {ref: "Tg 1.27", temas: [misericordia, santidade]}
+  - {ref: "Tg 2.14", temas: [fe, servico]}
+  - {ref: "Tg 2.17", temas: [fe, servico]}
+  - {ref: "Tg 2.26", temas: [fe, obediencia]}
+  - {ref: "Tg 3.17,18", temas: [sabedoria, paz]}
+  - {ref: "Tg 4.2,3", temas: [oracao, humildade]}
+  - {ref: "Tg 4.7,8", temas: [obediencia, oracao]}
+  - {ref: "Tg 4.10", temas: [humildade, promessa]}
+  - {ref: "Tg 4.14,15", temas: [humildade, confianca]}
+  - {ref: "Tg 5.7,8", temas: [perseveranca, esperanca]}
+  - {ref: "Tg 5.13", temas: [oracao, louvor]}
+  - {ref: "Tg 5.16", temas: [oracao, unidade, perdao]}
+  - {ref: "Tg 5.20", temas: [misericordia, arrependimento]}
+
+  # ===== 1 e 2 Pedro =====
+  - {ref: "1Pe 1.3,4", temas: [esperanca, salvacao]}
+  - {ref: "1Pe 1.6,7", temas: [fe, perseveranca]}
+  - {ref: "1Pe 1.8,9", temas: [alegria, fe]}
+  - {ref: "1Pe 1.15,16", temas: [santidade, obediencia]}
+  - {ref: "1Pe 1.24,25", temas: [palavra, esperanca]}
+  - {ref: "1Pe 2.9", temas: [santidade, louvor]}
+  - {ref: "1Pe 2.21", temas: [obediencia, perseveranca]}
+  - {ref: "1Pe 2.24", temas: [salvacao, perdao]}
+  - {ref: "1Pe 3.8", temas: [unidade, misericordia]}
+  - {ref: "1Pe 3.9", temas: [perdao, promessa]}
+  - {ref: "1Pe 3.15", temas: [esperanca, coragem]}
+  - {ref: "1Pe 4.8", temas: [amor, perdao]}
+  - {ref: "1Pe 4.10", temas: [servico, graca]}
+  - {ref: "1Pe 4.12,13", temas: [alegria, perseveranca]}
+  - {ref: "1Pe 5.5", temas: [humildade, graca]}
+  - {ref: "1Pe 5.6,7", temas: [humildade, consolo, confianca]}
+  - {ref: "1Pe 5.10", temas: [esperanca, perseveranca]}
+  - {ref: "2Pe 1.3", temas: [provisao, graca]}
+  - {ref: "2Pe 1.5-7", temas: [perseveranca, amor]}
+  - {ref: "2Pe 3.9", temas: [misericordia, arrependimento]}
+  - {ref: "2Pe 3.13", temas: [esperanca, promessa]}
+  - {ref: "2Pe 3.18", temas: [graca, sabedoria]}
+
+  # ===== 1, 2 e 3 João; Judas =====
+  - {ref: "1Jo 1.7", temas: [unidade, perdao]}
+  - {ref: "1Jo 1.9", temas: [perdao, arrependimento]}
+  - {ref: "1Jo 2.1", temas: [perdao, graca]}
+  - {ref: "1Jo 2.15", temas: [santidade, sabedoria]}
+  - {ref: "1Jo 2.17", temas: [obediencia, esperanca]}
+  - {ref: "1Jo 3.1", temas: [amor, familia]}
+  - {ref: "1Jo 3.16", temas: [amor, servico]}
+  - {ref: "1Jo 3.18", temas: [amor, servico]}
+  - {ref: "1Jo 3.22", temas: [oracao, obediencia]}
+  - {ref: "1Jo 4.4", temas: [coragem, confianca]}
+  - {ref: "1Jo 4.7,8", temas: [amor, unidade]}
+  - {ref: "1Jo 4.9,10", temas: [amor, salvacao]}
+  - {ref: "1Jo 4.11", temas: [amor, unidade]}
+  - {ref: "1Jo 4.16", temas: [amor, confianca]}
+  - {ref: "1Jo 4.18", temas: [amor, coragem]}
+  - {ref: "1Jo 4.19", temas: [amor, gratidao]}
+  - {ref: "1Jo 5.4", temas: [fe, coragem]}
+  - {ref: "1Jo 5.11,12", temas: [salvacao, promessa]}
+  - {ref: "1Jo 5.14,15", temas: [oracao, confianca]}
+  - {ref: "2Jo 6", temas: [amor, obediencia]}
+  - {ref: "3Jo 2", temas: [oracao, consolo]}
+  - {ref: "3Jo 4", temas: [alegria, familia]}
+  - {ref: "Jd 20,21", temas: [fe, esperanca, amor]}
+  - {ref: "Jd 24,25", temas: [louvor, confianca]}
+
+  # ===== Apocalipse =====
+  - {ref: "Ap 1.8", temas: [confianca, promessa]}
+  - {ref: "Ap 1.17,18", temas: [coragem, esperanca]}
+  - {ref: "Ap 2.10", temas: [perseveranca, promessa]}
+  - {ref: "Ap 3.8", temas: [perseveranca, fe]}
+  - {ref: "Ap 3.11", temas: [perseveranca, esperanca]}
+  - {ref: "Ap 3.20", temas: [oracao, graca]}
+  - {ref: "Ap 3.21", temas: [promessa, perseveranca]}
+  - {ref: "Ap 4.11", temas: [criacao, louvor]}
+  - {ref: "Ap 5.12", temas: [louvor, salvacao]}
+  - {ref: "Ap 7.9,10", temas: [salvacao, louvor, unidade]}
+  - {ref: "Ap 7.16,17", temas: [consolo, promessa]}
+  - {ref: "Ap 11.15", temas: [esperanca, louvor]}
+  - {ref: "Ap 12.11", temas: [coragem, salvacao]}
+  - {ref: "Ap 14.13", temas: [consolo, perseveranca]}
+  - {ref: "Ap 15.3", temas: [louvor, justica]}
+  - {ref: "Ap 19.6", temas: [louvor, alegria]}
+  - {ref: "Ap 21.1", temas: [esperanca, promessa]}
+  - {ref: "Ap 21.3", temas: [promessa, consolo]}
+  - {ref: "Ap 21.4", temas: [consolo, esperanca]}
+  - {ref: "Ap 21.5", temas: [esperanca, promessa]}
+  - {ref: "Ap 21.6", temas: [promessa, salvacao]}
+  - {ref: "Ap 22.1,2", temas: [esperanca, promessa]}
+  - {ref: "Ap 22.12", temas: [justica, promessa]}
+  - {ref: "Ap 22.13", temas: [confianca, louvor]}
+  - {ref: "Ap 22.17", temas: [graca, salvacao]}
+  - {ref: "Ap 22.20,21", temas: [esperanca, graca]}
+
+  # ===== Ocasiões especiais (reservadas: nunca caem em dia comum) =====
+  # Ano-Novo
+  - {ref: "Is 42.9", temas: [esperanca, promessa], ocasioes: [ano-novo]}
+  - {ref: "Sl 65.11", temas: [gratidao, provisao], ocasioes: [ano-novo]}
+  - {ref: "Dt 11.12", temas: [confianca, provisao], ocasioes: [ano-novo]}
+  - {ref: "Fp 3.12", temas: [perseveranca, esperanca], ocasioes: [ano-novo]}
+  - {ref: "Js 3.4", temas: [fe, obediencia], ocasioes: [ano-novo]}
+  # Epifania
+  - {ref: "Mt 2.1,2", temas: [fe, alegria], ocasioes: [epifania]}
+  - {ref: "Mt 2.11", temas: [louvor, generosidade], ocasioes: [epifania]}
+  - {ref: "Is 60.2,3", temas: [esperanca, salvacao], ocasioes: [epifania]}
+  - {ref: "Ef 3.6", temas: [unidade, graca], ocasioes: [epifania]}
+  - {ref: "Sl 72.10,11", temas: [louvor, justica], ocasioes: [epifania]}
+  - {ref: "Lc 2.30-32", temas: [salvacao, esperanca], ocasioes: [epifania]}
+  - {ref: "Is 49.6", temas: [salvacao, servico], ocasioes: [epifania]}
+  # Quarta-feira de Cinzas
+  - {ref: "Gn 3.19", temas: [humildade, arrependimento], ocasioes: [cinzas]}
+  - {ref: "Sl 103.14", temas: [humildade, misericordia], ocasioes: [cinzas]}
+  - {ref: "Sl 51.3,4", temas: [arrependimento, perdao], ocasioes: [cinzas]}
+  - {ref: "Mt 6.16-18", temas: [humildade, oracao], ocasioes: [cinzas]}
+  - {ref: "Dn 9.3", temas: [oracao, arrependimento], ocasioes: [cinzas]}
+  - {ref: "Lc 13.3", temas: [arrependimento, salvacao], ocasioes: [cinzas]}
+  - {ref: "Is 58.5", temas: [humildade, justica], ocasioes: [cinzas]}
+  # Domingo de Ramos
+  - {ref: "Mt 21.8,9", temas: [louvor, alegria], ocasioes: [ramos]}
+  - {ref: "Mc 11.9,10", temas: [louvor, esperanca], ocasioes: [ramos]}
+  - {ref: "Lc 19.37,38", temas: [louvor, paz], ocasioes: [ramos]}
+  - {ref: "Jo 12.12,13", temas: [louvor, alegria], ocasioes: [ramos]}
+  - {ref: "Sl 118.25,26", temas: [oracao, louvor], ocasioes: [ramos]}
+  - {ref: "Mt 21.5", temas: [humildade, promessa], ocasioes: [ramos]}
+  # Quinta-feira Santa
+  - {ref: "Lc 22.19,20", temas: [gratidao, salvacao], ocasioes: [quinta-santa]}
+  - {ref: "Jo 13.1", temas: [amor, servico], ocasioes: [quinta-santa]}
+  - {ref: "Jo 13.4,5", temas: [servico, humildade], ocasioes: [quinta-santa]}
+  - {ref: "1Co 11.23-25", temas: [gratidao, salvacao], ocasioes: [quinta-santa]}
+  - {ref: "Mt 26.26-28", temas: [salvacao, perdao], ocasioes: [quinta-santa]}
+  - {ref: "Mc 14.22-24", temas: [salvacao, unidade], ocasioes: [quinta-santa]}
+  # Sexta-feira Santa
+  - {ref: "Is 53.7", temas: [humildade, salvacao], ocasioes: [sexta-santa]}
+  - {ref: "Jo 19.17,18", temas: [salvacao, amor], ocasioes: [sexta-santa]}
+  - {ref: "Mt 27.46", temas: [oracao, consolo], ocasioes: [sexta-santa]}
+  - {ref: "Lc 23.46", temas: [confianca, oracao], ocasioes: [sexta-santa]}
+  - {ref: "Rm 5.6", temas: [amor, graca], ocasioes: [sexta-santa]}
+  - {ref: "Gl 3.13", temas: [salvacao, graca], ocasioes: [sexta-santa]}
+  # Páscoa
+  - {ref: "Mt 28.5,6", temas: [alegria, esperanca], ocasioes: [pascoa]}
+  - {ref: "Lc 24.5,6", temas: [esperanca, fe], ocasioes: [pascoa]}
+  - {ref: "Mc 16.6", temas: [esperanca, alegria], ocasioes: [pascoa]}
+  - {ref: "Jo 20.15,16", temas: [alegria, consolo], ocasioes: [pascoa]}
+  - {ref: "1Co 15.20", temas: [esperanca, promessa], ocasioes: [pascoa]}
+  - {ref: "Rm 6.9", temas: [esperanca, salvacao], ocasioes: [pascoa]}
+  - {ref: "Rm 8.11", temas: [esperanca, promessa], ocasioes: [pascoa]}
+  - {ref: "Lc 24.34", temas: [alegria, fe], ocasioes: [pascoa]}
+  # Ascensão
+  - {ref: "At 1.9", temas: [fe, esperanca], ocasioes: [ascensao]}
+  - {ref: "At 1.10,11", temas: [esperanca, promessa], ocasioes: [ascensao]}
+  - {ref: "Lc 24.50,51", temas: [alegria, graca], ocasioes: [ascensao]}
+  - {ref: "Mc 16.19", temas: [louvor, esperanca], ocasioes: [ascensao]}
+  - {ref: "Hb 4.14", temas: [fe, perseveranca], ocasioes: [ascensao]}
+  - {ref: "Ef 1.20,21", temas: [louvor, confianca], ocasioes: [ascensao]}
+  - {ref: "Fp 2.9-11", temas: [louvor, humildade], ocasioes: [ascensao]}
+  - {ref: "Sl 47.5", temas: [alegria, louvor], ocasioes: [ascensao]}
+  # Pentecostes
+  - {ref: "At 2.1-3", temas: [unidade, promessa], ocasioes: [pentecostes]}
+  - {ref: "At 2.4", temas: [promessa, coragem], ocasioes: [pentecostes]}
+  - {ref: "At 2.17,18", temas: [promessa, servico], ocasioes: [pentecostes]}
+  - {ref: "Jo 16.13", temas: [sabedoria, palavra], ocasioes: [pentecostes]}
+  - {ref: "1Co 12.13", temas: [unidade, graca], ocasioes: [pentecostes]}
+  - {ref: "Gl 5.25", temas: [obediencia, santidade], ocasioes: [pentecostes]}
+  - {ref: "Jo 20.22", temas: [paz, promessa], ocasioes: [pentecostes]}
+  - {ref: "At 2.33", temas: [promessa, louvor], ocasioes: [pentecostes]}
+  # Dia das Mães
+  - {ref: "Pv 31.28,29", temas: [familia, gratidao], ocasioes: [dia-das-maes]}
+  - {ref: "Pv 23.25", temas: [familia, alegria], ocasioes: [dia-das-maes]}
+  - {ref: "Pv 1.8", temas: [familia, sabedoria], ocasioes: [dia-das-maes]}
+  - {ref: "2Tm 1.5", temas: [familia, fe], ocasioes: [dia-das-maes]}
+  - {ref: "Jo 19.26,27", temas: [familia, amor], ocasioes: [dia-das-maes]}
+  - {ref: "Lc 1.42,43", temas: [alegria, familia], ocasioes: [dia-das-maes]}
+  - {ref: "Pv 6.20", temas: [familia, obediencia], ocasioes: [dia-das-maes]}
+  # Santíssima Trindade
+  - {ref: "Mt 3.16,17", temas: [amor, unidade], ocasioes: [trindade]}
+  - {ref: "Ef 4.4-6", temas: [unidade, fe], ocasioes: [trindade]}
+  - {ref: "1Pe 1.2", temas: [santidade, graca], ocasioes: [trindade]}
+  - {ref: "Gn 1.26", temas: [criacao, unidade], ocasioes: [trindade]}
+  - {ref: "Jo 15.26", temas: [palavra, consolo], ocasioes: [trindade]}
+  - {ref: "Gl 4.6", temas: [familia, amor], ocasioes: [trindade]}
+  - {ref: "Is 48.16", temas: [palavra, promessa], ocasioes: [trindade]}
+  - {ref: "Ap 1.4,5", temas: [graca, paz], ocasioes: [trindade]}
+  # Corpus Christi
+  - {ref: "Jo 6.51", temas: [salvacao, provisao], ocasioes: [corpus-christi]}
+  - {ref: "Jo 6.53-55", temas: [salvacao, fe], ocasioes: [corpus-christi]}
+  - {ref: "1Co 10.16,17", temas: [unidade, gratidao], ocasioes: [corpus-christi]}
+  - {ref: "1Co 11.26", temas: [fe, esperanca], ocasioes: [corpus-christi]}
+  - {ref: "Jo 6.48,49", temas: [provisao, salvacao], ocasioes: [corpus-christi]}
+  - {ref: "Sl 111.4,5", temas: [gratidao, provisao], ocasioes: [corpus-christi]}
+  - {ref: "Is 55.2", temas: [provisao, graca], ocasioes: [corpus-christi]}
+  # Dia dos Pais
+  - {ref: "Pv 17.6", temas: [familia, alegria], ocasioes: [dia-dos-pais]}
+  - {ref: "Cl 3.21", temas: [familia, paz], ocasioes: [dia-dos-pais]}
+  - {ref: "Sl 78.4", temas: [familia, palavra], ocasioes: [dia-dos-pais]}
+  - {ref: "Pv 23.24", temas: [familia, alegria], ocasioes: [dia-dos-pais]}
+  - {ref: "Mt 7.9,10", temas: [amor, oracao], ocasioes: [dia-dos-pais]}
+  - {ref: "1Ts 2.11,12", temas: [familia, obediencia], ocasioes: [dia-dos-pais]}
+  - {ref: "Pv 13.22", temas: [familia, generosidade], ocasioes: [dia-dos-pais]}
+  - {ref: "Sl 112.2", temas: [familia, promessa], ocasioes: [dia-dos-pais]}
+  # 1º Domingo do Advento
+  - {ref: "Is 64.1", temas: [esperanca, oracao], ocasioes: [advento]}
+  - {ref: "Lc 21.28", temas: [esperanca, coragem], ocasioes: [advento]}
+  - {ref: "Rm 13.11,12", temas: [esperanca, santidade], ocasioes: [advento]}
+  - {ref: "Mt 24.44", temas: [perseveranca, fe], ocasioes: [advento]}
+  - {ref: "Mc 13.35-37", temas: [perseveranca, oracao], ocasioes: [advento]}
+  - {ref: "Is 40.3", temas: [esperanca, promessa], ocasioes: [advento]}
+  - {ref: "Jr 33.14,15", temas: [promessa, esperanca], ocasioes: [advento]}
+  # Véspera de Natal
+  - {ref: "Lc 1.30,31", temas: [coragem, promessa], ocasioes: [vespera-natal]}
+  - {ref: "Lc 1.26,27", temas: [fe, promessa], ocasioes: [vespera-natal]}
+  - {ref: "Lc 1.35", temas: [promessa, santidade], ocasioes: [vespera-natal]}
+  - {ref: "Lc 1.45", temas: [fe, alegria], ocasioes: [vespera-natal]}
+  - {ref: "Lc 2.4,5", temas: [obediencia, confianca], ocasioes: [vespera-natal]}
+  - {ref: "Lc 1.68", temas: [louvor, salvacao], ocasioes: [vespera-natal]}
+  # Natal
+  - {ref: "Is 7.14", temas: [promessa, esperanca], ocasioes: [natal]}
+  - {ref: "Mt 1.23", temas: [promessa, consolo], ocasioes: [natal]}
+  - {ref: "Lc 2.6,7", temas: [humildade, alegria], ocasioes: [natal]}
+  - {ref: "Lc 2.15", temas: [alegria, fe], ocasioes: [natal]}
+  - {ref: "Lc 2.12", temas: [fe, humildade], ocasioes: [natal]}
+  - {ref: "Lc 2.8,9", temas: [alegria, coragem], ocasioes: [natal]}
+  - {ref: "Jo 1.10,11", temas: [graca, amor], ocasioes: [natal]}
+  # Último dia do ano
+  - {ref: "Sl 126.3", temas: [gratidao, alegria], ocasioes: [fim-de-ano]}
+  - {ref: "Sl 116.7,8", temas: [gratidao, consolo], ocasioes: [fim-de-ano]}
+  - {ref: "Sl 138.3", temas: [gratidao, oracao], ocasioes: [fim-de-ano]}
+  - {ref: "Sl 100.3", temas: [gratidao, louvor], ocasioes: [fim-de-ano]}
+  - {ref: "Sl 90.16,17", temas: [servico, esperanca], ocasioes: [fim-de-ano]}
+
+  # ===== Complemento do Novo Testamento =====
+  - {ref: "Mt 5.10", temas: [perseveranca, promessa]}
+  - {ref: "Mt 5.37", temas: [santidade, sabedoria]}
+  - {ref: "Mt 6.1", temas: [humildade, generosidade]}
+  - {ref: "Mt 6.7,8", temas: [oracao, confianca]}
+  - {ref: "Mt 6.22,23", temas: [sabedoria, santidade]}
+  - {ref: "Mt 7.16,17", temas: [sabedoria, santidade]}
+  - {ref: "Mt 7.21", temas: [obediencia, fe]}
+  - {ref: "Mt 9.2", temas: [perdao, fe]}
+  - {ref: "Mt 9.29", temas: [fe, promessa]}
+  - {ref: "Mt 10.16", temas: [sabedoria, coragem]}
+  - {ref: "Mt 10.19,20", temas: [coragem, promessa]}
+  - {ref: "Mt 11.4,5", temas: [esperanca, salvacao]}
+  - {ref: "Mt 12.7", temas: [misericordia, justica]}
+  - {ref: "Mt 13.23", temas: [palavra, perseveranca]}
+  - {ref: "Mt 13.31,32", temas: [fe, esperanca]}
+  - {ref: "Mt 15.28", temas: [fe, perseveranca]}
+  - {ref: "Mt 16.18", temas: [unidade, promessa]}
+  - {ref: "Mt 17.5", temas: [obediencia, palavra]}
+  - {ref: "Mt 18.10", temas: [misericordia, humildade]}
+  - {ref: "Mt 19.5,6", temas: [familia, unidade]}
+  - {ref: "Mt 19.21", temas: [generosidade, obediencia]}
+  - {ref: "Mt 20.16", temas: [humildade, justica]}
+  - {ref: "Mt 22.21", temas: [justica, sabedoria]}
+  - {ref: "Mt 24.13", temas: [perseveranca, salvacao]}
+  - {ref: "Mt 25.23", temas: [servico, alegria]}
+  - {ref: "Mt 26.13", temas: [gratidao, amor]}
+  - {ref: "Mt 28.18", temas: [confianca, promessa]}
+  - {ref: "Mc 1.11", temas: [amor, familia]}
+  - {ref: "Mc 2.5", temas: [perdao, fe]}
+  - {ref: "Mc 4.28", temas: [perseveranca, esperanca]}
+  - {ref: "Mc 5.19", temas: [gratidao, servico]}
+  - {ref: "Mc 7.37", temas: [alegria, louvor]}
+  - {ref: "Mc 9.41", temas: [generosidade, servico]}
+  - {ref: "Mc 10.9", temas: [familia, unidade]}
+  - {ref: "Mc 10.21", temas: [amor, generosidade]}
+  - {ref: "Mc 12.17", temas: [justica, sabedoria]}
+  - {ref: "Mc 12.34", temas: [sabedoria, esperanca]}
+  - {ref: "Mc 14.38", temas: [oracao, perseveranca]}
+  - {ref: "Lc 1.74,75", temas: [servico, santidade]}
+  - {ref: "Lc 2.29", temas: [paz, gratidao]}
+  - {ref: "Lc 3.11", temas: [generosidade, justica]}
+  - {ref: "Lc 4.4", temas: [palavra, provisao]}
+  - {ref: "Lc 5.16", temas: [oracao, perseveranca]}
+  - {ref: "Lc 6.20,21", temas: [consolo, esperanca]}
+  - {ref: "Lc 6.45", temas: [sabedoria, santidade]}
+  - {ref: "Lc 7.22", temas: [esperanca, salvacao]}
+  - {ref: "Lc 9.24,25", temas: [obediencia, sabedoria]}
+  - {ref: "Lc 10.20", temas: [alegria, salvacao]}
+  - {ref: "Lc 11.2-4", temas: [oracao, perdao, provisao]}
+  - {ref: "Lc 12.40", temas: [perseveranca, fe]}
+  - {ref: "Lc 13.24", temas: [perseveranca, obediencia]}
+  - {ref: "Lc 14.27", temas: [obediencia, perseveranca]}
+  - {ref: "Lc 15.10", temas: [alegria, arrependimento]}
+  - {ref: "Lc 17.10", temas: [humildade, servico]}
+  - {ref: "Lc 18.16,17", temas: [humildade, familia]}
+  - {ref: "Lc 18.43", temas: [fe, louvor]}
+  - {ref: "Lc 19.8,9", temas: [arrependimento, generosidade, salvacao]}
+  - {ref: "Lc 22.27", temas: [servico, humildade]}
+  - {ref: "Lc 24.45", temas: [palavra, sabedoria]}
+  - {ref: "Jo 1.3", temas: [criacao, palavra]}
+  - {ref: "Jo 2.5", temas: [obediencia, fe]}
+  - {ref: "Jo 3.8", temas: [fe, salvacao]}
+  - {ref: "Jo 3.36", temas: [fe, promessa]}
+  - {ref: "Jo 5.39,40", temas: [palavra, fe]}
+  - {ref: "Jo 6.27", temas: [sabedoria, provisao]}
+  - {ref: "Jo 6.29", temas: [fe, obediencia]}
+  - {ref: "Jo 6.40", temas: [fe, promessa]}
+  - {ref: "Jo 7.17", temas: [obediencia, sabedoria]}
+  - {ref: "Jo 8.51", temas: [palavra, promessa]}
+  - {ref: "Jo 9.25", temas: [gratidao, fe]}
+  - {ref: "Jo 10.14,15", temas: [amor, confianca]}
+  - {ref: "Jo 11.43,44", temas: [esperanca, fe]}
+  - {ref: "Jo 13.7", temas: [confianca, fe]}
+  - {ref: "Jo 14.12", temas: [fe, servico]}
+  - {ref: "Jo 15.8", temas: [servico, perseveranca]}
+  - {ref: "Jo 15.14,15", temas: [amor, unidade]}
+  - {ref: "Jo 18.36", temas: [paz, fe]}
+  - {ref: "At 2.21", temas: [oracao, salvacao]}
+  - {ref: "At 2.39", temas: [promessa, familia]}
+  - {ref: "At 3.16", temas: [fe, esperanca]}
+  - {ref: "At 4.20", temas: [coragem, fe]}
+  - {ref: "At 5.41,42", temas: [alegria, perseveranca]}
+  - {ref: "At 9.31", temas: [paz, unidade]}
+  - {ref: "At 10.43", temas: [perdao, fe]}
+  - {ref: "At 14.17", temas: [gratidao, criacao]}
+  - {ref: "At 17.30", temas: [arrependimento, misericordia]}
+  - {ref: "At 20.28", temas: [servico, humildade]}
+  - {ref: "At 24.16", temas: [santidade, justica]}
+  - {ref: "At 28.30,31", temas: [coragem, perseveranca]}
+  - {ref: "Rm 1.20", temas: [criacao, sabedoria]}
+  - {ref: "Rm 2.11", temas: [justica, misericordia]}
+  - {ref: "Rm 4.5", temas: [fe, graca]}
+  - {ref: "Rm 4.7,8", temas: [perdao, alegria]}
+  - {ref: "Rm 5.2", temas: [esperanca, graca]}
+  - {ref: "Rm 5.9,10", temas: [salvacao, amor]}
+  - {ref: "Rm 6.11", temas: [santidade, salvacao]}
+  - {ref: "Rm 8.16,17", temas: [familia, esperanca]}
+  - {ref: "Rm 8.32", temas: [amor, provisao]}
+  - {ref: "Rm 9.15,16", temas: [misericordia, graca]}
+  - {ref: "Rm 10.10", temas: [fe, salvacao]}
+  - {ref: "Rm 10.12", temas: [unidade, graca]}
+  - {ref: "Rm 11.29", temas: [promessa, confianca]}
+  - {ref: "Rm 12.3", temas: [humildade, sabedoria]}
+  - {ref: "Rm 12.6-8", temas: [servico, generosidade]}
+  - {ref: "Rm 12.11", temas: [servico, perseveranca]}
+  - {ref: "Rm 12.14", temas: [perdao, misericordia]}
+  - {ref: "Rm 12.16", temas: [humildade, unidade]}
+  - {ref: "Rm 14.1", temas: [unidade, misericordia]}
+  - {ref: "Rm 14.13", temas: [unidade, amor]}
+  - {ref: "Rm 15.1,2", temas: [servico, unidade]}
+  - {ref: "Rm 15.33", temas: [paz, promessa]}
+  - {ref: "Rm 16.20", temas: [paz, graca]}
+  - {ref: "1Co 2.12", temas: [graca, sabedoria]}
+  - {ref: "1Co 3.11", temas: [fe, confianca]}
+  - {ref: "1Co 4.20", temas: [fe, coragem]}
+  - {ref: "1Co 5.7,8", temas: [santidade, alegria]}
+  - {ref: "1Co 6.11", temas: [salvacao, santidade]}
+  - {ref: "1Co 10.12", temas: [humildade, sabedoria]}
+  - {ref: "1Co 12.7", temas: [servico, unidade]}
+  - {ref: "1Co 12.27", temas: [unidade, servico]}
+  - {ref: "1Co 13.8", temas: [amor, perseveranca]}
+  - {ref: "1Co 14.1", temas: [amor, servico]}
+  - {ref: "1Co 14.12", temas: [servico, unidade]}
+  - {ref: "1Co 15.51,52", temas: [esperanca, promessa]}
+  - {ref: "2Co 1.10", temas: [esperanca, confianca]}
+  - {ref: "2Co 1.21,22", temas: [promessa, confianca]}
+  - {ref: "2Co 4.1", temas: [misericordia, perseveranca]}
+  - {ref: "2Co 5.1", temas: [esperanca, promessa]}
+  - {ref: "2Co 5.14,15", temas: [amor, servico]}
+  - {ref: "2Co 7.1", temas: [santidade, promessa]}
+  - {ref: "2Co 7.10", temas: [arrependimento, salvacao]}
+  - {ref: "2Co 8.12", temas: [generosidade, humildade]}
+  - {ref: "2Co 12.10", temas: [coragem, humildade]}
+  - {ref: "2Co 13.5", temas: [fe, santidade]}
+  - {ref: "Gl 1.10", temas: [servico, obediencia]}
+  - {ref: "Gl 3.11", temas: [fe, justica]}
+  - {ref: "Gl 4.7", temas: [familia, graca]}
+  - {ref: "Gl 5.6", temas: [fe, amor]}
+  - {ref: "Gl 5.14", temas: [amor, obediencia]}
+  - {ref: "Gl 6.1", temas: [misericordia, humildade]}
+  - {ref: "Gl 6.7,8", temas: [justica, sabedoria]}
+  - {ref: "Ef 1.4,5", temas: [amor, familia]}
+  - {ref: "Ef 1.13,14", temas: [promessa, salvacao]}
+  - {ref: "Ef 1.17", temas: [sabedoria, oracao]}
+  - {ref: "Ef 2.19", temas: [familia, unidade]}
+  - {ref: "Ef 3.12", temas: [confianca, fe]}
+  - {ref: "Ef 4.11,12", temas: [servico, unidade]}
+  - {ref: "Ef 4.22-24", temas: [santidade, esperanca]}
+  - {ref: "Ef 5.9,10", temas: [santidade, sabedoria]}
+  - {ref: "Ef 5.21", temas: [humildade, unidade]}
+  - {ref: "Ef 6.7,8", temas: [servico, justica]}
+  - {ref: "Ef 6.19,20", temas: [coragem, oracao]}
+  - {ref: "Fp 1.27", temas: [unidade, coragem]}
+  - {ref: "Fp 2.1,2", temas: [unidade, amor]}
+  - {ref: "Fp 2.14,15", temas: [santidade, paz]}
+  - {ref: "Fp 3.10", temas: [fe, perseveranca]}
+  - {ref: "Fp 4.1", temas: [perseveranca, alegria]}
+  - {ref: "Fp 4.9", temas: [paz, obediencia]}
+  - {ref: "Cl 1.9", temas: [oracao, sabedoria]}
+  - {ref: "Cl 1.10,11", temas: [perseveranca, alegria]}
+  - {ref: "Cl 1.27", temas: [esperanca, promessa]}
+  - {ref: "Cl 2.2,3", temas: [sabedoria, unidade]}
+  - {ref: "Cl 3.3,4", temas: [esperanca, salvacao]}
+  - {ref: "Cl 3.9,10", temas: [santidade, esperanca]}
+  - {ref: "Cl 4.5", temas: [sabedoria, servico]}
+  - {ref: "1Tm 2.3,4", temas: [salvacao, misericordia]}
+  - {ref: "1Tm 4.8", temas: [santidade, esperanca]}
+  - {ref: "1Tm 4.16", temas: [perseveranca, palavra]}
+  - {ref: "1Tm 5.8", temas: [familia, servico]}
+  - {ref: "1Tm 6.18,19", temas: [generosidade, esperanca]}
+  - {ref: "2Tm 1.9", temas: [graca, salvacao]}
+  - {ref: "2Tm 1.14", temas: [fe, perseveranca]}
+  - {ref: "2Tm 2.3", temas: [perseveranca, coragem]}
+  - {ref: "2Tm 2.24,25", temas: [humildade, paz]}
+  - {ref: "2Tm 3.12", temas: [perseveranca, fe]}
+  - {ref: "Tt 2.7,8", temas: [santidade, servico]}
+  - {ref: "Tt 3.1,2", temas: [humildade, paz]}
+  - {ref: "Tt 3.14", temas: [servico, generosidade]}
+  - {ref: "Hb 1.1,2", temas: [palavra, fe]}
+  - {ref: "Hb 2.9", temas: [graca, salvacao]}
+  - {ref: "Hb 2.14,15", temas: [salvacao, coragem]}
+  - {ref: "Hb 3.14", temas: [perseveranca, fe]}
+  - {ref: "Hb 5.8,9", temas: [obediencia, salvacao]}
+  - {ref: "Hb 6.11,12", temas: [perseveranca, esperanca]}
+  - {ref: "Hb 9.27,28", temas: [esperanca, salvacao]}
+  - {ref: "Hb 10.14", temas: [santidade, salvacao]}
+  - {ref: "Hb 12.3", temas: [perseveranca, consolo]}
+  - {ref: "Hb 12.7", temas: [amor, obediencia]}
+  - {ref: "Hb 12.12,13", temas: [coragem, perseveranca]}
+  - {ref: "Hb 13.17", temas: [obediencia, unidade]}
+  - {ref: "Tg 1.6", temas: [fe, oracao]}
+  - {ref: "Tg 1.25", temas: [palavra, obediencia]}
+  - {ref: "Tg 2.5", temas: [fe, promessa]}
+  - {ref: "Tg 2.8", temas: [amor, justica]}
+  - {ref: "Tg 2.13", temas: [misericordia, justica]}
+  - {ref: "Tg 3.2", temas: [humildade, sabedoria]}
+  - {ref: "Tg 3.9,10", temas: [palavra, santidade]}
+  - {ref: "Tg 3.13", temas: [sabedoria, humildade]}
+  - {ref: "Tg 4.17", temas: [obediencia, justica]}
+  - {ref: "Tg 5.11", temas: [perseveranca, misericordia]}
+  - {ref: "1Pe 1.13", temas: [esperanca, perseveranca]}
+  - {ref: "1Pe 1.22", temas: [amor, unidade]}
+  - {ref: "1Pe 2.2,3", temas: [palavra, graca]}
+  - {ref: "1Pe 2.11,12", temas: [santidade, servico]}
+  - {ref: "1Pe 2.17", temas: [amor, humildade]}
+  - {ref: "1Pe 3.3,4", temas: [humildade, paz]}
+  - {ref: "1Pe 3.12", temas: [oracao, justica]}
+  - {ref: "1Pe 3.18", temas: [salvacao, amor]}
+  - {ref: "1Pe 4.7", temas: [oracao, sabedoria]}
+  - {ref: "1Pe 4.11", temas: [servico, louvor]}
+  - {ref: "1Pe 4.16", temas: [coragem, louvor]}
+  - {ref: "1Pe 5.2,3", temas: [servico, humildade]}
+  - {ref: "1Pe 5.8,9", temas: [perseveranca, fe]}
+  - {ref: "2Pe 1.4", temas: [promessa, santidade]}
+  - {ref: "2Pe 1.10,11", temas: [perseveranca, promessa]}
+  - {ref: "2Pe 3.8", temas: [esperanca, confianca]}
+  - {ref: "1Jo 1.5", temas: [esperanca, santidade]}
+  - {ref: "1Jo 2.3", temas: [obediencia, fe]}
+  - {ref: "1Jo 2.5,6", temas: [amor, obediencia]}
+  - {ref: "1Jo 2.9,10", temas: [amor, unidade]}
+  - {ref: "1Jo 2.25", temas: [promessa, salvacao]}
+  - {ref: "1Jo 3.2", temas: [esperanca, familia]}
+  - {ref: "1Jo 3.14", temas: [amor, salvacao]}
+  - {ref: "1Jo 3.19,20", temas: [consolo, confianca]}
+  - {ref: "1Jo 3.23", temas: [fe, amor]}
+  - {ref: "1Jo 4.12", temas: [amor, unidade]}
+  - {ref: "1Jo 4.14,15", temas: [salvacao, fe]}
+  - {ref: "1Jo 4.20,21", temas: [amor, obediencia]}
+  - {ref: "1Jo 5.3", temas: [amor, obediencia]}
+  - {ref: "1Jo 5.13", temas: [fe, salvacao]}
+  - {ref: "Ap 1.3", temas: [palavra, alegria]}
+  - {ref: "Ap 2.4,5", temas: [arrependimento, amor]}
+  - {ref: "Ap 2.7", temas: [promessa, perseveranca]}
+  - {ref: "Ap 3.19", temas: [amor, arrependimento]}
+  - {ref: "Ap 5.9,10", temas: [louvor, salvacao]}
+  - {ref: "Ap 7.12", temas: [louvor, gratidao]}
+  - {ref: "Ap 12.10", temas: [salvacao, coragem]}
+  - {ref: "Ap 14.12", temas: [perseveranca, obediencia]}
+  - {ref: "Ap 15.4", temas: [louvor, justica]}
+  - {ref: "Ap 21.7", temas: [promessa, perseveranca]}
+  - {ref: "Ap 21.23", temas: [esperanca, alegria]}
+  - {ref: "Ap 22.3-5", temas: [esperanca, promessa]}
+  - {ref: "Ap 22.7", temas: [palavra, alegria]}
