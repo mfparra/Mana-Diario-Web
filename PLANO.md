@@ -61,17 +61,19 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [x] Metadados Open Graph (título, frase do dia) para compartilhamento
 
 ## Fase 7 — Operação
-- [ ] `mana agendador` completo: recuperação, 00:10, backup, calendário em 1º/12 + testes
+- [x] `mana agendador` completo: recuperação, 00:10, backup, calendário em 1º/12 + testes
       com relógio falso
-- [ ] Testar `compose.prod.yaml` localmente (sem código montado) antes de levar ao servidor
-- [ ] README: linger + `podman-restart.service` para subir no boot
+- [x] Testar `compose.prod.yaml` localmente (sem código montado) antes de levar ao servidor
+- [x] README: linger + `podman-restart.service` para subir no boot
 - [ ] Levar ao servidor definitivo seguindo AGENTS.md §13 (Marcos acompanha)
-- [ ] README curto com instalação e operação
+- [x] README curto com instalação e operação
 
 ## Fase 8 — Provedor definitivo (quando o Marcos escolher)
 - [ ] Adaptador do novo provedor, prompt v2 se necessário, regerar estudos de teste
 
 ## Decisões
+- Fase 7: o agendador importa o `AAAA.yaml` revisado quando o banco não tem calendário (servidor novo sobe sem passo manual); se o YAML for inválido ou não existir, gera um. A rodada em andamento é cancelada no SIGTERM (para em 0,4 s). Provedor de LLM fora do ar encerra a rodada cedo e o agendador repete a cada 30 min até o estudo de hoje sair.
+- Fase 7: falta só o item "Levar ao servidor definitivo" (Marcos acompanha) e definir como o `compose.prod.yaml` alcança a LLM definitiva.
 - Fase 6: `ref-popover` e o corpo do estudo usam `linkar_referencias` na hora de renderizar (o banco guarda texto puro). Ícones (`favicon.svg`, PNGs, `og.png` 1200×630) gerados do logo; a página do dia não mostra o cabeçalho do site (ela tem o próprio logo), a navegação fica no rodapé. Fonte do corpo 1,15 rem (Crimson Pro é pequena; o DESIGN.md sugeria ~1,06 rem).
 - Fase 5: 7 dias gerados com o gemma-4-e4b-it (sem thinking): ~31 s por estudo, 6 de 7 aprovados na 1ª tentativa; o 7º foi recusado 2× por título > 6 palavras e estudo < 220 palavras e passou na 3ª (o motivo vai no prompt seguinte). Os estudos têm ~240–290 palavras (o prompt pede ~300). Se o Marcos quiser mais corpo ou títulos mais curtos, criar `prompts/estudo_diario.v2.md` (não editar a v1). Revisar com `mana revisar --data AAAA-MM-DD`.
 - Fase 4: acervo com 1.594 entradas (AT 670 / NT 924; 66 livros; 116 de ocasiões, de 5 a 8 por ocasião), 30 temas. Cinco anos seguidos (2026–2030) gerados sem aviso e sem violar nenhuma regra. O NT ficou maior que o AT no acervo para a janela de 3 anos não apertar o NT (o calendário usa ~55% NT).

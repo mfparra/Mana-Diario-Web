@@ -197,3 +197,9 @@ class RepositorioEstudos:
         with closing(self._conectar()) as con:
             achado = con.execute(sql, args).fetchone()[0]
         return date.fromisoformat(achado) if achado else None
+
+    def copiar_para(self, destino: Path) -> None:
+        """Cópia consistente do banco (API de backup do SQLite), mesmo com o site escrevendo."""
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        with closing(self._conectar()) as origem, closing(sqlite3.connect(destino)) as copia:
+            origem.backup(copia)

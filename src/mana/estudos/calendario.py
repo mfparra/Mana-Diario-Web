@@ -221,6 +221,36 @@ def gerar(
     return ResultadoGeracao(linhas, plano.avisos)
 
 
+def montar_ano(
+    ano: int,
+    repo: RepositorioEstudos,
+    acervo: Acervo,
+    ativas: frozenset[str],
+    hoje: date,
+    calendarios_dir: Path,
+    refazer: bool = False,
+) -> ResultadoGeracao:
+    """Gera os dias que faltam de `ano`, grava no banco e exporta o YAML para revisão.
+
+    `refazer` apaga antes os dias futuros do ano (nunca hoje nem os passados).
+    """
+    primeiro = date(ano, 1, 1)
+    if refazer:
+        repo.apagar_calendario(max(primeiro, hoje + timedelta(days=1)), date(ano, 12, 31))
+    resultado = gerar(
+        ano,
+        acervo,
+        ativas,
+        repo.calendario(),
+        inicio=max(primeiro, hoje) if ano == hoje.year else primeiro,
+    )
+    repo.gravar(resultado.linhas)
+    exportar_yaml(
+        ano, repo.calendario(primeiro, date(ano, 12, 31)), calendarios_dir / f"{ano}.yaml"
+    )
+    return resultado
+
+
 # ---------------------------------------------------------------------- verificação
 
 

@@ -407,6 +407,12 @@ arquivos. Esses arquivos ainda **não existem**; crie-os na Fase 0 seguindo isto
 - Com dois serviços montando as mesmas pastas, use `:z` (compartilhado), não `:Z`: com `:Z`
   o último container a subir reetiqueta a pasta e o outro recebe "Permission denied".
 - A mensagem de `${VAR:?...}` no compose não pode conter `:` sem aspas.
+- No distrobox, `distrobox-host-exec` **não repassa variáveis de ambiente** ao host: para testar
+  `MANA_TAG` (ou `PORTA_HOST`) aqui, edite o `.env` (num servidor normal, `MANA_TAG=x podman compose ...` funciona).
+- Não alterne `compose.local.yaml` (usa `keep-id`) e `compose.prod.yaml` sobre o mesmo volume: o
+  banco fica "somente leitura". Para testar o prod localmente use `-p outro-nome`.
+- O `compose.prod.yaml` foi testado localmente (31/10/2026): imagem com tag, só `/dados` montado,
+  logs no journald, `/saude` ok; o agendador sem acesso à LLM aborta a rodada e tenta de novo em 30 min.
 - Acesso ao llm-server: `host.containers.internal:8081` dá *Connection refused* (o llm-server
   publica a porta só em loopback). Funciona entrando na rede externa `llm-net`
   (`compose.local.yaml`) e usando `LLM_BASE_URL=http://llm:8081/v1`. Subir o llm-server:

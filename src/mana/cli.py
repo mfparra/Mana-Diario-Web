@@ -115,7 +115,7 @@ def calendario_gerar(
     refazer: bool = typer.Option(False, help="Refaz os dias futuros que já existem."),
 ) -> None:
     """Monta o calendário do ano (grava no banco e exporta o YAML para revisão)."""
-    from datetime import date, timedelta
+    from datetime import date
 
     from mana import tempo
     from mana.estudos import acervo as ac
@@ -129,27 +129,21 @@ def calendario_gerar(
         typer.secho("Esse ano já passou.", fg=typer.colors.RED, err=True)
         raise typer.Exit(1)
     repo = RepositorioEstudos(cfg.mana_db)
-    primeiro = date(ano, 1, 1)
-    if refazer:
-        apagados = repo.apagar_calendario(
-            max(primeiro, hoje + timedelta(days=1)), date(ano, 12, 31)
-        )
-        typer.echo(f"{apagados} dia(s) futuro(s) apagado(s) para refazer.")
     try:
-        resultado = cal.gerar(
+        resultado = cal.montar_ano(
             ano,
+            repo,
             ac.carregar(),
             interpretar_ativas(cfg.ocasioes_ativas),
-            repo.calendario(),
-            inicio=max(primeiro, hoje) if ano == hoje.year else primeiro,
+            hoje,
+            Path(cfg.calendarios_dir),
+            refazer,
         )
     except cal.ErroCalendario as e:
         typer.secho(f"Falhou: {e}", fg=typer.colors.RED, err=True)
         raise typer.Exit(1) from e
-    repo.gravar(resultado.linhas)
-    do_ano = repo.calendario(primeiro, date(ano, 12, 31))
+    do_ano = repo.calendario(date(ano, 1, 1), date(ano, 12, 31))
     destino = Path(cfg.calendarios_dir) / f"{ano}.yaml"
-    cal.exportar_yaml(ano, do_ano, destino)
     est = cal.estatisticas(do_ano)
     typer.echo(
         f"{len(resultado.linhas)} dia(s) novo(s); {est['dias']} no ano | "
@@ -283,8 +277,10 @@ def servir() -> None:
 
 @app.command()
 def agendador() -> None:
-    """Laço diário (gerar, backup, calendário)."""
+    """Laço diário (gerar, backup, calendário do ano seguinte)."""
+    import asyncio
+
     from mana import agendador as ag
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(message)s")
-    ag.executar()
+    asyncio.run(ag.principal(obter_configuracao()))
