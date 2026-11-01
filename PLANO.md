@@ -45,12 +45,13 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [x] Gerar 2026 (restante) e 2027 e entregar `data/calendarios/` para revisão do Marcos
 
 ## Fase 5 — Geração diária
-- [ ] Modelos Pydantic, repositório de estudos (`data/mana.sqlite`)
-- [ ] Gerador: prompt v1, validações de `docs/LLM.md`, até 3 tentativas, registro de falhas
-- [ ] `mana gerar --data`, `--proximos N`, `--forcar`
-- [ ] Campos `provedor`, `modelo`, `revisado`; `mana gerar --regerar-modelo`
+- [x] Modelos Pydantic, repositório de estudos (`data/mana.sqlite`)
+- [x] Gerador: prompt v1, validações de `docs/LLM.md`, até 3 tentativas, registro de falhas
+- [x] `mana gerar --data`, `--proximos N`, `--forcar`
+- [x] Campos `provedor`, `modelo`, `revisado`; `mana gerar --regerar-modelo`
 - [ ] Gerar 7 dias reais com a LLM de teste e revisar com o Marcos; ajustar prompt (v2 se preciso)
-- [ ] Faixa "ambiente de testes" quando `MODO_TESTE=true`
+      (7 dias gerados em 31/10–06/11 com `gemma-4-e4b-it`; falta a revisão do Marcos — ver Decisões)
+- [x] Faixa "ambiente de testes" quando `MODO_TESTE=true`
 
 ## Fase 6 — Página do dia
 - [ ] Template conforme `docs/DESIGN.md` (desktop e mobile, claro e escuro)
@@ -71,6 +72,7 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [ ] Adaptador do novo provedor, prompt v2 se necessário, regerar estudos de teste
 
 ## Decisões
+- Fase 5: 7 dias gerados com o gemma-4-e4b-it (sem thinking): ~31 s por estudo, 6 de 7 aprovados na 1ª tentativa; o 7º foi recusado 2× por título > 6 palavras e estudo < 220 palavras e passou na 3ª (o motivo vai no prompt seguinte). Os estudos têm ~240–290 palavras (o prompt pede ~300). Se o Marcos quiser mais corpo ou títulos mais curtos, criar `prompts/estudo_diario.v2.md` (não editar a v1). Revisar com `mana revisar --data AAAA-MM-DD`.
 - Fase 4: acervo com 1.594 entradas (AT 670 / NT 924; 66 livros; 116 de ocasiões, de 5 a 8 por ocasião), 30 temas. Cinco anos seguidos (2026–2030) gerados sem aviso e sem violar nenhuma regra. O NT ficou maior que o AT no acervo para a janela de 3 anos não apertar o NT (o calendário usa ~55% NT).
 - Fase 4: entradas com ocasião são reservadas a ela (não caem em dia comum); empate entre ocasiões: vale a cristã sobre a civil (ex.: 2035, sem Dia das Mães).
 - Fase 4: `data/calendarios/2026.yaml` (31/10 a 31/12) e `2027.yaml` gerados para revisão do Marcos; o banco `data/mana.sqlite` fica fora do git, então no servidor basta rodar `calendario importar` com esses YAMLs.
