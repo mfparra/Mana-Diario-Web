@@ -8,10 +8,12 @@ from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from mana.web.rotas import pagina, repositorio_biblia, router
+from mana.web.rotas_estudo import router as router_estudo
 
 app = FastAPI(title="Maná Diário")
 app.mount("/static", StaticFiles(directory=Path(__file__).parent / "static"), name="static")
 app.include_router(router)
+app.include_router(router_estudo)
 
 
 @app.exception_handler(StarletteHTTPException)

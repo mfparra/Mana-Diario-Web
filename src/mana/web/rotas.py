@@ -23,6 +23,7 @@ from mana.biblia.referencias import (
 )
 from mana.biblia.repositorio import LIMITE_VERSICULOS, RepositorioBiblia
 from mana.config import obter_configuracao
+from mana.estudos.repositorio import RepositorioEstudos
 
 router = APIRouter()
 templates = Jinja2Templates(directory=Path(__file__).parent / "templates")
@@ -41,13 +42,25 @@ def repositorio_biblia() -> RepositorioBiblia:
     return _repositorio()
 
 
+@cache
+def _repositorio_estudos() -> RepositorioEstudos:
+    return RepositorioEstudos(obter_configuracao().mana_db)
+
+
+def repositorio_estudos() -> RepositorioEstudos:
+    """Dependência do FastAPI (substituível nos testes)."""
+    return _repositorio_estudos()
+
+
 Repo = Annotated[RepositorioBiblia, Depends(repositorio_biblia)]
+RepoEstudos = Annotated[RepositorioEstudos, Depends(repositorio_estudos)]
 
 
 def pagina(request: Request, repo: RepositorioBiblia, nome: str, status: int = 200, **contexto):
     """Renderiza um template com o contexto comum (crédito da edição, modo de teste)."""
     contexto.setdefault("credito", repo.metadado("credito"))
     contexto.setdefault("modo_teste", obter_configuracao().modo_teste)
+    contexto.setdefault("url_publica", obter_configuracao().url_publica.rstrip("/"))
     return templates.TemplateResponse(request, nome, contexto, status_code=status)
 
 

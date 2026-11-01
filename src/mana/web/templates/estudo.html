@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block titulo %}{% if pronto %}{{ titulo }} — {% endif %}Maná Diário{% endblock %}
+{% block meta %}
+  {% if pronto %}
+  <meta name="description" content="{{ frase }}">
+  <meta property="og:site_name" content="Maná Diário">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ titulo }} — Maná Diário">
+  <meta property="og:description" content="{{ frase }}">
+  <meta property="og:url" content="{{ url_publica }}{{ caminho }}">
+  <meta property="og:image" content="{{ url_publica }}/static/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  {% else %}{{ super() }}{% endif %}
+{% endblock %}
+{% block cabecalho %}<link rel="stylesheet" href="/static/css/estudo.css">{% endblock %}
+{% block topo %}{% endblock %}
+
+{% block conteudo %}
+<article class="folha{% if not pronto %} em-preparacao{% endif %}">
+  <p class="data">
+    <span class="data-dia">{{ "%02d"|format(dia) }}</span> <span class="data-barra" aria-hidden="true">|</span> <span class="data-mes">{{ mes }}</span>
+    {% if ocasiao %}<span class="data-ocasiao">· {{ ocasiao }}</span>{% endif %}
+  </p>
+
+  {% if pronto %}<h1 class="titulo">{{ titulo }}</h1>{% else %}<h1 class="titulo">Estudo em preparação</h1>{% endif %}
+
+  <a class="logo-dia" href="/" aria-label="Maná Diário — ir para o estudo de hoje"><img src="/static/img/logo-mana.svg" alt="Maná Diário" width="180" height="180"></a>
+
+  {% if versiculo %}
+  <section class="versiculo-dia" aria-label="Versículo do dia">
+    <blockquote lang="pt-BR">{{ versiculo }}</blockquote>
+    <p class="versiculo-ref">{{ ref_html|safe }}</p>
+  </section>
+  {% else %}
+  <section class="versiculo-dia" aria-label="Versículo do dia"><blockquote>Maná fresco a cada manhã.</blockquote></section>
+  {% endif %}
+
+  {% if pronto %}
+  <aside class="lateral">
+    <p class="frase">{{ frase }}</p>
+    <div class="meta">
+      <p class="meta-item"><span class="rotulo">Estudo</span> <span class="meta-valor">{{ numero }}/{{ total_dias }}</span></p>
+      <p class="meta-item"><span class="rotulo">Leitura complementar</span>
+        <span class="meta-valor"><svg class="cruz" viewBox="0 0 12 16" width="11" height="15" aria-hidden="true"><path d="M5 0h2v5h5v2H7v9H5V7H0V5h5z" fill="currentColor"/></svg>{{ complementar_html|safe }}</span></p>
+    </div>
+  </aside>
+
+  <div class="corpo" lang="pt-BR">
+    {% for p in paragrafos %}<p>{{ p|safe }}</p>{% endfor %}
+  </div>
+
+  <section class="chaves" aria-label="Palavras-chave">
+    <h2 class="rotulo">Palavras-chave</h2>
+    <ul>{% for palavra in palavras_chave %}<li>{{ palavra }}</li>{% endfor %}</ul>
+  </section>
+  {% else %}
+  <div class="corpo preparacao">
+    <p>O estudo de {{ dia }} de {{ mes_nome }} ainda está sendo preparado. Volte daqui a pouco — enquanto isso, leia o versículo acima{% if ref_html %} e abra-o na Bíblia{% endif %}.</p>
+    {% if anterior %}<p><a class="botao" href="{{ anterior }}">‹ Ver o estudo anterior</a></p>{% endif %}
+  </div>
+  {% endif %}
+
+  <div class="selo-linha" aria-hidden="true"><img src="/static/img/favicon.svg" alt="" width="40" height="40"></div>
+  <nav class="navegacao-dia" aria-label="Navegação entre estudos">
+    {% if anterior %}<a href="{{ anterior }}" rel="prev">‹ dia anterior</a>{% else %}<span class="inativo">‹ dia anterior</span>{% endif %}
+    <a href="/estudos">arquivo</a>
+    <a href="/biblia">Bíblia</a>
+    {% if seguinte %}<a href="{{ seguinte }}" rel="next">dia seguinte ›</a>{% else %}<span class="inativo">dia seguinte ›</span>{% endif %}
+  </nav>
+</article>
+{% endblock %}
+{% block rodape_navegacao %}{% endblock %}

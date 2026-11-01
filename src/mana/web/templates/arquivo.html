@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block titulo %}Arquivo — Maná Diário{% endblock %}
+{% block conteudo %}
+<h1>Arquivo</h1>
+{% for grupo in grupos %}
+<h2>{{ grupo.titulo }}</h2>
+<ul class="arquivo">
+  {% for e in grupo.estudos %}
+  <li>
+    <a class="arquivo-data" href="{{ e.url }}">{{ "%02d"|format(e.data.day) }}/{{ "%02d"|format(e.data.month) }}</a>
+    <span class="arquivo-titulo"><a href="{{ e.url }}">{{ e.titulo|safe }}</a></span>
+    <span class="arquivo-ref">{{ e.referencia_html|safe }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Os primeiros estudos aparecerão aqui.</p>
+{% endfor %}
+{% endblock %}

@@ -181,3 +181,19 @@ class RepositorioEstudos:
                 ).rowcount
                 == 1
             )
+
+    def publicados(self, ate: date) -> list[Estudo]:
+        """Estudos válidos já publicáveis (data ≤ `ate`), do mais antigo ao mais novo."""
+        return self._estudos("WHERE status = 'ok' AND data <= ?", (ate.isoformat(),))
+
+    def vizinho(self, data: date, ate: date, anterior: bool) -> date | None:
+        """Data do estudo válido anterior/seguinte a `data` que já pode ser publicado."""
+        if anterior:
+            sql = "SELECT MAX(data) FROM estudos WHERE status = 'ok' AND data < ?"
+            args: tuple = (data.isoformat(),)
+        else:
+            sql = "SELECT MIN(data) FROM estudos WHERE status = 'ok' AND data > ? AND data <= ?"
+            args = (data.isoformat(), ate.isoformat())
+        with closing(self._conectar()) as con:
+            achado = con.execute(sql, args).fetchone()[0]
+        return date.fromisoformat(achado) if achado else None

@@ -54,11 +54,11 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [x] Faixa "ambiente de testes" quando `MODO_TESTE=true`
 
 ## Fase 6 — Página do dia
-- [ ] Template conforme `docs/DESIGN.md` (desktop e mobile, claro e escuro)
-- [ ] Favicon a partir da tigela do logo (`assets/logo-mana.svg` já está pronto)
-- [ ] `/`, `/estudo/{data}` (404 no futuro), `/estudos`, navegação no rodapé
-- [ ] Estado "Estudo em preparação" quando `status='falhou'` ou ausente
-- [ ] Metadados Open Graph (título, frase do dia) para compartilhamento
+- [x] Template conforme `docs/DESIGN.md` (desktop e mobile, claro e escuro)
+- [x] Favicon a partir da tigela do logo (`assets/logo-mana.svg` já está pronto)
+- [x] `/`, `/estudo/{data}` (404 no futuro), `/estudos`, navegação no rodapé
+- [x] Estado "Estudo em preparação" quando `status='falhou'` ou ausente
+- [x] Metadados Open Graph (título, frase do dia) para compartilhamento
 
 ## Fase 7 — Operação
 - [ ] `mana agendador` completo: recuperação, 00:10, backup, calendário em 1º/12 + testes
@@ -72,6 +72,7 @@ Marque `[x]` ao concluir. Anote decisões no fim de cada fase. Um commit (ou mai
 - [ ] Adaptador do novo provedor, prompt v2 se necessário, regerar estudos de teste
 
 ## Decisões
+- Fase 6: `ref-popover` e o corpo do estudo usam `linkar_referencias` na hora de renderizar (o banco guarda texto puro). Ícones (`favicon.svg`, PNGs, `og.png` 1200×630) gerados do logo; a página do dia não mostra o cabeçalho do site (ela tem o próprio logo), a navegação fica no rodapé. Fonte do corpo 1,15 rem (Crimson Pro é pequena; o DESIGN.md sugeria ~1,06 rem).
 - Fase 5: 7 dias gerados com o gemma-4-e4b-it (sem thinking): ~31 s por estudo, 6 de 7 aprovados na 1ª tentativa; o 7º foi recusado 2× por título > 6 palavras e estudo < 220 palavras e passou na 3ª (o motivo vai no prompt seguinte). Os estudos têm ~240–290 palavras (o prompt pede ~300). Se o Marcos quiser mais corpo ou títulos mais curtos, criar `prompts/estudo_diario.v2.md` (não editar a v1). Revisar com `mana revisar --data AAAA-MM-DD`.
 - Fase 4: acervo com 1.594 entradas (AT 670 / NT 924; 66 livros; 116 de ocasiões, de 5 a 8 por ocasião), 30 temas. Cinco anos seguidos (2026–2030) gerados sem aviso e sem violar nenhuma regra. O NT ficou maior que o AT no acervo para a janela de 3 anos não apertar o NT (o calendário usa ~55% NT).
 - Fase 4: entradas com ocasião são reservadas a ela (não caem em dia comum); empate entre ocasiões: vale a cristã sobre a civil (ex.: 2035, sem Dia das Mães).

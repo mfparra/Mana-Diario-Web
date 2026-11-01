@@ -364,6 +364,12 @@ def referencias_invalidas(texto: str) -> list[str]:
     return [texto[i:f] for i, f, r in _varrer(texto) if r is None]
 
 
+def link_referencia(ref: Referencia, texto: str | None = None) -> str:
+    """`<a class="ref" ...>` de uma referência já conhecida (texto padrão: forma de exibição)."""
+    visivel = escape(texto if texto is not None else formatar(ref))
+    return f'<a class="ref" href="{url_referencia(ref)}" data-ref="{canonico(ref)}">{visivel}</a>'
+
+
 def linkar_referencias(texto: str, existe: Callable[[Referencia], bool] | None = None) -> str:
     """Escapa o texto e transforma cada referência válida em link `<a class="ref">`.
 
@@ -377,10 +383,7 @@ def linkar_referencias(texto: str, existe: Callable[[Referencia], bool] | None =
             log.warning("Referência inexistente na Bíblia: %r", texto[e.inicio : e.fim])
             continue
         saida.append(escape(texto[pos : e.inicio]))
-        saida.append(
-            f'<a class="ref" href="{url_referencia(e.referencia)}" '
-            f'data-ref="{canonico(e.referencia)}">{escape(texto[e.inicio : e.fim])}</a>'
-        )
+        saida.append(link_referencia(e.referencia, texto[e.inicio : e.fim]))
         pos = e.fim
     saida.append(escape(texto[pos:]))
     return "".join(saida)

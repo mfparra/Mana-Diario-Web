@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>{% block titulo %}Maná Diário{% endblock %}</title>
+  <link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/static/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+  {% block meta %}
+  <meta name="description" content="Um pequeno estudo bíblico por dia.">
+  <meta property="og:site_name" content="Maná Diário">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maná Diário">
+  <meta property="og:description" content="Um pequeno estudo bíblico por dia.">
+  <meta property="og:image" content="{{ url_publica }}/static/img/og.png">
+  {% endblock %}
   <link rel="preload" href="/static/fonts/crimsonpro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/static/css/fontes.css">
   <link rel="stylesheet" href="/static/css/tema.css">
@@ -12,24 +23,31 @@
 </head>
 <body>
   {% if modo_teste %}<div class="faixa-teste">Ambiente de testes</div>{% endif %}
+  {% block topo %}
   <header class="topo">
     <div class="pagina">
       <a class="marca" href="/"><img src="/static/img/logo-mana.svg" alt="" width="40" height="40"><span>Maná Diário</span></a>
       <nav class="menu" aria-label="Principal">
+        <a href="/estudos"{% if secao == 'arquivo' %} aria-current="page"{% endif %}>Arquivo</a>
         <a href="/biblia"{% if secao == 'biblia' %} aria-current="page"{% endif %}>Bíblia</a>
       </nav>
     </div>
   </header>
+  {% endblock %}
   <main class="pagina">
     {% block conteudo %}{% endblock %}
   </main>
   <footer class="rodape">
     <div class="pagina">
-      <p class="credito">{{ credito }}</p>
+      {% block rodape_navegacao %}
       <nav aria-label="Rodapé">
+        <a href="/">Hoje</a>
+        <a href="/estudos">Arquivo</a>
         <a href="/biblia">Bíblia</a>
         <a href="/biblia/busca">Buscar na Bíblia</a>
       </nav>
+      {% endblock %}
+      <p class="credito">{{ credito }}</p>
     </div>
   </footer>
   <script src="/static/js/ref-popover.js" defer></script>
