@@ -112,6 +112,21 @@ texto. O código escolhe a primeira válida (ver regras).
 Grave no banco: JSON bruto, modelo, `versao_prompt` (ex.: `estudo_diario.v1`), tentativas,
 tempo de geração e motivo de cada rejeição — isso orienta ajustes no prompt.
 
+## 5.1 Como o código aplica (Fase 5)
+
+- `estudos/modelos.py`: `EstudoGerado` (o esquema acima, em Pydantic — o JSON Schema enviado ao
+  provedor sai dele) e `Estudo` (o que fica gravado).
+- `estudos/validacao.py`: as regras 1–6. Além delas, rejeita **8 palavras seguidas iguais a
+  qualquer versículo** (texto bíblico "citado de cabeça", mesmo sem aspas) e referência com cara
+  de referência mas inválida (`Romanos 99.1`).
+- `estudos/gerador.py`: até 3 tentativas; a cada rejeição, os motivos entram no prompt seguinte
+  (`{erro_tentativa_anterior}`). **Erro do provedor** (rede, timeout, 5xx, JSON ilegível) não é
+  erro de conteúdo: encerra o dia na hora com `status='falhou'` e a próxima rodada tenta de novo.
+- Cada estudo grava `provedor`, `modelo`, `versao_prompt`, `tentativas`, `tempo_s`, o JSON bruto
+  e `motivos` (um por rejeição). `revisado` só muda por `mana revisar`.
+- `mana gerar --regerar-modelo X` refaz os estudos de `X` com `revisado = 0` (inclui os que
+  falharam); os revisados nunca.
+
 ## 6. Contrato observado
 
 Lido em `llm-server/README.md` e `compose.yaml` e testado ao vivo em 31/10/2026.

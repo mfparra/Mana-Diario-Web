@@ -8,7 +8,7 @@ import json
 import logging
 import re
 import unicodedata
-from collections.abc import Callable
+from collections.abc import Callable, Iterator
 from dataclasses import dataclass
 from functools import cache
 from html import escape
@@ -326,15 +326,14 @@ _VIRGULA = re.compile(r",\d{1,3}(?:[.:]\d{1,3})?(?:-\d{1,3}(?:[.:]\d{1,3})?)?")
 _PONTO_VIRGULA = re.compile(r";\s*\d{1,3}[.:]\d{1,3}(?:\s?[-–]\s?\d{1,3}(?:[.:]\d{1,3})?)?")
 
 
-def encontrar_referencias(texto: str) -> list[Encontrada]:
-    """Acha referências em texto livre, com as regras conservadoras do §5 do BIBLIA.md."""
+def _varrer(texto: str) -> Iterator[tuple[int, int, Referencia | None]]:
+    """Candidatas a referência em texto livre: (início, fim, referência ou None se inválida)."""
     _, completos = _tabela()
-    achadas: list[Encontrada] = []
     posicao = 0
     while True:
         c = _CANDIDATO.search(texto, posicao)
         if not c:
-            return achadas
+            return
         posicao = c.end()
         nome = (c["ord"] or "") + c["palavra"] + (c["cauda"] or "")
         livro = buscar_livro(nome)
@@ -351,11 +350,18 @@ def encontrar_referencias(texto: str) -> list[Encontrada]:
             if not seguinte:
                 break
             fim = seguinte.end()
-        ref = parse_referencia(texto[c.start() : fim])
-        if ref is None:
-            continue
-        achadas.append(Encontrada(c.start(), fim, ref))
+        yield c.start(), fim, parse_referencia(texto[c.start() : fim])
         posicao = fim
+
+
+def encontrar_referencias(texto: str) -> list[Encontrada]:
+    """Acha referências válidas em texto livre, com as regras conservadoras do §5."""
+    return [Encontrada(i, f, r) for i, f, r in _varrer(texto) if r is not None]
+
+
+def referencias_invalidas(texto: str) -> list[str]:
+    """Trechos que parecem referência (livro + número) mas não são válidos (ex.: `Romanos 99.1`)."""
+    return [texto[i:f] for i, f, r in _varrer(texto) if r is None]
 
 
 def linkar_referencias(texto: str, existe: Callable[[Referencia], bool] | None = None) -> str:

@@ -9,6 +9,7 @@ from mana.biblia.referencias import (
     livros,
     parse_canonico,
     parse_referencia,
+    referencias_invalidas,
 )
 
 # entrada → (canônico, exibição)
@@ -173,3 +174,11 @@ def test_existencia_no_banco(repo):
     assert repo.existe(parse_referencia("Sl 119"))
     assert not repo.existe(parse_referencia("Rm 8.99"))
     assert not repo.existe(parse_referencia("Jd 1.99"))
+
+
+def test_referencias_invalidas_em_texto():
+    assert referencias_invalidas("Veja Romanos 99.1 e Romanos 8.28 e Jonas 7.2") == [
+        "Romanos 99.1",
+        "Jonas 7.2",
+    ]
+    assert referencias_invalidas("os 12 discípulos e Am 3") == []

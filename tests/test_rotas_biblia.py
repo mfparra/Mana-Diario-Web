@@ -107,3 +107,12 @@ def test_arquivos_estaticos(cliente):
         "/static/img/logo-mana.svg",
     ):
         assert cliente.get(caminho).status_code == 200, caminho
+
+
+@pytest.mark.parametrize("ligado", [True, False])
+def test_faixa_de_ambiente_de_testes(cliente, monkeypatch, ligado):
+    from mana.config import Configuracao
+    from mana.web import rotas
+
+    monkeypatch.setattr(rotas, "obter_configuracao", lambda: Configuracao(modo_teste=ligado))
+    assert ("Ambiente de testes" in cliente.get("/biblia").text) is ligado

@@ -137,8 +137,9 @@ uv run mana calendario gerar --ano 2027   # monta o calendário do ano (data/cal
 uv run mana calendario importar --ano 2027  # aplica as edições feitas no YAML do ano
 uv run mana llm testar                    # faz uma chamada mínima ao provedor configurado
 uv run mana gerar --data hoje             # gera (ou regenera com --forcar) o estudo do dia
-uv run mana gerar --proximos 7            # pré-gera os próximos 7 dias
-uv run mana gerar --regerar-modelo X      # refaz estudos futuros/sem revisão feitos pelo modelo X
+uv run mana gerar --proximos 7            # a data + os 7 dias seguintes (pula os que já estão ok)
+uv run mana gerar --regerar-modelo X      # refaz os estudos não revisados feitos pelo modelo X
+uv run mana revisar --data 2026-11-02     # marca o estudo como revisado (--desmarcar tira a marca)
 uv run mana servir                        # sobe o site em http://localhost:8000
 uv run mana agendador                     # laço diário (o mesmo que roda no container)
 uv run pytest                             # testes

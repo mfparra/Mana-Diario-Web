@@ -192,10 +192,84 @@ def calendario_importar(ano: int = typer.Option(..., help="Ano do calendário.")
         typer.secho(f"  aviso: {aviso}", fg=typer.colors.YELLOW)
 
 
+def _data_cli(texto: str):
+    from datetime import date
+
+    from mana import tempo
+
+    try:
+        return tempo.hoje() if texto == "hoje" else date.fromisoformat(texto)
+    except ValueError as e:
+        raise typer.BadParameter(f"use 'hoje' ou AAAA-MM-DD, não {texto!r}") from e
+
+
 @app.command()
-def gerar(data: str = "hoje") -> None:
-    """Gera o estudo do dia (Fase 5)."""
-    typer.echo("Ainda não implementado.")
+def gerar(
+    data: str = typer.Option("hoje", help="'hoje' ou AAAA-MM-DD."),
+    proximos: int = typer.Option(0, help="Além da data, gera também os N dias seguintes."),
+    forcar: bool = typer.Option(False, help="Refaz mesmo que já exista estudo válido."),
+    regerar_modelo: str = typer.Option(
+        "", help="Refaz os estudos não revisados feitos por este modelo (ignora --data)."
+    ),
+) -> None:
+    """Gera (ou regenera) o estudo do dia."""
+    import asyncio
+    from datetime import timedelta
+
+    from mana.biblia.repositorio import RepositorioBiblia
+    from mana.estudos.gerador import Gerador, SemCalendario
+    from mana.estudos.repositorio import RepositorioEstudos
+    from mana.llm.fabrica import criar_cliente
+
+    logging.basicConfig(level=logging.WARNING, format="%(message)s")
+    cfg = obter_configuracao()
+    estudos = RepositorioEstudos(cfg.mana_db)
+    if regerar_modelo:
+        datas = [e.data for e in estudos.do_modelo_nao_revisados(regerar_modelo)]
+        forcar = True
+        if not datas:
+            typer.echo(f"Nenhum estudo não revisado do modelo {regerar_modelo!r}.")
+            return
+    else:
+        inicio = _data_cli(data)
+        datas = [inicio + timedelta(days=i) for i in range(proximos + 1)]
+    gerador = Gerador(criar_cliente(cfg), RepositorioBiblia(cfg.biblia_db), estudos, cfg)
+
+    async def rodar() -> int:
+        falhas = 0
+        for d in datas:
+            try:
+                e = await gerador.gerar_dia(d, forcar=forcar)
+            except SemCalendario as erro:
+                typer.secho(f"{d}: {erro}", fg=typer.colors.RED, err=True)
+                falhas += 1
+                continue
+            if e.status == "ok":
+                typer.echo(f"{d} ok  [{e.tentativas} tentativa(s), {e.tempo_s:.0f}s] {e.titulo}")
+            else:
+                falhas += 1
+                typer.secho(
+                    f"{d} FALHOU: {e.motivos[-1] if e.motivos else '?'}", fg=typer.colors.RED
+                )
+        return falhas
+
+    if asyncio.run(rodar()):
+        raise typer.Exit(1)
+
+
+@app.command()
+def revisar(
+    data: str = typer.Option(..., help="'hoje' ou AAAA-MM-DD."),
+    desmarcar: bool = typer.Option(False, help="Tira a marca de revisado."),
+) -> None:
+    """Marca o estudo de uma data como revisado (ele deixa de ser refeito por --regerar-modelo)."""
+    from mana.estudos.repositorio import RepositorioEstudos
+
+    d = _data_cli(data)
+    if not RepositorioEstudos(obter_configuracao().mana_db).marcar_revisado(d, not desmarcar):
+        typer.secho(f"Não há estudo válido em {d}.", fg=typer.colors.RED, err=True)
+        raise typer.Exit(1)
+    typer.echo(f"{d}: " + ("revisão desmarcada." if desmarcar else "marcado como revisado."))
 
 
 @app.command()

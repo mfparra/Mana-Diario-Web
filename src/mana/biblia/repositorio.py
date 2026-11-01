@@ -113,6 +113,24 @@ class RepositorioBiblia:
                 "SELECT COUNT(*) FROM versiculos_fts WHERE versiculos_fts MATCH ?", (expr,)
             ).fetchone()[0]
 
+    def frases_na_biblia(self, texto: str, palavras: int = 8) -> list[str]:
+        """Trechos de `palavras` palavras seguidas de `texto` que existem na Bíblia (sem acento).
+
+        Serve para flagrar versículo "citado de cabeça" pela LLM, mesmo sem aspas.
+        """
+        tokens = re.findall(r"\w+", texto.lower())
+        achados: list[str] = []
+        with closing(self._conectar()) as con:
+            for i in range(len(tokens) - palavras + 1):
+                janela = tokens[i : i + palavras]
+                frase = " ".join(janela)
+                if con.execute(
+                    "SELECT 1 FROM versiculos_fts WHERE versiculos_fts MATCH ? LIMIT 1",
+                    (f'"{frase}"',),
+                ).fetchone():
+                    achados.append(frase)
+        return achados
+
     def metadado(self, chave: str) -> str:
         with closing(self._conectar()) as con:
             linha = con.execute("SELECT valor FROM metadados WHERE chave=?", (chave,)).fetchone()
